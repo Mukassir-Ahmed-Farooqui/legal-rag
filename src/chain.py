@@ -1,6 +1,6 @@
 
 # src/chain.py
-
+from src.security.guards import contains_prompt_injection
 from src.llm.groq_client import generate
 from src.prompts.legal_qa import LEGAL_QA_PROMPT
 from src.retrieval.retriever import HierarchicalRetriever
@@ -21,6 +21,17 @@ class LegalRAG:
     def ask(self, question: str):
 
         results = self.retriever.retrieve(question)
+
+        safe_chunks = []
+
+        for chunk in results.sentences:
+
+            if contains_prompt_injection(chunk.text):
+                continue
+
+            safe_chunks.append(chunk)
+
+        results.sentences = safe_chunks
 
         context = "\n\n".join(
             f"""
