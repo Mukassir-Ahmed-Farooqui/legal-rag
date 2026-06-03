@@ -1,16 +1,17 @@
 # src/retrieval/retriever.py
 from dataclasses import dataclass
 from typing import Optional
-
 from qdrant_client import QdrantClient
 from qdrant_client.models import FieldCondition, Filter, MatchAny
-from sentence_transformers import SentenceTransformer
+from typing import Optional, Any
+
 
 from src.storage.qdrant_store import (
     COLLECTION_SECTIONS,
     COLLECTION_SENTENCES,
     embed_query,
 )
+
 
 
 @dataclass
@@ -21,7 +22,8 @@ class Chunk:
     heading: str
     page_num: int
     doc_id: str
-    score: float
+    filename: str = ""
+    score: float = 0.0
     section_id: Optional[str] = None
 
 
@@ -44,7 +46,7 @@ class HierarchicalRetriever:
     def __init__(
         self,
         client: QdrantClient,
-        model: SentenceTransformer,
+        model: Any,
         top_sections: int = 3,
         top_sentences: int = 5,
     ):
@@ -97,6 +99,8 @@ class HierarchicalRetriever:
 
 def _to_chunk(hit) -> Chunk:
     p = hit.payload
+
+
     return Chunk(
         chunk_id=p["chunk_id"],
         chunk_type=p["chunk_type"],
@@ -104,6 +108,7 @@ def _to_chunk(hit) -> Chunk:
         heading=p.get("heading", ""),
         page_num=p.get("page_num", 1),
         doc_id=p["doc_id"],
+        filename=p.get("filename", ""),
         score=round(hit.score, 4),
         section_id=p.get("section_id"),
     )

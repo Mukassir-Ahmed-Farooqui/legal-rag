@@ -25,6 +25,7 @@ def _chunk_id(doc_id: str, kind: str, index: int) -> str:
 
 @dataclass
 class SectionChunk:
+    filename: str
     chunk_id: str
     doc_id: str
     chunk_type: str = "section"
@@ -39,6 +40,7 @@ class SectionChunk:
 
 @dataclass
 class SentenceChunk:
+    filename: str
     chunk_id: str
     doc_id: str
     section_id: str
@@ -54,6 +56,7 @@ class SentenceChunk:
 def chunk_document(
     elements: list,
     doc_id: str,
+    filename: str,
     max_section_tokens: int = 800,
     max_sentence_tokens: int = 150,
     min_tokens: int = 50,
@@ -65,8 +68,20 @@ def chunk_document(
     Sentence chunks: 2-3 sentence windows per section, 50-150 tokens.
     Each chunk keeps page_num and section_id for hierarchical retrieval.
     """
-    section_chunks = _build_sections(elements, doc_id, max_section_tokens, min_tokens)
-    sentence_chunks = _build_sentences(section_chunks, doc_id, max_sentence_tokens, min_tokens)
+    section_chunks = _build_sections(
+        elements,
+        doc_id,
+        filename,
+        max_section_tokens,
+        min_tokens,
+    )
+    sentence_chunks = _build_sentences(
+        section_chunks,
+        doc_id,
+        filename,
+        max_sentence_tokens,
+        min_tokens,
+    )
     return section_chunks, sentence_chunks
 
 
@@ -75,6 +90,7 @@ def chunk_document(
 def _build_sections(
     elements: list,
     doc_id: str,
+    filename: str,
     max_tokens: int,
     min_tokens: int,
 ) -> list[SectionChunk]:
@@ -97,6 +113,7 @@ def _build_sections(
             return
         if tokens <= max_tokens:
             chunks.append(SectionChunk(
+                filename=filename,
                 chunk_id=_chunk_id(doc_id, "section", idx),
                 doc_id=doc_id,
                 text=merged,
@@ -109,7 +126,7 @@ def _build_sections(
             ))
             idx += 1
         else:
-            for sub in _split_section(merged, heading, heading_page, heading_bbox, doc_id, idx, max_tokens):
+            for sub in _split_section(merged, heading, heading_page, heading_bbox, doc_id, filename, idx, max_tokens):
                 chunks.append(sub)
                 idx += 1
 
@@ -141,6 +158,7 @@ def _split_section(
     page_num: int,
     bbox: Optional[dict],
     doc_id: str,
+    filename: str,
     start_idx: int,
     target_tokens: int,
 ) -> list[SectionChunk]:
@@ -152,6 +170,7 @@ def _split_section(
         nonlocal sub
         t = " ".join(buffer)
         chunks.append(SectionChunk(
+            filename=filename,
             chunk_id=_chunk_id(doc_id, "section", start_idx + sub),
             doc_id=doc_id,
             text=t,
@@ -184,6 +203,7 @@ def _split_section(
 def _build_sentences(
     sections: list[SectionChunk],
     doc_id: str,
+    filename: str,
     max_tokens: int,
     min_tokens: int,
 ) -> list[SentenceChunk]:
@@ -199,6 +219,7 @@ def _build_sentences(
             if _token_count(t) < min_tokens:
                 return
             chunks.append(SentenceChunk(
+                filename=section.filename,
                 chunk_id=_chunk_id(doc_id, "sentence", section.section_index * 1000 + idx),
                 doc_id=doc_id,
                 section_id=section.chunk_id,

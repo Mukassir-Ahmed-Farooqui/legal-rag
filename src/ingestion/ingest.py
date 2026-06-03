@@ -29,7 +29,7 @@ def ingest_pdf(pdf_path: Path, client, model) -> tuple[int, int]:
     parsed = parse_pdf(pdf_path)
 
     print(f"  chunking {len(parsed.elements)} elements")
-    sections, sentences = chunk_document(parsed.elements, parsed.doc_id)
+    sections, sentences = chunk_document(parsed.elements, parsed.doc_id, parsed.filename)
 
     print(f"  upserting {len(sections)} sections, {len(sentences)} sentences")
     n_s = upsert_chunks(client, model, sections, COLLECTION_SECTIONS)
