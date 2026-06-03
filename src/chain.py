@@ -1,5 +1,6 @@
 
 # src/chain.py
+from typing import Optional
 from src.security.guards import contains_prompt_injection
 from src.llm.groq_client import generate
 from src.prompts.legal_qa import LEGAL_QA_PROMPT
@@ -18,9 +19,9 @@ class LegalRAG:
             get_embedder(),
         )
 
-    def ask(self, question: str):
+    def ask(self, question: str, doc_id: Optional[str] = None):
 
-        results = self.retriever.retrieve(question)
+        results = self.retriever.retrieve(question, doc_id=doc_id)
 
         safe_chunks = []
 
