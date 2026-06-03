@@ -1,0 +1,57 @@
+from pathlib import Path
+from fastapi import UploadFile
+
+from src.ingestion.parser import parse_pdf
+from src.ingestion.chunker import chunk_document
+from src.storage.qdrant_store import (
+    COLLECTION_SECTIONS,
+    COLLECTION_SENTENCES,
+    get_client,
+    get_embedder,
+    upsert_chunks,
+)
+
+
+UPLOAD_DIR = Path("data/uploads")
+UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
+
+
+def ingest_uploaded_pdf(file: UploadFile) -> dict:
+
+    file_path = UPLOAD_DIR / file.filename
+
+    with open(file_path, "wb") as buffer:
+        buffer.write(file.file.read())
+
+    client = get_client()
+    model = get_embedder()
+
+    parsed = parse_pdf(file_path)
+
+    sections, sentences = chunk_document(
+        parsed.elements,
+        parsed.doc_id,
+        parsed.filename,
+    )
+
+    n_sections = upsert_chunks(
+        client,
+        model,
+        sections,
+        COLLECTION_SECTIONS,
+    )
+
+    n_sentences = upsert_chunks(
+        client,
+        model,
+        sentences,
+        COLLECTION_SENTENCES,
+    )
+
+    return {
+        "doc_id": parsed.doc_id,
+        "filename": parsed.filename,
+        "sections": n_sections,
+        "sentences": n_sentences,
+        "status": "indexed",
+    }

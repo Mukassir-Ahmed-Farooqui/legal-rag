@@ -26,3 +26,12 @@ class HealthResponse(BaseModel):
         ...,
         description="Connectivity status to the Qdrant vector database.",
     )
+
+
+class UploadResponse(BaseModel):
+    doc_id: str
+    filename: str
+    sections: int
+    sentences: int
+    status: str
+
