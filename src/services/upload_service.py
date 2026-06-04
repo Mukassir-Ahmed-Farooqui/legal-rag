@@ -1,4 +1,5 @@
 from pathlib import Path
+import uuid
 from fastapi import UploadFile
 
 from src.ingestion.parser import parse_pdf
@@ -26,7 +27,8 @@ def ingest_uploaded_pdf(file: UploadFile) -> dict:
     client = get_client()
     model = get_embedder()
 
-    parsed = parse_pdf(file_path)
+    doc_id = str(uuid.uuid4())
+    parsed = parse_pdf(file_path, doc_id=doc_id)
 
     sections, sentences = chunk_document(
         parsed.elements,

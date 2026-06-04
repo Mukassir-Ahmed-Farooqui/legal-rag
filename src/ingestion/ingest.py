@@ -9,6 +9,7 @@ Usage:
 
 import argparse
 from pathlib import Path
+import uuid
 
 from src.ingestion.chunker import chunk_document
 from src.ingestion.loader import download_cuad
@@ -26,7 +27,8 @@ from src.storage.qdrant_store import (
 def ingest_pdf(pdf_path: Path, client, model) -> tuple[int, int]:
     """Parse → chunk → upsert one PDF. Returns (n_sections, n_sentences)."""
     print(f"  parsing  {pdf_path.name}")
-    parsed = parse_pdf(pdf_path)
+    doc_id = str(uuid.uuid4())
+    parsed = parse_pdf(pdf_path, doc_id=doc_id)
 
     print(f"  chunking {len(parsed.elements)} elements")
     sections, sentences = chunk_document(parsed.elements, parsed.doc_id, parsed.filename)

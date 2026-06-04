@@ -1,6 +1,7 @@
 # src/ingestion/parser.py
 
 import re
+import uuid
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Optional
@@ -39,11 +40,13 @@ class ParsedDocument:
     elements: list[DocElement] = field(default_factory=list)
 
 
-def parse_pdf(pdf_path: Path) -> ParsedDocument:
+def parse_pdf(pdf_path: Path, doc_id: Optional[str] = None) -> ParsedDocument:
     """
     Parse a PDF with Docling, returning structured elements
     (headings, paragraphs, tables) with page numbers and bboxes.
     """
+    if not doc_id:
+        doc_id = str(uuid.uuid4())
 
     pipeline_options = PdfPipelineOptions()
     pipeline_options.do_ocr = False
@@ -130,7 +133,7 @@ def parse_pdf(pdf_path: Path) -> ParsedDocument:
         )
 
     return ParsedDocument(
-        doc_id=pdf_path.stem,
+        doc_id=doc_id,
         filename=pdf_path.name,
         source_path=str(pdf_path),
         num_pages=(
