@@ -6,6 +6,7 @@ from src.api.routes import (
     health,
     upload,
     documents,
+    auth,
 )
 
 app = FastAPI(
@@ -35,6 +36,11 @@ app.include_router(
     documents.router,
     prefix="/api/v1/documents",
     tags=["documents"],
+)
+app.include_router(
+    auth.router,
+    prefix="/api/v1/auth",
+    tags=["auth"],
 )
 
 
