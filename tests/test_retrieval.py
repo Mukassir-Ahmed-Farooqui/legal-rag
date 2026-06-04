@@ -17,7 +17,7 @@ for s in results.sections:
     print(
         f"[p.{s.page_num}] "
         f"{s.score:.4f} "
-        f"{s.heading}"
+        f"{s.heading.encode('ascii', 'replace').decode('ascii')}"
     )
 
 print("\n=== SENTENCES ===\n")
@@ -26,5 +26,5 @@ for s in results.sentences:
         f"[p.{s.page_num}] "
         f"{s.score:.4f}"
     )
-    print(s.text[:300])
+    print(s.text[:300].encode("ascii", "replace").decode("ascii"))
     print("-" * 80)
