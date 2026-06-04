@@ -41,17 +41,22 @@ def delete_document(db: Session, doc_id: str, user_id: uuid.UUID):
             detail="Invalid doc_id format. Must be a valid UUID.",
         )
 
-    # Find the document
+    # Find the document regardless of owner
     doc = db.query(Document).filter(
         Document.doc_id == doc_uuid,
-        Document.owner_id == user_id,
         Document.is_deleted == False
     ).first()
 
     if not doc:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
-            detail="Document not found or not owned by user.",
+            detail="Document not found.",
+        )
+
+    if doc.owner_id != user_id:
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail="Delete access denied. You do not own this document.",
         )
 
     # Soft delete in PostgreSQL

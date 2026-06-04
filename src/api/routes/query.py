@@ -1,5 +1,6 @@
+import time
 import uuid
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 from src.api.dependencies import get_rag_pipeline
 from src.chain import LegalRAG
@@ -8,6 +9,7 @@ from src.models.responses import QueryResponse
 from src.auth import get_current_user
 from src.db import get_db
 from src.db.models import User, Document
+from src.services import audit_service
 
 router = APIRouter()
 
@@ -23,6 +25,8 @@ def query_rag(
     Query the legal RAG pipeline with a specific question.
     Optionally restrict search to a specific document ID.
     """
+    start_time = time.perf_counter()
+    document_id_db = None
     try:
         if request.doc_id:
             try:
@@ -33,10 +37,9 @@ def query_rag(
                     detail="Invalid doc_id format.",
                 )
 
-            # Check if document exists and is owned by the current user
+            # Check if document exists regardless of owner
             doc = db.query(Document).filter(
                 Document.doc_id == target_uuid,
-                Document.owner_id == current_user.id,
                 Document.is_deleted == False
             ).first()
 
@@ -46,7 +49,24 @@ def query_rag(
                     detail="Document not found.",
                 )
 
+            # Check ownership
+            if doc.owner_id != current_user.id:
+                latency_ms = int((time.perf_counter() - start_time) * 1000)
+                audit_service.log_auth_failure(
+                    db=db,
+                    user_id=current_user.id,
+                    attempted_doc_id=request.doc_id,
+                    reason="Ownership denied. You do not own this document.",
+                    latency_ms=latency_ms,
+                    action="QUERY",
+                )
+                raise HTTPException(
+                    status_code=status.HTTP_403_FORBIDDEN,
+                    detail="Ownership denied. You do not own this document.",
+                )
+
             allowed_doc_ids = str(doc.doc_id)
+            document_id_db = doc.id
         else:
             # Fetch all active documents owned by this user
             user_docs = db.query(Document).filter(
@@ -55,14 +75,39 @@ def query_rag(
             ).all()
 
             if not user_docs:
+                answer = "You have not uploaded any documents yet. Please upload a PDF before querying."
+                latency_ms = int((time.perf_counter() - start_time) * 1000)
+                audit_service.log_query(
+                    db=db,
+                    user_id=current_user.id,
+                    question=request.question,
+                    answer=answer,
+                    chunks_retrieved=0,
+                    latency_ms=latency_ms,
+                    document_id=None,
+                )
                 return QueryResponse(
-                    answer="You have not uploaded any documents yet. Please upload a PDF before querying.",
+                    answer=answer,
                     citations=[],
                 )
 
             allowed_doc_ids = [str(d.doc_id) for d in user_docs]
+            document_id_db = None
 
         result = rag.ask(request.question, doc_id=allowed_doc_ids)
+        latency_ms = int((time.perf_counter() - start_time) * 1000)
+
+        # Log successful query
+        audit_service.log_query(
+            db=db,
+            user_id=current_user.id,
+            question=request.question,
+            answer=result["answer"],
+            chunks_retrieved=result["chunks_retrieved_count"],
+            latency_ms=latency_ms,
+            document_id=document_id_db,
+        )
+
         return QueryResponse(
             answer=result["answer"],
             citations=result["citations"],

@@ -60,6 +60,8 @@ def test_document_ownership_and_corpus_isolation():
                 files={"file": ("agreement_a.pdf", f, "application/pdf")},
                 headers=headers_a
             )
+        if res_upload.status_code != 200:
+            print("UPLOAD FAILED:", res_upload.status_code, res_upload.text)
         assert res_upload.status_code == 200
         doc_id_a = res_upload.json()["doc_id"]
         print(f"Uploaded: doc_id_a={doc_id_a}")
@@ -77,23 +79,23 @@ def test_document_ownership_and_corpus_isolation():
         assert len(docs_a) == 1
         assert docs_a[0]["doc_id"] == doc_id_a
 
-        # 5. Delete Protection: User B attempts to delete User A's document (should be 404)
+        # 5. Delete Protection: User B attempts to delete User A's document (should be 403)
         print("Verifying Delete Protection...")
         res_del_unauth = client.delete(f"/api/v1/documents/{doc_id_a}", headers=headers_b)
-        assert res_del_unauth.status_code == 404
+        assert res_del_unauth.status_code == 403
 
         # Verify it is still active and visible to User A
         res_list_a_check = client.get("/api/v1/documents", headers=headers_a)
         assert len(res_list_a_check.json()) == 1
 
-        # 6. Query Protection: User B queries restricting to User A's doc_id (should be 404)
+        # 6. Query Protection: User B queries restricting to User A's doc_id (should be 403)
         print("Verifying Query Protection...")
         res_query_unauth = client.post(
             "/api/v1/query",
             json={"question": "What is the referral fee?", "doc_id": doc_id_a},
             headers=headers_b
         )
-        assert res_query_unauth.status_code == 404
+        assert res_query_unauth.status_code == 403
 
         # 7. Corpus Isolation: User B queries without doc_id (should not fetch User A's document)
         print("Verifying Corpus Isolation (no doc_id scope)...")
