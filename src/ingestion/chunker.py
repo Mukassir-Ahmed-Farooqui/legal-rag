@@ -138,7 +138,7 @@ def _build_sections(
         page = el.page_num if hasattr(el, "page_num") else el.get("page_num", 1)
         bbox = el.bbox if hasattr(el, "bbox") else el.get("bbox")
 
-        if "heading" in el_type.lower():
+        if "heading" in el_type.lower() or "section_header" in el_type.lower():
             flush()
             heading = text
             heading_page = page
@@ -174,7 +174,7 @@ def _split_section(
             chunk_id=_chunk_id(doc_id, "section", start_idx + sub),
             doc_id=doc_id,
             text=t,
-            heading=f"{heading} (part {sub + 1})" if sub > 0 else heading,
+            heading=heading,
             page_num=page_num,
             end_page_num=page_num,
             bbox=bbox,

@@ -11,11 +11,10 @@ from docling.datamodel.pipeline_options import PdfPipelineOptions
 
 def clean_heading(text: str) -> str:
 
+    # Strip trailing dash separators (e.g. "Section 1 ----------")
     text = re.sub(r"-{2,}.*$", "", text)
 
-    if "." in text:
-        text = text.split(".")[0]
-
+    # Normalise whitespace
     text = re.sub(r"\s+", " ", text)
 
     return text.strip()
@@ -102,7 +101,7 @@ def parse_pdf(pdf_path: Path) -> ParsedDocument:
                 }
 
         level = None
-        is_heading = "heading" in label.lower()
+        is_heading = "heading" in label.lower() or "section_header" in label.lower()
 
         if is_heading:
 

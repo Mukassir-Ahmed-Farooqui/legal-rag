@@ -64,10 +64,59 @@ def test_upload():
     print(f"Upload endpoint verified successfully! Indexed {data['sections']} sections and {data['sentences']} sentences.")
 
 
+def test_documents():
+    # 1. Get current list of documents
+    response = client.get("/api/v1/documents")
+    assert response.status_code == 200
+    initial_docs = response.json()
+    assert isinstance(initial_docs, list)
+
+    # 2. Upload a document
+    pdf_path = os.path.join(
+        "data", "cuad", "CUAD_v1", "full_contract_pdf", "Part_I",
+        "Affiliate_Agreements", "CreditcardscomInc_20070810_S-1_EX-10.33_362297_EX-10.33_Affiliate Agreement.pdf"
+    )
+
+    if not os.path.exists(pdf_path):
+        print("Warning: Test PDF not found. Skipping documents integration test.")
+        return
+
+    print("Uploading document for testing...")
+    with open(pdf_path, "rb") as f:
+        response = client.post(
+            "/api/v1/upload",
+            files={"file": ("test_agreement.pdf", f, "application/pdf")}
+        )
+    assert response.status_code == 200
+    uploaded_doc = response.json()
+    doc_id = uploaded_doc["doc_id"]
+
+    # 3. Get list of documents and check if the uploaded document is there
+    response = client.get("/api/v1/documents")
+    assert response.status_code == 200
+    docs = response.json()
+    assert any(d["doc_id"] == doc_id for d in docs)
+
+    # 4. Delete the document
+    response = client.delete(f"/api/v1/documents/{doc_id}")
+    assert response.status_code == 200
+    delete_res = response.json()
+    assert delete_res["status"] == "deleted"
+    assert delete_res["doc_id"] == doc_id
+
+    # 5. Get list of documents and check if it's gone
+    response = client.get("/api/v1/documents")
+    assert response.status_code == 200
+    docs_after = response.json()
+    assert not any(d["doc_id"] == doc_id for d in docs_after)
+    print("Documents endpoints verified successfully!")
+
+
 if __name__ == "__main__":
     print("Starting API verification tests...")
     test_root()
     test_health()
     test_query()
     test_upload()
+    test_documents()
     print("All tests passed successfully!")

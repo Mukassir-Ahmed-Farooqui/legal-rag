@@ -1,7 +1,12 @@
 import uvicorn
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from src.api.routes import query, health, upload
+from src.api.routes import (
+    query,
+    health,
+    upload,
+    documents,
+)
 
 app = FastAPI(
     title="Legal RAG API",
@@ -25,6 +30,11 @@ app.include_router(
     upload.router,
     prefix="/api/v1/upload",
     tags=["upload"],
+)
+app.include_router(
+    documents.router,
+    prefix="/api/v1/documents",
+    tags=["documents"],
 )
 
 
