@@ -1,6 +1,6 @@
 from src.db.database import engine, SessionLocal, get_db, init_db
 from src.db.base import Base
-from src.db.models import User, Document, QueryLog
+from src.db.models import User, Document, QueryLog, Chat, Message
 
 __all__ = [
     "engine",
@@ -11,4 +11,7 @@ __all__ = [
     "User",
     "Document",
     "QueryLog",
+    "Chat",
+    "Message",
 ]
+

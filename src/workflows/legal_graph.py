@@ -15,6 +15,7 @@ class LegalState(TypedDict, total=False):
     retrieved_chunks: list[Any]
     answer: str
     citations: list[dict]
+    chat_history: Optional[str]
 
 # Instantiate retriever once globally to share across calls
 retriever = HierarchicalRetriever(
@@ -42,6 +43,7 @@ def retrieve_node(state: LegalState) -> LegalState:
 def generate_node(state: LegalState) -> LegalState:
     question = state.get("question", "")
     retrieved_chunks = state.get("retrieved_chunks", [])
+    chat_history = state.get("chat_history", None) or "No previous conversation history."
     
     context = "\n\n".join(
         f"""
@@ -55,12 +57,14 @@ Page: {chunk.page_num}
     )
 
     prompt = LEGAL_QA_PROMPT.format(
+        chat_history=chat_history,
         context=context,
         question=question,
     )
 
     answer = generate(prompt)
     return {"answer": answer}
+
 
 def citation_node(state: LegalState) -> LegalState:
     retrieved_chunks = state.get("retrieved_chunks", [])

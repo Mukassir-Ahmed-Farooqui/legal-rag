@@ -35,3 +35,36 @@ class UploadResponse(BaseModel):
     sentences: int
     status: str
 
+
+class MessageResponse(BaseModel):
+    id: str
+    role: str
+    content: str
+    citations: Optional[List[Citation]] = None
+    latency_ms: Optional[int] = None
+    timestamp: str
+
+
+class ChatResponse(BaseModel):
+    id: str
+    title: str
+    scope_type: str
+    scope_doc_id: Optional[str] = None
+    created_at: str
+    updated_at: str
+
+
+class ChatDetailResponse(BaseModel):
+    id: str
+    title: str
+    scope_type: str
+    scope_doc_id: Optional[str] = None
+    created_at: str
+    updated_at: str
+    messages: List[MessageResponse] = []
+
+
+class StatusResponse(BaseModel):
+    status: str
+    message: Optional[str] = None
+
