@@ -7,12 +7,24 @@ from src.api.routes import (
     upload,
     documents,
     auth,
+    chats,
 )
+
+
+from contextlib import asynccontextmanager
+from src.db.database import init_db
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Auto deploy database schemas on startup
+    init_db()
+    yield
 
 app = FastAPI(
     title="Legal RAG API",
     description="API to query the legal documents retrieval-augmented generation (RAG) pipeline.",
     version="0.1.0",
+    lifespan=lifespan,
 )
 
 # Configure CORS for frontend access
@@ -42,6 +54,12 @@ app.include_router(
     prefix="/api/v1/auth",
     tags=["auth"],
 )
+app.include_router(
+    chats.router,
+    prefix="/api/v1/chats",
+    tags=["chats"],
+)
+
 
 
 

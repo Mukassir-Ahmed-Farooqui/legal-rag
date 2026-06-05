@@ -11,3 +11,21 @@ class QueryRequest(BaseModel):
         None,
         description="Optional document ID to restrict retrieval to a specific document.",
     )
+
+
+class ChatCreateRequest(BaseModel):
+    scope_type: str = Field(..., description="Scope type: 'corpus' or 'document'")
+    scope_doc_id: Optional[str] = Field(None, description="Scope document UUID string (nullable)")
+
+
+class ChatRenameRequest(BaseModel):
+    title: str = Field(..., description="New title of the chat session")
+
+
+class ChatScopeUpdateRequest(BaseModel):
+    scope_type: str = Field(..., description="Scope type: 'corpus' or 'document'")
+    scope_doc_id: Optional[str] = Field(None, description="Scope document UUID string (nullable)")
+
+
+class MessageCreateRequest(BaseModel):
+    question: str = Field(..., description="User question to ask")

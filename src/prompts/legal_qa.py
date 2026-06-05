@@ -20,6 +20,9 @@ Instructions:
 - If the answer is not contained in the context, respond exactly with:
   "I could not find sufficient evidence in the provided documents."
 
+Chat History:
+{chat_history}
+
 Context:
 {context}
 
