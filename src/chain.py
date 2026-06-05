@@ -15,4 +15,5 @@ class LegalRAG:
             "answer": state.get("answer", ""),
             "citations": state.get("citations", []),
             "chunks_retrieved_count": len(state.get("retrieved_chunks", [])),
+            "contexts": [c.text for c in state.get("retrieved_chunks", [])],
         }
