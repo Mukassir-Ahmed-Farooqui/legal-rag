@@ -4,10 +4,10 @@ import { ThinkingIndicator } from './ThinkingIndicator';
 import { MessageSquare } from 'lucide-react';
 
 const SUGGESTIONS = [
-  "Compare termination provisions",
-  "Summarize payment obligations",
-  "Who owns the intellectual property?",
-  "What limitations exist under this agreement?"
+  "Summarize the key findings in this document",
+  "What are the main obligations or requirements?",
+  "Compare the selected documents",
+  "What conclusions does this report draw?"
 ];
 
 export const ChatArea = ({ messages, isQuerying, documents = [], onSuggestionClick }) => {
@@ -28,10 +28,10 @@ export const ChatArea = ({ messages, isQuerying, documents = [], onSuggestionCli
           
           <div className="space-y-2">
             <h2 className="text-xl font-extrabold text-slate-800 tracking-tight">
-              ClauseScope Workspace
+              No documents yet
             </h2>
             <p className="text-xs text-slate-550 leading-relaxed max-w-xs mx-auto">
-              No agreements uploaded yet. Drag & drop or browse in the left repository panel to import contracts (NDAs, Vendor Contracts, Service agreements, etc.) and begin analysis.
+              Upload your first document to start asking questions.
             </p>
           </div>
         </div>
@@ -50,16 +50,16 @@ export const ChatArea = ({ messages, isQuerying, documents = [], onSuggestionCli
           
           <div className="space-y-2">
             <h2 className="text-xl font-extrabold text-slate-800 tracking-tight">
-              ClauseScope Workspace
+              OpenDoc Workspace
             </h2>
-            <p className="text-xs text-slate-550 leading-relaxed max-w-xs mx-auto">
-              ClauseScope is ready. Ask natural language questions about your active agreements, inspect source context, and retrieve secure citation-grounded analysis.
+            <p className="text-slate-500 text-sm max-w-lg mx-auto font-medium leading-relaxed">
+              OpenDoc is ready. Ask natural language questions about your active documents, inspect source context, and retrieve secure citation-grounded analysis.
             </p>
           </div>
 
           <div className="space-y-3 pt-2">
             <span className="text-[10px] font-extrabold text-slate-400 uppercase tracking-widest block">
-              Suggested Audits
+              Suggested Questions
             </span>
             <div className="flex flex-wrap gap-2 justify-center">
               {SUGGESTIONS.map((s) => (

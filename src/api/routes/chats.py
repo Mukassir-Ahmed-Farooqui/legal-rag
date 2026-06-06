@@ -98,7 +98,8 @@ def create_chat(
     """
     try:
         validated_ids = []
-        if request.selected_doc_ids:
+        if request.selected_doc_ids is not None:
+
             for doc_id_str in request.selected_doc_ids:
                 try:
                     doc_uuid = uuid.UUID(doc_id_str)
@@ -298,7 +299,7 @@ def update_chat_documents(
 
     try:
         validated_ids = []
-        if request.selected_doc_ids:
+        if request.selected_doc_ids is not None:
             for doc_id_str in request.selected_doc_ids:
                 try:
                     doc_uuid = uuid.UUID(doc_id_str)
@@ -445,13 +446,13 @@ def create_message(
 
     # Load active workspace documents and validate
     if not chat.selected_doc_ids:
-        # Corpus mode: retrieve all active documents owned by the user
-        user_docs = (
-            db.query(Document)
-            .filter(Document.owner_id == current_user.id, Document.is_deleted == False)
-            .all()
-        )
-        if not user_docs:
+        user_docs_count = db.query(Document).filter(Document.owner_id == current_user.id, Document.is_deleted == False).count()
+        if user_docs_count > 0:
+            raise HTTPException(
+                status_code=400,
+                detail="No documents selected. Please select at least one document.",
+            )
+        else:
             # Short-circuit if user has no documents uploaded
             answer = "You have not uploaded any documents yet. Please upload a PDF before querying."
             latency_ms = int((time.perf_counter() - start_time) * 1000)
@@ -507,8 +508,6 @@ def create_message(
                     status_code=500,
                     detail=f"Failed to handle empty documents state transaction: {str(e)}",
                 )
-
-        allowed_doc_ids = [str(d.doc_id) for d in user_docs]
     else:
         # Validate that all selected documents still exist and are owned by the user
         for doc_id_str in chat.selected_doc_ids:
@@ -591,10 +590,19 @@ def create_message(
         trimmed_messages.reverse()
         chat_history_str = _format_history_block(trimmed_messages)
 
+    # Apply Summary Style Instruction
+    rag_question = request.question
+    if request.summary_style == "detailed":
+        rag_question = "[Format Instruction: Provide a comprehensive section-by-section breakdown.]\n\n" + rag_question
+    elif request.summary_style == "highlights":
+        rag_question = "[Format Instruction: Provide a bullet list of critical points and key highlights.]\n\n" + rag_question
+    elif request.summary_style == "executive":
+        rag_question = "[Format Instruction: Provide a sleek, condensed executive summary.]\n\n" + rag_question
+
     # Run LegalRAG Pipeline
     try:
         result = rag.ask(
-            request.question, selected_doc_ids=allowed_doc_ids, chat_history=chat_history_str
+            rag_question, selected_doc_ids=allowed_doc_ids, chat_history=chat_history_str
         )
         latency_ms = int((time.perf_counter() - start_time) * 1000)
 

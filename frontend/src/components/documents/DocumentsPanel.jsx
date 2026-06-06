@@ -55,7 +55,7 @@ export const DocumentsPanel = ({
         <Search className="absolute left-3 top-2.5 h-3.5 w-3.5 text-slate-400" />
         <input
           type="text"
-          placeholder="Search contracts..."
+          placeholder="Search documents..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
           className="w-full pl-8 pr-3 py-2 text-xs bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-blue-500 focus:bg-white transition-all text-slate-800"
@@ -65,7 +65,7 @@ export const DocumentsPanel = ({
       {/* Bulk Actions and Title */}
       <div className="flex items-center justify-between px-1">
         <h4 className="text-[10px] font-extrabold text-slate-400 uppercase tracking-wider">
-          Contracts List ({filteredDocs.length})
+          Documents List ({filteredDocs.length})
         </h4>
         {documents.length > 0 && (
           <div className="flex items-center gap-2 text-[10px] font-extrabold uppercase select-none">
@@ -80,7 +80,7 @@ export const DocumentsPanel = ({
               onClick={handleClearSelection}
               className="text-slate-500 hover:text-slate-600 cursor-pointer transition-colors"
             >
-              Clear
+              Deselect All
             </button>
           </div>
         )}
@@ -91,10 +91,10 @@ export const DocumentsPanel = ({
         {filteredDocs.length === 0 ? (
           <div className="bg-slate-50/50 rounded-xl border border-slate-200 p-6 text-center text-slate-400">
             <HelpCircle className="h-7 w-7 mx-auto text-slate-300 mb-2" />
-            <p className="text-xs font-semibold">No contracts match</p>
+            <p className="text-xs font-semibold">No documents match</p>
             <p className="text-[10px] text-slate-450 mt-1 leading-normal max-w-[200px] mx-auto">
               {documents.length === 0 
-                ? 'Choose a PDF file to begin extracting context segments.' 
+                ? 'Upload your first document to start asking questions.' 
                 : 'Try adjusting your search criteria.'}
             </p>
           </div>

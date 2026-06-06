@@ -5,7 +5,7 @@ Authentication routes: register and login.
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 
-from src.auth.schemas import RegisterRequest, LoginRequest, TokenResponse
+from src.auth.schemas import RegisterRequest, LoginRequest, TokenResponse, UserUpdateRequest
 from src.auth.security import hash_password, verify_password
 from src.auth.jwt import create_access_token
 from src.db.database import get_db
@@ -97,6 +97,31 @@ def get_me(current_user: User = Depends(get_current_user)):
     """
     Get email, full name, and creation date of the current logged-in user.
     """
+    return {
+        "id": str(current_user.id),
+        "email": current_user.email,
+        "full_name": current_user.full_name,
+        "created_at": current_user.created_at.isoformat(),
+    }
+
+@router.patch(
+    "/me",
+    summary="Update current user details",
+)
+def update_me(
+    body: UserUpdateRequest,
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db)
+):
+    """
+    Update profile details for the current logged-in user.
+    """
+    if body.full_name is not None:
+        current_user.full_name = body.full_name
+
+    db.commit()
+    db.refresh(current_user)
+
     return {
         "id": str(current_user.id),
         "email": current_user.email,

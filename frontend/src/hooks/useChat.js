@@ -93,7 +93,8 @@ export const useChat = (isAuthenticated, documents = []) => {
       return newChat;
     } catch (err) {
       console.error("Failed to create chat:", err);
-      toast.error("Failed to start new chat.");
+      const detail = err.response?.data?.detail || "Failed to start new chat.";
+      toast.error(`Error: ${detail}`);
     } finally {
       setIsLoadingChats(false);
     }
@@ -170,6 +171,11 @@ export const useChat = (isAuthenticated, documents = []) => {
   const askQuestion = async (question) => {
     if (!question || !question.trim() || !activeChatId) return;
 
+    if (selectedDocIds.length === 0 && documents.length > 0) {
+      toast.error("No documents selected. Please select at least one document to begin analysis.");
+      return;
+    }
+
     setIsQuerying(true);
 
     const tempUserMsgId = Math.random().toString(36).substring(7);
@@ -184,7 +190,8 @@ export const useChat = (isAuthenticated, documents = []) => {
     setMessages((prev) => [...prev, userMessage]);
 
     try {
-      const res = await chatService.sendMessage(activeChatId, question);
+      const summaryStyle = localStorage.getItem('cs_summary_style') || 'executive';
+      const res = await chatService.sendMessage(activeChatId, question, summaryStyle);
 
       const assistantMessage = {
         id: res.id,

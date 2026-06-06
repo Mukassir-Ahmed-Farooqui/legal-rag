@@ -29,33 +29,25 @@ def query_rag(
     document_id_db = None
     try:
         allowed_doc_ids = []
-        if not request.selected_doc_ids:
-            # Fetch all active documents owned by this user
-            user_docs = db.query(Document).filter(
-                Document.owner_id == current_user.id,
-                Document.is_deleted == False
-            ).all()
-
-            if not user_docs:
-                answer = "You have not uploaded any documents yet. Please upload a PDF before querying."
-                latency_ms = int((time.perf_counter() - start_time) * 1000)
-                audit_service.log_query(
-                    db=db,
-                    user_id=current_user.id,
-                    question=request.question,
-                    answer=answer,
-                    chunks_retrieved=0,
-                    latency_ms=latency_ms,
-                    document_id=None,
-                )
-                return QueryResponse(
-                    answer=answer,
-                    citations=[],
-                )
-
-            allowed_doc_ids = [str(d.doc_id) for d in user_docs]
-            document_id_db = None
-        else:
+        if request.selected_doc_ids is not None:
+            if len(request.selected_doc_ids) == 0:
+                user_docs_count = db.query(Document).filter(Document.owner_id == current_user.id, Document.is_deleted == False).count()
+                if user_docs_count > 0:
+                    raise HTTPException(status_code=400, detail="No documents selected. Please select at least one document.")
+                else:
+                    answer = "You have not uploaded any documents yet. Please upload a PDF before querying."
+                    latency_ms = int((time.perf_counter() - start_time) * 1000)
+                    audit_service.log_query(
+                        db=db,
+                        user_id=current_user.id,
+                        question=request.question,
+                        answer=answer,
+                        chunks_retrieved=0,
+                        latency_ms=latency_ms,
+                        document_id=None,
+                    )
+                    return QueryResponse(answer=answer, citations=[])
+        
             for doc_id_str in request.selected_doc_ids:
                 try:
                     target_uuid = uuid.UUID(doc_id_str)

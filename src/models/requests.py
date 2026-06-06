@@ -33,3 +33,7 @@ class ChatDocumentsUpdateRequest(BaseModel):
 
 class MessageCreateRequest(BaseModel):
     question: str = Field(..., description="User question to ask")
+    summary_style: Optional[str] = Field(
+        default="executive",
+        description="The desired summary style (executive, detailed, highlights)"
+    )

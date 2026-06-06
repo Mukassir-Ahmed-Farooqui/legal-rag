@@ -75,7 +75,7 @@ export const UploadZone = ({ onUpload, progress }) => {
         </div>
         
         <p className="text-xs font-bold text-slate-700">
-          Upload Agreements
+          Upload Documents
         </p>
         <p className="text-[10px] text-slate-400 mt-1 leading-normal">
           Drag & drop PDF or <span className="text-blue-650 font-bold hover:underline">browse files</span> (Max 25MB)
@@ -90,27 +90,31 @@ export const UploadZone = ({ onUpload, progress }) => {
         <ul className="grid grid-cols-2 gap-1.5 text-[10px] text-slate-600 font-bold">
           <li className="flex items-center gap-1">
             <span className="h-1 w-1 bg-blue-500 rounded-full" />
-            NDAs
+            Contracts
           </li>
           <li className="flex items-center gap-1">
             <span className="h-1 w-1 bg-blue-500 rounded-full" />
-            Employment Contracts
+            Research Papers
           </li>
           <li className="flex items-center gap-1">
             <span className="h-1 w-1 bg-blue-500 rounded-full" />
-            Vendor Contracts
+            Technical Documentation
           </li>
           <li className="flex items-center gap-1">
             <span className="h-1 w-1 bg-blue-500 rounded-full" />
-            Service Agreements
+            Reports
           </li>
-          <li className="flex items-center gap-1 col-span-2">
+          <li className="flex items-center gap-1">
             <span className="h-1 w-1 bg-blue-500 rounded-full" />
-            Development Agreements
+            Policies
+          </li>
+          <li className="flex items-center gap-1">
+            <span className="h-1 w-1 bg-blue-500 rounded-full" />
+            PDF Documents
           </li>
         </ul>
         <p className="text-[9px] text-slate-450 leading-normal font-semibold border-t border-slate-200 pt-1.5 mt-1">
-          Other PDFs are supported, but ClauseScope is optimized for contractual and legal text.
+          Other PDFs are supported. OpenDoc works best with text-based documents.
         </p>
       </div>
 
@@ -125,7 +129,7 @@ export const UploadZone = ({ onUpload, progress }) => {
                     <Loader className="h-3 w-3 animate-spin text-blue-650 shrink-0" />
                     <span className="truncate">{displayUploadName}</span>
                   </span>
-                  <span>{percent}%</span>
+                  <span className="shrink-0">{percent === 90 ? 'Processing...' : `${percent}%`}</span>
                 </div>
                 <div className="w-full bg-slate-200 rounded-full h-1.5 overflow-hidden">
                   <div

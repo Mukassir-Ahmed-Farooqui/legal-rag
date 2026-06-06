@@ -1,4 +1,5 @@
 import React, { createContext, useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import api, { authService, profileService } from '../services/api';
 
 export const AuthContext = createContext(undefined);
@@ -30,6 +31,7 @@ export const AuthProvider = ({ children }) => {
   const [token, setToken] = useState(localStorage.getItem('token'));
   const [user, setUser] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const initAuth = async () => {
@@ -38,7 +40,7 @@ export const AuthProvider = ({ children }) => {
         if (decodedUser) {
           setUser(decodedUser);
           try {
-            const profile = await profileService.getProfile();
+            const profile = await profileService.getCurrentUser();
             setUser((prev) => ({
               ...prev,
               full_name: profile.full_name,
@@ -94,6 +96,11 @@ export const AuthProvider = ({ children }) => {
     delete api.defaults.headers.common['Authorization'];
     setToken(null);
     setUser(null);
+    navigate('/', { replace: true });
+  };
+
+  const updateUser = (updatedFields) => {
+    setUser((prev) => ({ ...prev, ...updatedFields }));
   };
 
   return (
@@ -106,6 +113,7 @@ export const AuthProvider = ({ children }) => {
         login,
         register,
         logout,
+        updateUser,
       }}
     >
       {children}

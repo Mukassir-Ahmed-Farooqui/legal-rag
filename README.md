@@ -1,8 +1,8 @@
-# ClauseScope
+# OpenDoc
 
 ### AI-Powered Contract Intelligence Platform
 
-ClauseScope is a citation-grounded Legal RAG platform designed for contract analysis, ownership-secured retrieval, and evidence-backed question answering.
+OpenDoc is a citation-grounded Legal RAG platform designed for contract analysis, ownership-secured retrieval, and evidence-backed question answering.
 
 <p align="left">
   <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" />
@@ -75,7 +75,7 @@ graph TD
 
 ## 🎬 Reproducible Demonstration Script (2-3 Minutes)
 
-Follow this predefined sequence to demonstrate the capabilities of the ClauseScope platform during reviews or portfolio presentations:
+Follow this predefined sequence to demonstrate the capabilities of the OpenDoc platform during reviews or portfolio presentations:
 
 ### Scenario 1: User A Contract Analysis & Citations
 1.  **Authentication**: Sign in using User A credentials.
@@ -92,7 +92,7 @@ Follow this predefined sequence to demonstrate the capabilities of the ClauseSco
 5.  **Multi-Contract Querying**:
     *   Set the **Scope Selector** back to `All Contracts (Corpus-wide)`.
     *   Query: `Compare termination provisions across my contracts.`
-    *   *Inspect*: Note that ClauseScope synthesizes answers referencing multiple uploaded agreements simultaneously, displaying distinct citations for each source.
+    *   *Inspect*: Note that OpenDoc synthesizes answers referencing multiple uploaded agreements simultaneously, displaying distinct citations for each source.
 
 ### Scenario 3: Ownership Enforcement & Corpus Isolation
 6.  **Tenant B Verification**:

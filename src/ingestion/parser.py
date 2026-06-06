@@ -132,14 +132,17 @@ def parse_pdf(pdf_path: Path, doc_id: Optional[str] = None) -> ParsedDocument:
             )
         )
 
+    import pypdfium2 as pdfium
+    try:
+        pdf = pdfium.PdfDocument(str(pdf_path))
+        num_pages = len(pdf)
+    except Exception:
+        num_pages = len(doc.pages) if hasattr(doc, "pages") else 1
+
     return ParsedDocument(
         doc_id=doc_id,
         filename=pdf_path.name,
         source_path=str(pdf_path),
-        num_pages=(
-            len(doc.pages)
-            if hasattr(doc, "pages")
-            else 0
-        ),
+        num_pages=num_pages,
         elements=elements,
     )

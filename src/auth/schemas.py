@@ -22,3 +22,8 @@ class TokenResponse(BaseModel):
     """JWT token response."""
     access_token: str
     token_type: str = "bearer"
+
+class UserUpdateRequest(BaseModel):
+    """PATCH /api/v1/auth/me request body."""
+    full_name: str | None = None
+

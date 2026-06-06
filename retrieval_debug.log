@@ -15467,3 +15467,1539 @@
   ]
 }
 ================================================================================
+{
+  "timestamp": "2026-06-06T15:05:24.611581",
+  "query": "hi",
+  "doc_id": [
+    "1799460c-12d1-474a-b8a0-e09fb0743968",
+    "b1e9687d-5218-4235-b9a0-cd74eab58d79"
+  ],
+  "retrieved_sections_count": 20,
+  "retrieved_sections": [
+    {
+      "rank": 1,
+      "chunk_id": "sec_d876cbe3",
+      "heading": "10.3 NON DISPARAGEMENT CLAUSE",
+      "page_num": 10,
+      "dense_score": 0.5774
+    },
+    {
+      "rank": 2,
+      "chunk_id": "sec_aadf602d",
+      "heading": "12.6 OTHER DEFINITIONAL TERMS, TERMS OF CONSTRUCTION",
+      "page_num": 13,
+      "dense_score": 0.5577
+    },
+    {
+      "rank": 3,
+      "chunk_id": "sec_a77463d1",
+      "heading": "6.4 CONFIDENTIALITY AND NON-DISCLOSURE",
+      "page_num": 7,
+      "dense_score": 0.5548
+    },
+    {
+      "rank": 4,
+      "chunk_id": "sec_f98cb7f8",
+      "heading": "13. Acknowledgement by Client",
+      "page_num": 14,
+      "dense_score": 0.5477
+    },
+    {
+      "rank": 5,
+      "chunk_id": "sec_a41a41ef",
+      "heading": "12.4 WAIVER",
+      "page_num": 12,
+      "dense_score": 0.5472
+    },
+    {
+      "rank": 6,
+      "chunk_id": "sec_e4dae54d",
+      "heading": "12.5 ASSIGNMENT",
+      "page_num": 12,
+      "dense_score": 0.5463
+    },
+    {
+      "rank": 7,
+      "chunk_id": "sec_e95698e6",
+      "heading": "12.2 NOTICE",
+      "page_num": 12,
+      "dense_score": 0.5386
+    },
+    {
+      "rank": 8,
+      "chunk_id": "sec_5b854a01",
+      "heading": "7.2 NON-EXCLUSIVITY",
+      "page_num": 8,
+      "dense_score": 0.5343
+    },
+    {
+      "rank": 9,
+      "chunk_id": "sec_fcc2b439",
+      "heading": "12.7 COUNTERPARTS",
+      "page_num": 13,
+      "dense_score": 0.534
+    },
+    {
+      "rank": 10,
+      "chunk_id": "sec_0336aa50",
+      "heading": "12.8 ENTIRE AGREEMENT AND UNDERSTANDING",
+      "page_num": 13,
+      "dense_score": 0.5326
+    },
+    {
+      "rank": 11,
+      "chunk_id": "sec_4e9d6d9b",
+      "heading": "4. Change Orders",
+      "page_num": 4,
+      "dense_score": 0.5278
+    },
+    {
+      "rank": 12,
+      "chunk_id": "sec_a5e305c8",
+      "heading": "7.1 INDEPENDENT CONTRACTOR",
+      "page_num": 8,
+      "dense_score": 0.522
+    },
+    {
+      "rank": 13,
+      "chunk_id": "sec_ed2bba78",
+      "heading": "9.1 CLIENT",
+      "page_num": 9,
+      "dense_score": 0.5179
+    },
+    {
+      "rank": 14,
+      "chunk_id": "sec_26cb4128",
+      "heading": "3.6 FAILURE OF DEVELOPER TO CORRECT DEFECTS",
+      "page_num": 3,
+      "dense_score": 0.5179
+    },
+    {
+      "rank": 15,
+      "chunk_id": "sec_6e95638f",
+      "heading": "11.3 OBLIGATIONS UPON TERMINATION",
+      "page_num": 11,
+      "dense_score": 0.5122
+    },
+    {
+      "rank": 16,
+      "chunk_id": "sec_5ab05e72",
+      "heading": "6.2 DEVELOPER'S INTELLECTUAL PROPERTY",
+      "page_num": 6,
+      "dense_score": 0.5107
+    },
+    {
+      "rank": 17,
+      "chunk_id": "sec_35d203d2",
+      "heading": "3.7 FINAL DELIVERABLE AND SUBJECT PROGRAM TESTING",
+      "page_num": 3,
+      "dense_score": 0.51
+    },
+    {
+      "rank": 18,
+      "chunk_id": "sec_670f5fcc",
+      "heading": "3.3 ACCEPTANCE AND BETA TESTS",
+      "page_num": 2,
+      "dense_score": 0.5099
+    },
+    {
+      "rank": 19,
+      "chunk_id": "sec_230ae050",
+      "heading": "10.2 DEVELOPER",
+      "page_num": 9,
+      "dense_score": 0.5032
+    },
+    {
+      "rank": 20,
+      "chunk_id": "sec_d6b837fe",
+      "heading": "12.1 CHOICE OF LAW AND VENUE",
+      "page_num": 11,
+      "dense_score": 0.5015
+    }
+  ],
+  "bm25_scores": [
+    {
+      "rank": 1,
+      "chunk_id": "sec_a77463d1",
+      "heading": "6.4 CONFIDENTIALITY AND NON-DISCLOSURE",
+      "score": 14.70336023631178
+    },
+    {
+      "rank": 2,
+      "chunk_id": "sec_4e9d6d9b",
+      "heading": "4. Change Orders",
+      "score": 13.350455600365692
+    },
+    {
+      "rank": 3,
+      "chunk_id": "sec_fcc2b439",
+      "heading": "12.7 COUNTERPARTS",
+      "score": 12.989756220925747
+    },
+    {
+      "rank": 4,
+      "chunk_id": "sec_e4dae54d",
+      "heading": "12.5 ASSIGNMENT",
+      "score": 12.882454552969236
+    },
+    {
+      "rank": 5,
+      "chunk_id": "sec_d876cbe3",
+      "heading": "10.3 NON DISPARAGEMENT CLAUSE",
+      "score": 11.76630199209585
+    },
+    {
+      "rank": 6,
+      "chunk_id": "sec_a41a41ef",
+      "heading": "12.4 WAIVER",
+      "score": 11.490454661708561
+    },
+    {
+      "rank": 7,
+      "chunk_id": "sec_6e95638f",
+      "heading": "11.3 OBLIGATIONS UPON TERMINATION",
+      "score": 11.440494224303167
+    },
+    {
+      "rank": 8,
+      "chunk_id": "sec_aadf602d",
+      "heading": "12.6 OTHER DEFINITIONAL TERMS, TERMS OF CONSTRUCTION",
+      "score": 11.340601789557093
+    },
+    {
+      "rank": 9,
+      "chunk_id": "sec_670f5fcc",
+      "heading": "3.3 ACCEPTANCE AND BETA TESTS",
+      "score": 11.20879757231511
+    },
+    {
+      "rank": 10,
+      "chunk_id": "sec_ed2bba78",
+      "heading": "9.1 CLIENT",
+      "score": 11.109625015958498
+    },
+    {
+      "rank": 11,
+      "chunk_id": "sec_35d203d2",
+      "heading": "3.7 FINAL DELIVERABLE AND SUBJECT PROGRAM TESTING",
+      "score": 10.636240996623318
+    },
+    {
+      "rank": 12,
+      "chunk_id": "sec_0336aa50",
+      "heading": "12.8 ENTIRE AGREEMENT AND UNDERSTANDING",
+      "score": 10.1438736259442
+    },
+    {
+      "rank": 13,
+      "chunk_id": "sec_26cb4128",
+      "heading": "3.6 FAILURE OF DEVELOPER TO CORRECT DEFECTS",
+      "score": 10.10242497433684
+    },
+    {
+      "rank": 14,
+      "chunk_id": "sec_d6b837fe",
+      "heading": "12.1 CHOICE OF LAW AND VENUE",
+      "score": 9.965306488121053
+    },
+    {
+      "rank": 15,
+      "chunk_id": "sec_5b854a01",
+      "heading": "7.2 NON-EXCLUSIVITY",
+      "score": 9.025829810130714
+    },
+    {
+      "rank": 16,
+      "chunk_id": "sec_a5e305c8",
+      "heading": "7.1 INDEPENDENT CONTRACTOR",
+      "score": 8.999874336830594
+    },
+    {
+      "rank": 17,
+      "chunk_id": "sec_5ab05e72",
+      "heading": "6.2 DEVELOPER'S INTELLECTUAL PROPERTY",
+      "score": 8.336465578374748
+    },
+    {
+      "rank": 18,
+      "chunk_id": "sec_230ae050",
+      "heading": "10.2 DEVELOPER",
+      "score": 8.294759046255047
+    },
+    {
+      "rank": 19,
+      "chunk_id": "sec_f98cb7f8",
+      "heading": "13. Acknowledgement by Client",
+      "score": 8.272041991882094
+    },
+    {
+      "rank": 20,
+      "chunk_id": "sec_e95698e6",
+      "heading": "12.2 NOTICE",
+      "score": 8.261816490040225
+    }
+  ],
+  "rrf_fusion": [
+    {
+      "rank": 1,
+      "chunk_id": "sec_a77463d1",
+      "fusion_score": 0.032266458495966696
+    },
+    {
+      "rank": 2,
+      "chunk_id": "sec_d876cbe3",
+      "fusion_score": 0.03177805800756621
+    },
+    {
+      "rank": 3,
+      "chunk_id": "sec_aadf602d",
+      "fusion_score": 0.030834914611005692
+    },
+    {
+      "rank": 4,
+      "chunk_id": "sec_e4dae54d",
+      "fusion_score": 0.030776515151515152
+    },
+    {
+      "rank": 5,
+      "chunk_id": "sec_a41a41ef",
+      "fusion_score": 0.030536130536130537
+    },
+    {
+      "rank": 6,
+      "chunk_id": "sec_fcc2b439",
+      "fusion_score": 0.03036576949620428
+    },
+    {
+      "rank": 7,
+      "chunk_id": "sec_4e9d6d9b",
+      "fusion_score": 0.03021353930031804
+    },
+    {
+      "rank": 8,
+      "chunk_id": "sec_f98cb7f8",
+      "fusion_score": 0.028283227848101264
+    },
+    {
+      "rank": 9,
+      "chunk_id": "sec_6e95638f",
+      "fusion_score": 0.028258706467661692
+    },
+    {
+      "rank": 10,
+      "chunk_id": "sec_0336aa50",
+      "fusion_score": 0.02817460317460317
+    },
+    {
+      "rank": 11,
+      "chunk_id": "sec_5b854a01",
+      "fusion_score": 0.02803921568627451
+    },
+    {
+      "rank": 12,
+      "chunk_id": "sec_ed2bba78",
+      "fusion_score": 0.027984344422700584
+    },
+    {
+      "rank": 13,
+      "chunk_id": "sec_e95698e6",
+      "fusion_score": 0.027425373134328357
+    },
+    {
+      "rank": 14,
+      "chunk_id": "sec_670f5fcc",
+      "fusion_score": 0.027313266443701224
+    },
+    {
+      "rank": 15,
+      "chunk_id": "sec_26cb4128",
+      "fusion_score": 0.027212143650499815
+    },
+    {
+      "rank": 16,
+      "chunk_id": "sec_35d203d2",
+      "fusion_score": 0.027071520029266508
+    },
+    {
+      "rank": 17,
+      "chunk_id": "sec_a5e305c8",
+      "fusion_score": 0.027046783625730993
+    },
+    {
+      "rank": 18,
+      "chunk_id": "sec_5ab05e72",
+      "fusion_score": 0.026144907723855092
+    },
+    {
+      "rank": 19,
+      "chunk_id": "sec_d6b837fe",
+      "fusion_score": 0.026013513513513515
+    },
+    {
+      "rank": 20,
+      "chunk_id": "sec_230ae050",
+      "fusion_score": 0.025478740668614087
+    }
+  ],
+  "top_sections_selected": [
+    {
+      "chunk_id": "sec_a77463d1",
+      "heading": "6.4 CONFIDENTIALITY AND NON-DISCLOSURE",
+      "page_num": 7,
+      "dense_score": 0.5548
+    },
+    {
+      "chunk_id": "sec_d876cbe3",
+      "heading": "10.3 NON DISPARAGEMENT CLAUSE",
+      "page_num": 10,
+      "dense_score": 0.5774
+    },
+    {
+      "chunk_id": "sec_aadf602d",
+      "heading": "12.6 OTHER DEFINITIONAL TERMS, TERMS OF CONSTRUCTION",
+      "page_num": 13,
+      "dense_score": 0.5577
+    }
+  ],
+  "retrieved_sentences_count": 11,
+  "retrieved_sentences": [
+    {
+      "rank": 1,
+      "chunk_id": "sen_e93b3b6b",
+      "section_id": "sec_aadf602d",
+      "heading": "12.6 OTHER DEFINITIONAL TERMS, TERMS OF CONSTRUCTION",
+      "page_num": 13,
+      "dense_score": 0.5707,
+      "text": "The words hereof, herein and hereunder and words of similar import when used in this Agreement refer to this Agreement a..."
+    },
+    {
+      "rank": 2,
+      "chunk_id": "sen_98e5b57c",
+      "section_id": "sec_d876cbe3",
+      "heading": "10.3 NON DISPARAGEMENT CLAUSE",
+      "page_num": 10,
+      "dense_score": 0.5645,
+      "text": "The Client and the Designer both agree to never to disparage or speak ill of the other party to anyone and or post negat..."
+    },
+    {
+      "rank": 3,
+      "chunk_id": "sen_72e5fced",
+      "section_id": "sec_d876cbe3",
+      "heading": "10.3 NON DISPARAGEMENT CLAUSE",
+      "page_num": 10,
+      "dense_score": 0.5613,
+      "text": "The Client and Designer both agree not to post on defamatory websites or review websites any negative posts concerning e..."
+    },
+    {
+      "rank": 4,
+      "chunk_id": "sen_70d41193",
+      "section_id": "sec_a77463d1",
+      "heading": "6.4 CONFIDENTIALITY AND NON-DISCLOSURE",
+      "page_num": 7,
+      "dense_score": 0.5434,
+      "text": "6.4.2 Non-Disclosure. Neither Party shall use or disclose Confidential Information of the other Party to any third party..."
+    },
+    {
+      "rank": 5,
+      "chunk_id": "sen_def71835",
+      "section_id": "sec_a77463d1",
+      "heading": "6.4 CONFIDENTIALITY AND NON-DISCLOSURE",
+      "page_num": 7,
+      "dense_score": 0.5386,
+      "text": "For purposes of this Agreement, Derivatives shall mean: (a) for copyrightable or copyrighted material, any translation, ..."
+    },
+    {
+      "rank": 6,
+      "chunk_id": "sen_1f5947f4",
+      "section_id": "sec_d876cbe3",
+      "heading": "10.3 NON DISPARAGEMENT CLAUSE",
+      "page_num": 10,
+      "dense_score": 0.5374,
+      "text": "Subject to the terms, conditions, express representations and warranties provided in this Agreement, Designer and Client..."
+    },
+    {
+      "rank": 7,
+      "chunk_id": "sen_1dcf9890",
+      "section_id": "sec_a77463d1",
+      "heading": "6.4 CONFIDENTIALITY AND NON-DISCLOSURE",
+      "page_num": 7,
+      "dense_score": 0.5352,
+      "text": "Confidential Information does not include information at: (a) is available to the public or that becomes available to th..."
+    },
+    {
+      "rank": 8,
+      "chunk_id": "sen_1aabf791",
+      "section_id": "sec_a77463d1",
+      "heading": "6.4 CONFIDENTIALITY AND NON-DISCLOSURE",
+      "page_num": 7,
+      "dense_score": 0.5132,
+      "text": "The Receiving Party further agrees to immediately notify Disclosing Party of any actual or suspected misuse misappropria..."
+    },
+    {
+      "rank": 9,
+      "chunk_id": "sen_9aaf97a6",
+      "section_id": "sec_a77463d1",
+      "heading": "6.4 CONFIDENTIALITY AND NON-DISCLOSURE",
+      "page_num": 7,
+      "dense_score": 0.5127,
+      "text": "Upon expiration or termination of this Agreement, Receiving Party will immediately destroy or erase all copies of docume..."
+    },
+    {
+      "rank": 10,
+      "chunk_id": "sen_9bbbd0a0",
+      "section_id": "sec_a77463d1",
+      "heading": "6.4 CONFIDENTIALITY AND NON-DISCLOSURE",
+      "page_num": 7,
+      "dense_score": 0.5039,
+      "text": "Accordingly, in the event of a breach or threatened breach of Section 6 of this Agreement, Disclosing Party will be enti..."
+    },
+    {
+      "rank": 11,
+      "chunk_id": "sen_c06b16c6",
+      "section_id": "sec_aadf602d",
+      "heading": "12.6 OTHER DEFINITIONAL TERMS, TERMS OF CONSTRUCTION",
+      "page_num": 13,
+      "dense_score": 0.4634,
+      "text": "All covenants, terms, definition and other provisions from other agreements incorporated into this Agreement by referenc..."
+    }
+  ],
+  "context_sent_to_llm": "\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2.pdf\nSection: 12.6 OTHER DEFINITIONAL TERMS, TERMS OF CONSTRUCTION\nPage: 13\n\nThe words hereof, herein and hereunder and words of similar import when used in this Agreement refer to this Agreement as a whole and not to any particular provision of this Agreement. The words include, includes and including shall be deemed to be followed by the phrase without limitation. Unless the context in which used herein otherwise clearly requires, or has the inclusive meaning represented by the phrase and/or. All incorporations by reference of covenants, terms, definitions or other provisions from other agreements are incorporated into this Agreement as if such provisions were fully set forth herein, and include all necessary definitions and related provisions from such other agreements.\n\n\n\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2.pdf\nSection: 10.3 NON DISPARAGEMENT CLAUSE\nPage: 10\n\nThe Client and the Designer both agree to never to disparage or speak ill of the other party to anyone and or post negative or disparaging comments Online regarding any of the Designer's products, services, affiliates, subsidiaries, officers, directors, employees or shareholders, and will take reasonable steps to prevent and will not knowingly permit any of their respective employees or agents to, disparage or speak ill of such persons. For purposes of this Section, \"disparage\" shall mean any negative statement whether written or oral, about Seattle Software Developers, Inc., Dot Com LLC. and or any of its affiliates.\n\n\n\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2.pdf\nSection: 10.3 NON DISPARAGEMENT CLAUSE\nPage: 10\n\nThe Client and Designer both agree not to post on defamatory websites or review websites any negative posts concerning each other, the names of our companies, and our employees. Both the Client and the Designer both agree and acknowledge that this non-disparagement provision is a material term of this Agreement, the absence of which would have resulted in the Company refusing to enter into this Agreement.\n\n\n\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2.pdf\nSection: 6.4 CONFIDENTIALITY AND NON-DISCLOSURE\nPage: 7\n\n6.4.2 Non-Disclosure. Neither Party shall use or disclose Confidential Information of the other Party to any third party, without the written consent of the Disclosing Party of such Confidential Information. Receiving Party agrees to undertake reasonable measures to maintain and preserve the Confidential Information of the Disclosing Party in confidence, which measures shall be no less than the measures taken by the\n\nReceiving Party to protect its own confidential information and in no vent shall be less than reasonable care.\n\n\n\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2.pdf\nSection: 6.4 CONFIDENTIALITY AND NON-DISCLOSURE\nPage: 7\n\nFor purposes of this Agreement, Derivatives shall mean: (a) for copyrightable or copyrighted material, any translation, abridgment, revision or other form in which an existing work may be recast, transformed or adapted \u037e(b) for patentable or patented material, any improvement thereon\u037e and (c) for material which is protected by trade secret, any new material derived from such existing trade secret material, including new material which may be protected under applicable copyright, patent, or trade secret law. 6.4.4 Notification of Suspected Disclosure.\n\n\n\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2.pdf\nSection: 10.3 NON DISPARAGEMENT CLAUSE\nPage: 10\n\nSubject to the terms, conditions, express representations and warranties provided in this Agreement, Designer and Client both agree to indemnify, save and hold armless each other from any and all damages, liabilities, costs, losses or expenses arising out of any finding of fact which is inconsistent with Designer's representations and warranties made herein, except in the event any such claims, damages, liabilities, costs, losses or expenses arise directly as a result of gross negligence or misconduct of Client.\n\n\n\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2.pdf\nSection: 6.4 CONFIDENTIALITY AND NON-DISCLOSURE\nPage: 7\n\nConfidential Information does not include information at: (a) is available to the public or that becomes available to the public through no act or failure to act by the receiving Party (Receiving Party)\u037e (b) is known to the Receiving Party prior to the date of disclosure by the disclosing Party (Disclosing Party), unless the Receiving Party agreed to keep such information in confidence at the time of receipt of the information\u037e (c) is properly obtained hereafter from a source that is not under an obligation of confidentiality with respect to such information\u037e or (d) is developed independently by the Receiving Party without reference to or use of the Disclosing Party's Confidential Information.\n\n\n\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2.pdf\nSection: 6.4 CONFIDENTIALITY AND NON-DISCLOSURE\nPage: 7\n\nThe Receiving Party further agrees to immediately notify Disclosing Party of any actual or suspected misuse misappropriation, or unauthorized disclosure of Confidential Information, which may come to Receiving Party's attention. 6.4.5  Injunctive Relief for Breach. Because of the unique nature of the Confidential Information and other elements of the Parties business relationship, the Parties acknowledge and agree that a breach of any of the provisions of Section 6 of this Agreement by Receiving Party will irreparably harm the Disclosing Party.\n\n\n\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2.pdf\nSection: 6.4 CONFIDENTIALITY AND NON-DISCLOSURE\nPage: 7\n\nUpon expiration or termination of this Agreement, Receiving Party will immediately destroy or erase all copies of documents or materials containing any Confidential Information provided by Disclosing Party and, upon the Disclosing Party's request, promptly confirm destruction of same by signing and returning to the Disclosing Party a certificate of destruction reasonably satisfactory to the Disclosing Party. 6.4.3 Derivatives. All Confidential Information, and any Derivatives thereof whether created by Client or Developer, remain the property of the Disclosing Party and no license or other rights to any Confidential Information or Derivatives is granted or implied hereby.\n\n\n\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2.pdf\nSection: 6.4 CONFIDENTIALITY AND NON-DISCLOSURE\nPage: 7\n\nAccordingly, in the event of a breach or threatened breach of Section 6 of this Agreement, Disclosing Party will be entitled to seek injunctive relief to enforce the terms of Section 6 of this Agreement without the necessity of posting a bond or if a bond is required, at the minimum amount legally required.\n\n\n\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2.pdf\nSection: 12.6 OTHER DEFINITIONAL TERMS, TERMS OF CONSTRUCTION\nPage: 13\n\nAll covenants, terms, definition and other provisions from other agreements incorporated into this Agreement by reference will survive termination of this Agreement. References to statutes, regulations or laws, include any amendments, modifications or replacements of such statutes, regulations, or laws.\n",
+  "generated_answer": "I could not find sufficient evidence in the provided documents to answer your question. The context only contains information related to a development agreement between a client and a designer, including terms and conditions, confidentiality and non-disclosure, and indemnification. It does not contain any information that would be relevant to a simple greeting like \"hi\".",
+  "citations": [
+    {
+      "document": "PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2.pdf",
+      "page": 13,
+      "section": "12.6 OTHER DEFINITIONAL TERMS, TERMS OF CONSTRUCTION"
+    },
+    {
+      "document": "PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2.pdf",
+      "page": 10,
+      "section": "10.3 NON DISPARAGEMENT CLAUSE"
+    },
+    {
+      "document": "PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2.pdf",
+      "page": 7,
+      "section": "6.4 CONFIDENTIALITY AND NON-DISCLOSURE"
+    }
+  ]
+}
+================================================================================
+{
+  "timestamp": "2026-06-06T15:51:55.287279",
+  "query": "compare the doc",
+  "doc_id": [
+    "1799460c-12d1-474a-b8a0-e09fb0743968",
+    "b1e9687d-5218-4235-b9a0-cd74eab58d79"
+  ],
+  "retrieved_sections_count": 20,
+  "retrieved_sections": [
+    {
+      "rank": 1,
+      "chunk_id": "sec_fcc2b439",
+      "heading": "12.7 COUNTERPARTS",
+      "page_num": 13,
+      "dense_score": 0.6479
+    },
+    {
+      "rank": 2,
+      "chunk_id": "sec_d876cbe3",
+      "heading": "10.3 NON DISPARAGEMENT CLAUSE",
+      "page_num": 10,
+      "dense_score": 0.6013
+    },
+    {
+      "rank": 3,
+      "chunk_id": "sec_26cb4128",
+      "heading": "3.6 FAILURE OF DEVELOPER TO CORRECT DEFECTS",
+      "page_num": 3,
+      "dense_score": 0.5912
+    },
+    {
+      "rank": 4,
+      "chunk_id": "sec_35d203d2",
+      "heading": "3.7 FINAL DELIVERABLE AND SUBJECT PROGRAM TESTING",
+      "page_num": 3,
+      "dense_score": 0.5851
+    },
+    {
+      "rank": 5,
+      "chunk_id": "sec_f98cb7f8",
+      "heading": "13. Acknowledgement by Client",
+      "page_num": 14,
+      "dense_score": 0.585
+    },
+    {
+      "rank": 6,
+      "chunk_id": "sec_aadf602d",
+      "heading": "12.6 OTHER DEFINITIONAL TERMS, TERMS OF CONSTRUCTION",
+      "page_num": 13,
+      "dense_score": 0.5835
+    },
+    {
+      "rank": 7,
+      "chunk_id": "sec_670f5fcc",
+      "heading": "3.3 ACCEPTANCE AND BETA TESTS",
+      "page_num": 2,
+      "dense_score": 0.5825
+    },
+    {
+      "rank": 8,
+      "chunk_id": "sec_b80b203c",
+      "heading": "3.8 CLIENT ASSISTANCE",
+      "page_num": 3,
+      "dense_score": 0.5731
+    },
+    {
+      "rank": 9,
+      "chunk_id": "sec_44ba91a8",
+      "heading": "3.4 ACCEPTANCE OF MILESTONE DELIVERABLE\u037e CHANGE REQUESTS",
+      "page_num": 2,
+      "dense_score": 0.5637
+    },
+    {
+      "rank": 10,
+      "chunk_id": "sec_5ab05e72",
+      "heading": "6.2 DEVELOPER'S INTELLECTUAL PROPERTY",
+      "page_num": 6,
+      "dense_score": 0.5618
+    },
+    {
+      "rank": 11,
+      "chunk_id": "sec_ed2bba78",
+      "heading": "9.1 CLIENT",
+      "page_num": 9,
+      "dense_score": 0.5594
+    },
+    {
+      "rank": 12,
+      "chunk_id": "sec_230ae050",
+      "heading": "10.2 DEVELOPER",
+      "page_num": 9,
+      "dense_score": 0.5574
+    },
+    {
+      "rank": 13,
+      "chunk_id": "sec_5da4ee81",
+      "heading": "SOFTWARE DEVELOPMENT AGREEMENT",
+      "page_num": 1,
+      "dense_score": 0.5573
+    },
+    {
+      "rank": 14,
+      "chunk_id": "sec_0336aa50",
+      "heading": "12.8 ENTIRE AGREEMENT AND UNDERSTANDING",
+      "page_num": 13,
+      "dense_score": 0.5551
+    },
+    {
+      "rank": 15,
+      "chunk_id": "sec_8c86da45",
+      "heading": "3.5 REJECTION OF MILESTONE DELIVERABLE",
+      "page_num": 2,
+      "dense_score": 0.5542
+    },
+    {
+      "rank": 16,
+      "chunk_id": "sec_a77463d1",
+      "heading": "6.4 CONFIDENTIALITY AND NON-DISCLOSURE",
+      "page_num": 7,
+      "dense_score": 0.5525
+    },
+    {
+      "rank": 17,
+      "chunk_id": "sec_fdc1248d",
+      "heading": "3.2 PROJECT DELIVERY AND INSTALLATION",
+      "page_num": 2,
+      "dense_score": 0.5523
+    },
+    {
+      "rank": 18,
+      "chunk_id": "sec_6e95638f",
+      "heading": "11.3 OBLIGATIONS UPON TERMINATION",
+      "page_num": 11,
+      "dense_score": 0.5515
+    },
+    {
+      "rank": 19,
+      "chunk_id": "sec_283c3864",
+      "heading": "6.3 LICENSE TO CLIENT'S INTELLECTUAL PROPERTY",
+      "page_num": 6,
+      "dense_score": 0.5498
+    },
+    {
+      "rank": 20,
+      "chunk_id": "sec_a5fda85b",
+      "heading": "6.1 WORK MADE FOR HIRE AND ASSIGNMENT OF RIGHTS",
+      "page_num": 6,
+      "dense_score": 0.5491
+    }
+  ],
+  "bm25_scores": [
+    {
+      "rank": 1,
+      "chunk_id": "sec_35d203d2",
+      "heading": "3.7 FINAL DELIVERABLE AND SUBJECT PROGRAM TESTING",
+      "score": 1.2713030407591261
+    },
+    {
+      "rank": 2,
+      "chunk_id": "sec_a5fda85b",
+      "heading": "6.1 WORK MADE FOR HIRE AND ASSIGNMENT OF RIGHTS",
+      "score": 1.263775231641609
+    },
+    {
+      "rank": 3,
+      "chunk_id": "sec_670f5fcc",
+      "heading": "3.3 ACCEPTANCE AND BETA TESTS",
+      "score": 1.2615318155154163
+    },
+    {
+      "rank": 4,
+      "chunk_id": "sec_a77463d1",
+      "heading": "6.4 CONFIDENTIALITY AND NON-DISCLOSURE",
+      "score": 1.236757497883348
+    },
+    {
+      "rank": 5,
+      "chunk_id": "sec_8c86da45",
+      "heading": "3.5 REJECTION OF MILESTONE DELIVERABLE",
+      "score": 1.1747327607855078
+    },
+    {
+      "rank": 6,
+      "chunk_id": "sec_b80b203c",
+      "heading": "3.8 CLIENT ASSISTANCE",
+      "score": 1.1733486306372878
+    },
+    {
+      "rank": 7,
+      "chunk_id": "sec_d876cbe3",
+      "heading": "10.3 NON DISPARAGEMENT CLAUSE",
+      "score": 1.1712031827308613
+    },
+    {
+      "rank": 8,
+      "chunk_id": "sec_26cb4128",
+      "heading": "3.6 FAILURE OF DEVELOPER TO CORRECT DEFECTS",
+      "score": 1.1638669661331011
+    },
+    {
+      "rank": 9,
+      "chunk_id": "sec_283c3864",
+      "heading": "6.3 LICENSE TO CLIENT'S INTELLECTUAL PROPERTY",
+      "score": 1.1569421391674755
+    },
+    {
+      "rank": 10,
+      "chunk_id": "sec_6e95638f",
+      "heading": "11.3 OBLIGATIONS UPON TERMINATION",
+      "score": 1.1499453029004447
+    },
+    {
+      "rank": 11,
+      "chunk_id": "sec_0336aa50",
+      "heading": "12.8 ENTIRE AGREEMENT AND UNDERSTANDING",
+      "score": 1.1231107626859251
+    },
+    {
+      "rank": 12,
+      "chunk_id": "sec_aadf602d",
+      "heading": "12.6 OTHER DEFINITIONAL TERMS, TERMS OF CONSTRUCTION",
+      "score": 1.1028868051193657
+    },
+    {
+      "rank": 13,
+      "chunk_id": "sec_44ba91a8",
+      "heading": "3.4 ACCEPTANCE OF MILESTONE DELIVERABLE\u037e CHANGE REQUESTS",
+      "score": 1.0958505629763853
+    },
+    {
+      "rank": 14,
+      "chunk_id": "sec_f98cb7f8",
+      "heading": "13. Acknowledgement by Client",
+      "score": 1.0932982590889162
+    },
+    {
+      "rank": 15,
+      "chunk_id": "sec_fdc1248d",
+      "heading": "3.2 PROJECT DELIVERY AND INSTALLATION",
+      "score": 1.0810904057365451
+    },
+    {
+      "rank": 16,
+      "chunk_id": "sec_5ab05e72",
+      "heading": "6.2 DEVELOPER'S INTELLECTUAL PROPERTY",
+      "score": 1.0762583168477668
+    },
+    {
+      "rank": 17,
+      "chunk_id": "sec_5da4ee81",
+      "heading": "SOFTWARE DEVELOPMENT AGREEMENT",
+      "score": 0.9608511930446698
+    },
+    {
+      "rank": 18,
+      "chunk_id": "sec_230ae050",
+      "heading": "10.2 DEVELOPER",
+      "score": 0.6137224524230321
+    },
+    {
+      "rank": 19,
+      "chunk_id": "sec_ed2bba78",
+      "heading": "9.1 CLIENT",
+      "score": 0.5839552542348383
+    },
+    {
+      "rank": 20,
+      "chunk_id": "sec_fcc2b439",
+      "heading": "12.7 COUNTERPARTS",
+      "score": 0.0
+    }
+  ],
+  "rrf_fusion": [
+    {
+      "rank": 1,
+      "chunk_id": "sec_35d203d2",
+      "fusion_score": 0.032018442622950824
+    },
+    {
+      "rank": 2,
+      "chunk_id": "sec_d876cbe3",
+      "fusion_score": 0.031054405392392875
+    },
+    {
+      "rank": 3,
+      "chunk_id": "sec_670f5fcc",
+      "fusion_score": 0.030798389007344232
+    },
+    {
+      "rank": 4,
+      "chunk_id": "sec_26cb4128",
+      "fusion_score": 0.03057889822595705
+    },
+    {
+      "rank": 5,
+      "chunk_id": "sec_b80b203c",
+      "fusion_score": 0.029857397504456328
+    },
+    {
+      "rank": 6,
+      "chunk_id": "sec_aadf602d",
+      "fusion_score": 0.02904040404040404
+    },
+    {
+      "rank": 7,
+      "chunk_id": "sec_f98cb7f8",
+      "fusion_score": 0.0288981288981289
+    },
+    {
+      "rank": 8,
+      "chunk_id": "sec_fcc2b439",
+      "fusion_score": 0.02889344262295082
+    },
+    {
+      "rank": 9,
+      "chunk_id": "sec_a77463d1",
+      "fusion_score": 0.028782894736842105
+    },
+    {
+      "rank": 10,
+      "chunk_id": "sec_8c86da45",
+      "fusion_score": 0.02871794871794872
+    },
+    {
+      "rank": 11,
+      "chunk_id": "sec_a5fda85b",
+      "fusion_score": 0.028629032258064516
+    },
+    {
+      "rank": 12,
+      "chunk_id": "sec_44ba91a8",
+      "fusion_score": 0.02819138376017471
+    },
+    {
+      "rank": 13,
+      "chunk_id": "sec_0336aa50",
+      "fusion_score": 0.027598020555767037
+    },
+    {
+      "rank": 14,
+      "chunk_id": "sec_5ab05e72",
+      "fusion_score": 0.027443609022556388
+    },
+    {
+      "rank": 15,
+      "chunk_id": "sec_283c3864",
+      "fusion_score": 0.02715098147128967
+    },
+    {
+      "rank": 16,
+      "chunk_id": "sec_6e95638f",
+      "fusion_score": 0.027106227106227107
+    },
+    {
+      "rank": 17,
+      "chunk_id": "sec_ed2bba78",
+      "fusion_score": 0.026742734890354787
+    },
+    {
+      "rank": 18,
+      "chunk_id": "sec_230ae050",
+      "fusion_score": 0.026709401709401708
+    },
+    {
+      "rank": 19,
+      "chunk_id": "sec_5da4ee81",
+      "fusion_score": 0.02668564312399929
+    },
+    {
+      "rank": 20,
+      "chunk_id": "sec_fdc1248d",
+      "fusion_score": 0.02632034632034632
+    }
+  ],
+  "top_sections_selected": [
+    {
+      "chunk_id": "sec_35d203d2",
+      "heading": "3.7 FINAL DELIVERABLE AND SUBJECT PROGRAM TESTING",
+      "page_num": 3,
+      "dense_score": 0.5851
+    },
+    {
+      "chunk_id": "sec_d876cbe3",
+      "heading": "10.3 NON DISPARAGEMENT CLAUSE",
+      "page_num": 10,
+      "dense_score": 0.6013
+    },
+    {
+      "chunk_id": "sec_670f5fcc",
+      "heading": "3.3 ACCEPTANCE AND BETA TESTS",
+      "page_num": 2,
+      "dense_score": 0.5825
+    }
+  ],
+  "retrieved_sentences_count": 6,
+  "retrieved_sentences": [
+    {
+      "rank": 1,
+      "chunk_id": "sen_e2e0f2ff",
+      "section_id": "sec_35d203d2",
+      "heading": "3.7 FINAL DELIVERABLE AND SUBJECT PROGRAM TESTING",
+      "page_num": 3,
+      "dense_score": 0.5905,
+      "text": "If the Subject Program or Final Deliverable still does not satisfy the Client's acceptance criteria and/or the Acceptanc..."
+    },
+    {
+      "rank": 2,
+      "chunk_id": "sen_5b2d0afa",
+      "section_id": "sec_35d203d2",
+      "heading": "3.7 FINAL DELIVERABLE AND SUBJECT PROGRAM TESTING",
+      "page_num": 3,
+      "dense_score": 0.585,
+      "text": "Notwithstanding anything contained herein, upon completion of the Final Deliverable set out in the Specifications theret..."
+    },
+    {
+      "rank": 3,
+      "chunk_id": "sen_7ff54c79",
+      "section_id": "sec_670f5fcc",
+      "heading": "3.3 ACCEPTANCE AND BETA TESTS",
+      "page_num": 2,
+      "dense_score": 0.5825,
+      "text": "Within the time periods designated in the SOW, Client shall perform any tests or evaluation of the Subject Program (coll..."
+    },
+    {
+      "rank": 4,
+      "chunk_id": "sen_1f5947f4",
+      "section_id": "sec_d876cbe3",
+      "heading": "10.3 NON DISPARAGEMENT CLAUSE",
+      "page_num": 10,
+      "dense_score": 0.5661,
+      "text": "Subject to the terms, conditions, express representations and warranties provided in this Agreement, Designer and Client..."
+    },
+    {
+      "rank": 5,
+      "chunk_id": "sen_72e5fced",
+      "section_id": "sec_d876cbe3",
+      "heading": "10.3 NON DISPARAGEMENT CLAUSE",
+      "page_num": 10,
+      "dense_score": 0.555,
+      "text": "The Client and Designer both agree not to post on defamatory websites or review websites any negative posts concerning e..."
+    },
+    {
+      "rank": 6,
+      "chunk_id": "sen_98e5b57c",
+      "section_id": "sec_d876cbe3",
+      "heading": "10.3 NON DISPARAGEMENT CLAUSE",
+      "page_num": 10,
+      "dense_score": 0.5487,
+      "text": "The Client and the Designer both agree to never to disparage or speak ill of the other party to anyone and or post negat..."
+    }
+  ],
+  "context_sent_to_llm": "\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2.pdf\nSection: 3.7 FINAL DELIVERABLE AND SUBJECT PROGRAM TESTING\nPage: 3\n\nIf the Subject Program or Final Deliverable still does not satisfy the Client's acceptance criteria and/or the Acceptance Tests, Client shall have the option of either: (a) repeating the procedure set forth above\u037e or (b) terminating this Agreement pursuant to Section 12 of this Agreement . If the Client does not notify the Developer of any further failures, objections, changes, or other defects, or bugs of or in the Subject Program via a Change Request, Client will be deemed to have accepted the Subject Program.\n\n\n\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2.pdf\nSection: 3.7 FINAL DELIVERABLE AND SUBJECT PROGRAM TESTING\nPage: 3\n\nNotwithstanding anything contained herein, upon completion of the Final Deliverable set out in the Specifications thereto, Client will perform Acceptance Test on the Subject Program within fifteen (15) calendar days from the Acceptance Test Date in order to determine whether the Subject Program satisfies the acceptance criteria and operates with internal consistency. If the completed Subject Program does not satisfy the Client's Acceptance Tests and Client provides Developer a Change Request concerning the same, Developer will have fifteen (15) calendar days from the receipt of such Change Request to correct the deficiencies errors, corrections, modifications, bug-fixes or changes. Client shall then have ten (10) additional days to inspect, test and reevaluate the completed and modified Subject Program or Final Deliverable.\n\n\n\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2.pdf\nSection: 3.3 ACCEPTANCE AND BETA TESTS\nPage: 2\n\nWithin the time periods designated in the SOW, Client shall perform any tests or evaluation of the Subject Program (collectively, the Acceptance Tests) after the Acceptance Test Date, to determine whether each Deliverable: (a) conforms to the SOW\u037e and (b) performs repetitively on an appropriate variety of data and platforms, without failure, as more fully described in the Specifications. Upon completion of II Deliverables, the Acceptance Tests shall be performed on the Subject Program in its entirety in order to determine whether the Subject Program (i) meets the Specifications and (ii) operates with internal consistency.\n\n\n\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2.pdf\nSection: 10.3 NON DISPARAGEMENT CLAUSE\nPage: 10\n\nSubject to the terms, conditions, express representations and warranties provided in this Agreement, Designer and Client both agree to indemnify, save and hold armless each other from any and all damages, liabilities, costs, losses or expenses arising out of any finding of fact which is inconsistent with Designer's representations and warranties made herein, except in the event any such claims, damages, liabilities, costs, losses or expenses arise directly as a result of gross negligence or misconduct of Client.\n\n\n\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2.pdf\nSection: 10.3 NON DISPARAGEMENT CLAUSE\nPage: 10\n\nThe Client and Designer both agree not to post on defamatory websites or review websites any negative posts concerning each other, the names of our companies, and our employees. Both the Client and the Designer both agree and acknowledge that this non-disparagement provision is a material term of this Agreement, the absence of which would have resulted in the Company refusing to enter into this Agreement.\n\n\n\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2.pdf\nSection: 10.3 NON DISPARAGEMENT CLAUSE\nPage: 10\n\nThe Client and the Designer both agree to never to disparage or speak ill of the other party to anyone and or post negative or disparaging comments Online regarding any of the Designer's products, services, affiliates, subsidiaries, officers, directors, employees or shareholders, and will take reasonable steps to prevent and will not knowingly permit any of their respective employees or agents to, disparage or speak ill of such persons. For purposes of this Section, \"disparage\" shall mean any negative statement whether written or oral, about Seattle Software Developers, Inc., Dot Com LLC. and or any of its affiliates.\n",
+  "generated_answer": "Based on the provided context, I have identified the relevant sections and provisions related to termination and acceptance. Here are the key points:\n\n**Termination Provisions:**\n\n* **Section 12 of this Agreement:** Allows Client to terminate this Agreement if the Subject Program or Final Deliverable does not satisfy the Client's acceptance criteria and/or the Acceptance Tests.\n* **Section 11.1 TERMINATION WITHOUT CAUSE (Page 10):** Allows either Party to terminate this Agreement at any time during the term of this Agreement for any reason upon two weeks written notice to the other Party.\n* **Section 11.3 OBLIGATIONS UPON TERMINATION (Page 11):** Requires Developer to provide Termination Assistance Services to Client in a manner that does not interfere with, interrupt or degrade the Subject Program.\n\n**Acceptance Provisions:**\n\n* **Section 3.7 FINAL DELIVERABLE AND SUBJECT PROGRAM TESTING (Page 3):** Requires Client to perform Acceptance Tests on the Subject Program within fifteen (15) calendar days from the Acceptance Test Date to determine whether the Subject Program satisfies the acceptance criteria and operates with internal consistency.\n* **Section 3.3 ACCEPTANCE AND BETA TESTS (Page 2):** Requires Client to perform Acceptance Tests on the Subject Program in its entirety to determine whether the Subject Program meets the Specifications and operates with internal consistency.\n\n**Comparison of Termination and Acceptance Provisions:**\n\n* Both Section 12 and Section 11.1 allow for termination of the Agreement for any reason.\n* Section 12 requires the Subject Program or Final Deliverable to not satisfy the Client's acceptance criteria and/or the Acceptance Tests, while Section 11.1 requires two weeks written notice.\n* Section 12 does not specify a notice period, while Section 11.1 requires immediate cessation of Service and Deliverables upon termination.\n* Section 12 requires Developer to provide Termination Assistance Services, while Section 11.3 requires Developer to provide Termination Assistance Services for up to three months.\n\n**Survival of Provisions:**\n\n* According to Section 12.6 OTHER DEFINITIONAL TERMS, TERMS OF CONSTRUCTION (Page 13), all covenants, terms, definitions, and other provisions from other agreements incorporated into this Agreement by reference will survive termination of this Agreement.\n\n**Non-Disparagement Clause:**\n\n* Section 10.3 NON DISPARAGEMENT CLAUSE (Page 10) requires Client and Developer to not post negative posts concerning each other, the names of their companies, and their employees on defamatory websites or review websites.\n\n**Restrictions:**\n\n* Client and Developer are restricted from disparaging or speaking ill of each other to anyone and/or posting negative or disparaging comments Online regarding any of the other party's products, services, affiliates, subsidiaries, officers, directors, employees, or shareholders.\n* Client and Developer are required to take reasonable steps to prevent and will not knowingly permit any of their respective employees or agents to disparage or speak ill of such persons.",
+  "citations": [
+    {
+      "document": "PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2.pdf",
+      "page": 3,
+      "section": "3.7 FINAL DELIVERABLE AND SUBJECT PROGRAM TESTING"
+    },
+    {
+      "document": "PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2.pdf",
+      "page": 2,
+      "section": "3.3 ACCEPTANCE AND BETA TESTS"
+    },
+    {
+      "document": "PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2.pdf",
+      "page": 10,
+      "section": "10.3 NON DISPARAGEMENT CLAUSE"
+    }
+  ]
+}
+================================================================================
+{
+  "timestamp": "2026-06-06T16:09:26.315549",
+  "query": "Summarize the key findings in this document",
+  "doc_id": [
+    "1799460c-12d1-474a-b8a0-e09fb0743968"
+  ],
+  "retrieved_sections_count": 1,
+  "retrieved_sections": [
+    {
+      "rank": 1,
+      "chunk_id": "summary_1799460c-12d1-474a-b8a0-e09fb0743968",
+      "heading": "Document Summary",
+      "page_num": 1,
+      "dense_score": 1.0
+    }
+  ],
+  "bm25_scores": [],
+  "rrf_fusion": [],
+  "top_sections_selected": [
+    {
+      "chunk_id": "summary_1799460c-12d1-474a-b8a0-e09fb0743968",
+      "heading": "Document Summary",
+      "page_num": 1,
+      "dense_score": 1.0
+    }
+  ],
+  "retrieved_sentences_count": 1,
+  "retrieved_sentences": [
+    {
+      "rank": 1,
+      "chunk_id": "summary_1799460c-12d1-474a-b8a0-e09fb0743968",
+      "section_id": null,
+      "heading": "Document Summary",
+      "page_num": 1,
+      "dense_score": 1.0,
+      "text": "**Comprehensive Summary of the Software Development Agreement**\n\n**Parties:**\n\n- **Developer:** DOT COM LLC (also referr..."
+    }
+  ],
+  "context_sent_to_llm": "\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2.pdf\nSection: Document Summary\nPage: 1\n\n**Comprehensive Summary of the Software Development Agreement**\n\n**Parties:**\n\n- **Developer:** DOT COM LLC (also referred to as the \"Developer\")\n- **Client:** Pelican Delivers Inc. (also referred to as the \"Client\")\n\n**Core Purpose of the Agreement:**\n\nThe Software Development Agreement outlines the terms and conditions for the performance of software design services and development between the Developer and the Client.\n\n**Key Obligations:**\n\n- **Developer Obligations:**\n  - Design, develop, and deliver the \"Pelican Delivers Application Phase 1\" and related services, work product, and documentation in accordance with the Project specifications outlined in the Statement of Work (SOW).\n  - Use best efforts to complete services and deliverables by the Final Delivery Date, making any necessary corrections or changes promptly.\n  - Provide reasonable assistance to the Client in completing the Services and producing the Deliverables.\n  - Transfer all works to the Client upon termination of the Agreement.\n- **Client Obligations:**\n  - Pay the Developer's Fees, Expenses (if any), and Bonus via wire transfer to the Developer's bank account.\n  - Perform Acceptance Tests within designated time periods to determine if Deliverables conform to the Service Order and Specifications.\n  - Provide reasonable assistance to the Developer in completing the Services and producing the Deliverables.\n  - Pay any outstanding fees upon termination of the Agreement.\n\n**Key Termination Rules:**\n\n- **Termination for Cause:** The Agreement can be terminated immediately by either party under certain conditions, including material breach, non-payment of undisputed fees, misappropriation of confidential information, or illegal activities.\n- **Termination Without Cause:** Either party may terminate this Agreement with two weeks' written notice, after which the Developer will cease providing services and the Client will pay for all services and deliverables up to the date of termination.\n- **Obligations Upon Termination:** Upon termination of the Agreement or any Statement of Work (SOW), the Client must pay any outstanding fees and the Developer will refund any non-accrued pre-paid fees. The Developer will also provide up to three (3) months of Termination Assistance Services, including knowledge transfer and data migration, at an additional cost to the Client.\n\n**Other Key Provisions:**\n\n- **Non-Exclusivity:** The parties acknowledge that this agreement does not create an exclusive business relationship, allowing the Developer to offer services to third parties and solicit other clients.\n- **Non-Disparagement Clause:** The Client and the Developer agree to refrain from making negative statements or posts about each other, their companies, employees, and affiliates online or offline.\n- **Indemnification:** The Developer agrees to defend, indemnify, and hold harmless the Client from losses, claims, liabilities, and damages arising from the Developer's material breach, gross negligence, willful misconduct, or violation of laws and regulations. The Client agrees to defend, indemnify, and hold harmless the Developer, its affiliates, and related parties from losses, claims, and damages arising from the Client's breach of this Agreement, gross negligence, or willful misconduct.\n- **Confidentiality and Non-Disclosure:** Each party acknowledges that they will receive confidential information from the other party and agrees to maintain it in confidence, using reasonable measures to protect it, and destroying or erasing all copies upon expiration or termination of the agreement.\n",
+  "generated_answer": "Based on the provided context, the key findings in this document are:\n\n**Parties Involved:**\n- **Developer:** DOT COM LLC\n- **Client:** Pelican Delivers Inc.\n\n**Core Purpose of the Agreement:**\n- The Software Development Agreement outlines the terms and conditions for the performance of software design services and development between the Developer and the Client.\n\n**Key Obligations:**\n- **Developer Obligations:**\n  - Design, develop, and deliver the \"Pelican Delivers Application Phase 1\" and related services, work product, and documentation.\n  - Use best efforts to complete services and deliverables by the Final Delivery Date.\n  - Provide reasonable assistance to the Client in completing the Services and producing the Deliverables.\n  - Transfer all works to the Client upon termination of the Agreement.\n- **Client Obligations:**\n  - Pay the Developer's Fees, Expenses (if any), and Bonus via wire transfer to the Developer's bank account.\n  - Perform Acceptance Tests within designated time periods to determine if Deliverables conform to the Service Order and Specifications.\n  - Provide reasonable assistance to the Developer in completing the Services and producing the Deliverables.\n  - Pay any outstanding fees upon termination of the Agreement.\n\n**Key Termination Rules:**\n- **Termination for Cause:** The Agreement can be terminated immediately by either party under certain conditions, including material breach, non-payment of undisputed fees, misappropriation of confidential information, or illegal activities.\n- **Termination Without Cause:** Either party may terminate this Agreement with two weeks' written notice.\n- **Obligations Upon Termination:** Upon termination of the Agreement or any Statement of Work (SOW), the Client must pay any outstanding fees and the Developer will refund any non-accrued pre-paid fees.\n\n**Other Key Provisions:**\n- **Non-Exclusivity:** The parties acknowledge that this agreement does not create an exclusive business relationship.\n- **Non-Disparagement Clause:** The Client and the Developer agree to refrain from making negative statements or posts about each other, their companies, employees, and affiliates online or offline.\n- **Indemnification:** The Developer agrees to defend, indemnify, and hold harmless the Client from losses, claims, liabilities, and damages arising from the Developer's material breach, gross negligence, willful misconduct, or violation of laws and regulations.\n- **Confidentiality and Non-Disclosure:** Each party acknowledges that they will receive confidential information from the other party and agrees to maintain it in confidence.",
+  "citations": [
+    {
+      "document": "PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2.pdf",
+      "page": 1,
+      "section": "Document Summary"
+    }
+  ]
+}
+================================================================================
+{
+  "timestamp": "2026-06-06T16:10:41.454987",
+  "query": "important things that i should know about",
+  "doc_id": [
+    "1799460c-12d1-474a-b8a0-e09fb0743968"
+  ],
+  "retrieved_sections_count": 20,
+  "retrieved_sections": [
+    {
+      "rank": 1,
+      "chunk_id": "sec_a77463d1",
+      "heading": "6.4 CONFIDENTIALITY AND NON-DISCLOSURE",
+      "page_num": 7,
+      "dense_score": 0.5617
+    },
+    {
+      "rank": 2,
+      "chunk_id": "sec_b80b203c",
+      "heading": "3.8 CLIENT ASSISTANCE",
+      "page_num": 3,
+      "dense_score": 0.5315
+    },
+    {
+      "rank": 3,
+      "chunk_id": "sec_fdc1248d",
+      "heading": "3.2 PROJECT DELIVERY AND INSTALLATION",
+      "page_num": 2,
+      "dense_score": 0.5289
+    },
+    {
+      "rank": 4,
+      "chunk_id": "sec_aadf602d",
+      "heading": "12.6 OTHER DEFINITIONAL TERMS, TERMS OF CONSTRUCTION",
+      "page_num": 13,
+      "dense_score": 0.5277
+    },
+    {
+      "rank": 5,
+      "chunk_id": "sec_ed2bba78",
+      "heading": "9.1 CLIENT",
+      "page_num": 9,
+      "dense_score": 0.5245
+    },
+    {
+      "rank": 6,
+      "chunk_id": "sec_e95698e6",
+      "heading": "12.2 NOTICE",
+      "page_num": 12,
+      "dense_score": 0.5245
+    },
+    {
+      "rank": 7,
+      "chunk_id": "sec_44ba91a8",
+      "heading": "3.4 ACCEPTANCE OF MILESTONE DELIVERABLE\u037e CHANGE REQUESTS",
+      "page_num": 2,
+      "dense_score": 0.506
+    },
+    {
+      "rank": 8,
+      "chunk_id": "sec_5ab05e72",
+      "heading": "6.2 DEVELOPER'S INTELLECTUAL PROPERTY",
+      "page_num": 6,
+      "dense_score": 0.504
+    },
+    {
+      "rank": 9,
+      "chunk_id": "sec_0336aa50",
+      "heading": "12.8 ENTIRE AGREEMENT AND UNDERSTANDING",
+      "page_num": 13,
+      "dense_score": 0.5024
+    },
+    {
+      "rank": 10,
+      "chunk_id": "sec_d876cbe3",
+      "heading": "10.3 NON DISPARAGEMENT CLAUSE",
+      "page_num": 10,
+      "dense_score": 0.501
+    },
+    {
+      "rank": 11,
+      "chunk_id": "sec_fcc2b439",
+      "heading": "12.7 COUNTERPARTS",
+      "page_num": 13,
+      "dense_score": 0.4961
+    },
+    {
+      "rank": 12,
+      "chunk_id": "sec_670f5fcc",
+      "heading": "3.3 ACCEPTANCE AND BETA TESTS",
+      "page_num": 2,
+      "dense_score": 0.4928
+    },
+    {
+      "rank": 13,
+      "chunk_id": "sec_26cb4128",
+      "heading": "3.6 FAILURE OF DEVELOPER TO CORRECT DEFECTS",
+      "page_num": 3,
+      "dense_score": 0.4891
+    },
+    {
+      "rank": 14,
+      "chunk_id": "sec_35d203d2",
+      "heading": "3.7 FINAL DELIVERABLE AND SUBJECT PROGRAM TESTING",
+      "page_num": 3,
+      "dense_score": 0.4889
+    },
+    {
+      "rank": 15,
+      "chunk_id": "sec_e16f56a0",
+      "heading": "11.2 TERMINATION FOR CAUSE",
+      "page_num": 10,
+      "dense_score": 0.4859
+    },
+    {
+      "rank": 16,
+      "chunk_id": "sec_d6b837fe",
+      "heading": "12.1 CHOICE OF LAW AND VENUE",
+      "page_num": 11,
+      "dense_score": 0.4846
+    },
+    {
+      "rank": 17,
+      "chunk_id": "sec_5b13de94",
+      "heading": "12.3 SEVERABILITY",
+      "page_num": 12,
+      "dense_score": 0.4782
+    },
+    {
+      "rank": 18,
+      "chunk_id": "sec_8c86da45",
+      "heading": "3.5 REJECTION OF MILESTONE DELIVERABLE",
+      "page_num": 2,
+      "dense_score": 0.475
+    },
+    {
+      "rank": 19,
+      "chunk_id": "sec_d00f25da",
+      "heading": "2. Statement of Work",
+      "page_num": 1,
+      "dense_score": 0.4745
+    },
+    {
+      "rank": 20,
+      "chunk_id": "sec_4e9d6d9b",
+      "heading": "4. Change Orders",
+      "page_num": 4,
+      "dense_score": 0.4721
+    }
+  ],
+  "bm25_scores": [
+    {
+      "rank": 1,
+      "chunk_id": "sec_a77463d1",
+      "heading": "6.4 CONFIDENTIALITY AND NON-DISCLOSURE",
+      "score": 4.62707179401502
+    },
+    {
+      "rank": 2,
+      "chunk_id": "sec_d00f25da",
+      "heading": "2. Statement of Work",
+      "score": 4.045923638878487
+    },
+    {
+      "rank": 3,
+      "chunk_id": "sec_d6b837fe",
+      "heading": "12.1 CHOICE OF LAW AND VENUE",
+      "score": 3.766550994022351
+    },
+    {
+      "rank": 4,
+      "chunk_id": "sec_e16f56a0",
+      "heading": "11.2 TERMINATION FOR CAUSE",
+      "score": 3.742263328727816
+    },
+    {
+      "rank": 5,
+      "chunk_id": "sec_b80b203c",
+      "heading": "3.8 CLIENT ASSISTANCE",
+      "score": 3.193309291614016
+    },
+    {
+      "rank": 6,
+      "chunk_id": "sec_5b13de94",
+      "heading": "12.3 SEVERABILITY",
+      "score": 2.824466690301161
+    },
+    {
+      "rank": 7,
+      "chunk_id": "sec_26cb4128",
+      "heading": "3.6 FAILURE OF DEVELOPER TO CORRECT DEFECTS",
+      "score": 2.765258283575293
+    },
+    {
+      "rank": 8,
+      "chunk_id": "sec_5ab05e72",
+      "heading": "6.2 DEVELOPER'S INTELLECTUAL PROPERTY",
+      "score": 2.563854395764098
+    },
+    {
+      "rank": 9,
+      "chunk_id": "sec_4e9d6d9b",
+      "heading": "4. Change Orders",
+      "score": 2.504522796555739
+    },
+    {
+      "rank": 10,
+      "chunk_id": "sec_fcc2b439",
+      "heading": "12.7 COUNTERPARTS",
+      "score": 2.3533090608952763
+    },
+    {
+      "rank": 11,
+      "chunk_id": "sec_aadf602d",
+      "heading": "12.6 OTHER DEFINITIONAL TERMS, TERMS OF CONSTRUCTION",
+      "score": 1.9105225953853875
+    },
+    {
+      "rank": 12,
+      "chunk_id": "sec_0336aa50",
+      "heading": "12.8 ENTIRE AGREEMENT AND UNDERSTANDING",
+      "score": 1.9065340069518217
+    },
+    {
+      "rank": 13,
+      "chunk_id": "sec_670f5fcc",
+      "heading": "3.3 ACCEPTANCE AND BETA TESTS",
+      "score": 1.7273616961388953
+    },
+    {
+      "rank": 14,
+      "chunk_id": "sec_fdc1248d",
+      "heading": "3.2 PROJECT DELIVERY AND INSTALLATION",
+      "score": 1.723418051725131
+    },
+    {
+      "rank": 15,
+      "chunk_id": "sec_e95698e6",
+      "heading": "12.2 NOTICE",
+      "score": 1.7011131309819063
+    },
+    {
+      "rank": 16,
+      "chunk_id": "sec_d876cbe3",
+      "heading": "10.3 NON DISPARAGEMENT CLAUSE",
+      "score": 1.644046436122841
+    },
+    {
+      "rank": 17,
+      "chunk_id": "sec_35d203d2",
+      "heading": "3.7 FINAL DELIVERABLE AND SUBJECT PROGRAM TESTING",
+      "score": 1.4521166582850031
+    },
+    {
+      "rank": 18,
+      "chunk_id": "sec_8c86da45",
+      "heading": "3.5 REJECTION OF MILESTONE DELIVERABLE",
+      "score": 1.4454165621540147
+    },
+    {
+      "rank": 19,
+      "chunk_id": "sec_ed2bba78",
+      "heading": "9.1 CLIENT",
+      "score": 1.2563534833934795
+    },
+    {
+      "rank": 20,
+      "chunk_id": "sec_44ba91a8",
+      "heading": "3.4 ACCEPTANCE OF MILESTONE DELIVERABLE\u037e CHANGE REQUESTS",
+      "score": 0.9009070089208969
+    }
+  ],
+  "rrf_fusion": [
+    {
+      "rank": 1,
+      "chunk_id": "sec_a77463d1",
+      "fusion_score": 0.03278688524590164
+    },
+    {
+      "rank": 2,
+      "chunk_id": "sec_b80b203c",
+      "fusion_score": 0.0315136476426799
+    },
+    {
+      "rank": 3,
+      "chunk_id": "sec_aadf602d",
+      "fusion_score": 0.029709507042253523
+    },
+    {
+      "rank": 4,
+      "chunk_id": "sec_5ab05e72",
+      "fusion_score": 0.029411764705882353
+    },
+    {
+      "rank": 5,
+      "chunk_id": "sec_fdc1248d",
+      "fusion_score": 0.029386529386529386
+    },
+    {
+      "rank": 6,
+      "chunk_id": "sec_d6b837fe",
+      "fusion_score": 0.029030910609857977
+    },
+    {
+      "rank": 7,
+      "chunk_id": "sec_e16f56a0",
+      "fusion_score": 0.028958333333333336
+    },
+    {
+      "rank": 8,
+      "chunk_id": "sec_d00f25da",
+      "fusion_score": 0.02878726010616578
+    },
+    {
+      "rank": 9,
+      "chunk_id": "sec_26cb4128",
+      "fusion_score": 0.02862400327131466
+    },
+    {
+      "rank": 10,
+      "chunk_id": "sec_e95698e6",
+      "fusion_score": 0.028484848484848488
+    },
+    {
+      "rank": 11,
+      "chunk_id": "sec_0336aa50",
+      "fusion_score": 0.028381642512077296
+    },
+    {
+      "rank": 12,
+      "chunk_id": "sec_fcc2b439",
+      "fusion_score": 0.028370221327967807
+    },
+    {
+      "rank": 13,
+      "chunk_id": "sec_5b13de94",
+      "fusion_score": 0.02813852813852814
+    },
+    {
+      "rank": 14,
+      "chunk_id": "sec_ed2bba78",
+      "fusion_score": 0.02804284323271665
+    },
+    {
+      "rank": 15,
+      "chunk_id": "sec_670f5fcc",
+      "fusion_score": 0.02758751902587519
+    },
+    {
+      "rank": 16,
+      "chunk_id": "sec_d876cbe3",
+      "fusion_score": 0.027443609022556388
+    },
+    {
+      "rank": 17,
+      "chunk_id": "sec_44ba91a8",
+      "fusion_score": 0.027425373134328357
+    },
+    {
+      "rank": 18,
+      "chunk_id": "sec_4e9d6d9b",
+      "fusion_score": 0.026992753623188405
+    },
+    {
+      "rank": 19,
+      "chunk_id": "sec_35d203d2",
+      "fusion_score": 0.026500526500526502
+    },
+    {
+      "rank": 20,
+      "chunk_id": "sec_8c86da45",
+      "fusion_score": 0.02564102564102564
+    }
+  ],
+  "top_sections_selected": [
+    {
+      "chunk_id": "sec_a77463d1",
+      "heading": "6.4 CONFIDENTIALITY AND NON-DISCLOSURE",
+      "page_num": 7,
+      "dense_score": 0.5617
+    },
+    {
+      "chunk_id": "sec_b80b203c",
+      "heading": "3.8 CLIENT ASSISTANCE",
+      "page_num": 3,
+      "dense_score": 0.5315
+    },
+    {
+      "chunk_id": "sec_aadf602d",
+      "heading": "12.6 OTHER DEFINITIONAL TERMS, TERMS OF CONSTRUCTION",
+      "page_num": 13,
+      "dense_score": 0.5277
+    }
+  ],
+  "retrieved_sentences_count": 9,
+  "retrieved_sentences": [
+    {
+      "rank": 1,
+      "chunk_id": "sen_70d41193",
+      "section_id": "sec_a77463d1",
+      "heading": "6.4 CONFIDENTIALITY AND NON-DISCLOSURE",
+      "page_num": 7,
+      "dense_score": 0.5501,
+      "text": "6.4.2 Non-Disclosure. Neither Party shall use or disclose Confidential Information of the other Party to any third party..."
+    },
+    {
+      "rank": 2,
+      "chunk_id": "sen_1aabf791",
+      "section_id": "sec_a77463d1",
+      "heading": "6.4 CONFIDENTIALITY AND NON-DISCLOSURE",
+      "page_num": 7,
+      "dense_score": 0.5487,
+      "text": "The Receiving Party further agrees to immediately notify Disclosing Party of any actual or suspected misuse misappropria..."
+    },
+    {
+      "rank": 3,
+      "chunk_id": "sen_e93b3b6b",
+      "section_id": "sec_aadf602d",
+      "heading": "12.6 OTHER DEFINITIONAL TERMS, TERMS OF CONSTRUCTION",
+      "page_num": 13,
+      "dense_score": 0.5349,
+      "text": "The words hereof, herein and hereunder and words of similar import when used in this Agreement refer to this Agreement a..."
+    },
+    {
+      "rank": 4,
+      "chunk_id": "sen_867b9bda",
+      "section_id": "sec_b80b203c",
+      "heading": "3.8 CLIENT ASSISTANCE",
+      "page_num": 3,
+      "dense_score": 0.5315,
+      "text": "Client shall provide Developer assistance to complete the Services, and produce the Deliverables, as reasonably requeste..."
+    },
+    {
+      "rank": 5,
+      "chunk_id": "sen_9bbbd0a0",
+      "section_id": "sec_a77463d1",
+      "heading": "6.4 CONFIDENTIALITY AND NON-DISCLOSURE",
+      "page_num": 7,
+      "dense_score": 0.5282,
+      "text": "Accordingly, in the event of a breach or threatened breach of Section 6 of this Agreement, Disclosing Party will be enti..."
+    },
+    {
+      "rank": 6,
+      "chunk_id": "sen_1dcf9890",
+      "section_id": "sec_a77463d1",
+      "heading": "6.4 CONFIDENTIALITY AND NON-DISCLOSURE",
+      "page_num": 7,
+      "dense_score": 0.5245,
+      "text": "Confidential Information does not include information at: (a) is available to the public or that becomes available to th..."
+    },
+    {
+      "rank": 7,
+      "chunk_id": "sen_9aaf97a6",
+      "section_id": "sec_a77463d1",
+      "heading": "6.4 CONFIDENTIALITY AND NON-DISCLOSURE",
+      "page_num": 7,
+      "dense_score": 0.51,
+      "text": "Upon expiration or termination of this Agreement, Receiving Party will immediately destroy or erase all copies of docume..."
+    },
+    {
+      "rank": 8,
+      "chunk_id": "sen_def71835",
+      "section_id": "sec_a77463d1",
+      "heading": "6.4 CONFIDENTIALITY AND NON-DISCLOSURE",
+      "page_num": 7,
+      "dense_score": 0.4888,
+      "text": "For purposes of this Agreement, Derivatives shall mean: (a) for copyrightable or copyrighted material, any translation, ..."
+    },
+    {
+      "rank": 9,
+      "chunk_id": "sen_c06b16c6",
+      "section_id": "sec_aadf602d",
+      "heading": "12.6 OTHER DEFINITIONAL TERMS, TERMS OF CONSTRUCTION",
+      "page_num": 13,
+      "dense_score": 0.4716,
+      "text": "All covenants, terms, definition and other provisions from other agreements incorporated into this Agreement by referenc..."
+    }
+  ],
+  "context_sent_to_llm": "\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2.pdf\nSection: 6.4 CONFIDENTIALITY AND NON-DISCLOSURE\nPage: 7\n\n6.4.2 Non-Disclosure. Neither Party shall use or disclose Confidential Information of the other Party to any third party, without the written consent of the Disclosing Party of such Confidential Information. Receiving Party agrees to undertake reasonable measures to maintain and preserve the Confidential Information of the Disclosing Party in confidence, which measures shall be no less than the measures taken by the\n\nReceiving Party to protect its own confidential information and in no vent shall be less than reasonable care.\n\n\n\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2.pdf\nSection: 6.4 CONFIDENTIALITY AND NON-DISCLOSURE\nPage: 7\n\nThe Receiving Party further agrees to immediately notify Disclosing Party of any actual or suspected misuse misappropriation, or unauthorized disclosure of Confidential Information, which may come to Receiving Party's attention. 6.4.5  Injunctive Relief for Breach. Because of the unique nature of the Confidential Information and other elements of the Parties business relationship, the Parties acknowledge and agree that a breach of any of the provisions of Section 6 of this Agreement by Receiving Party will irreparably harm the Disclosing Party.\n\n\n\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2.pdf\nSection: 12.6 OTHER DEFINITIONAL TERMS, TERMS OF CONSTRUCTION\nPage: 13\n\nThe words hereof, herein and hereunder and words of similar import when used in this Agreement refer to this Agreement as a whole and not to any particular provision of this Agreement. The words include, includes and including shall be deemed to be followed by the phrase without limitation. Unless the context in which used herein otherwise clearly requires, or has the inclusive meaning represented by the phrase and/or. All incorporations by reference of covenants, terms, definitions or other provisions from other agreements are incorporated into this Agreement as if such provisions were fully set forth herein, and include all necessary definitions and related provisions from such other agreements.\n\n\n\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2.pdf\nSection: 3.8 CLIENT ASSISTANCE\nPage: 3\n\nClient shall provide Developer assistance to complete the Services, and produce the Deliverables, as reasonably requested, including but not limited to providing the necessary information or documentation required from Developer for the development of the Subject Program. Client shall conduct all Acceptance Tests in good faith and shall not delay any acceptance of any Service or Deliverable without reasonable justification. The evaluation of any Service or Deliverable for any Acceptance Test will be based on material compliance with applicable Specifications and Client shall not arbitrarily withhold acceptance of any Milestone Deliverable or Subject Program.\n\n\n\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2.pdf\nSection: 6.4 CONFIDENTIALITY AND NON-DISCLOSURE\nPage: 7\n\nAccordingly, in the event of a breach or threatened breach of Section 6 of this Agreement, Disclosing Party will be entitled to seek injunctive relief to enforce the terms of Section 6 of this Agreement without the necessity of posting a bond or if a bond is required, at the minimum amount legally required.\n\n\n\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2.pdf\nSection: 6.4 CONFIDENTIALITY AND NON-DISCLOSURE\nPage: 7\n\nConfidential Information does not include information at: (a) is available to the public or that becomes available to the public through no act or failure to act by the receiving Party (Receiving Party)\u037e (b) is known to the Receiving Party prior to the date of disclosure by the disclosing Party (Disclosing Party), unless the Receiving Party agreed to keep such information in confidence at the time of receipt of the information\u037e (c) is properly obtained hereafter from a source that is not under an obligation of confidentiality with respect to such information\u037e or (d) is developed independently by the Receiving Party without reference to or use of the Disclosing Party's Confidential Information.\n\n\n\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2.pdf\nSection: 6.4 CONFIDENTIALITY AND NON-DISCLOSURE\nPage: 7\n\nUpon expiration or termination of this Agreement, Receiving Party will immediately destroy or erase all copies of documents or materials containing any Confidential Information provided by Disclosing Party and, upon the Disclosing Party's request, promptly confirm destruction of same by signing and returning to the Disclosing Party a certificate of destruction reasonably satisfactory to the Disclosing Party. 6.4.3 Derivatives. All Confidential Information, and any Derivatives thereof whether created by Client or Developer, remain the property of the Disclosing Party and no license or other rights to any Confidential Information or Derivatives is granted or implied hereby.\n\n\n\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2.pdf\nSection: 6.4 CONFIDENTIALITY AND NON-DISCLOSURE\nPage: 7\n\nFor purposes of this Agreement, Derivatives shall mean: (a) for copyrightable or copyrighted material, any translation, abridgment, revision or other form in which an existing work may be recast, transformed or adapted \u037e(b) for patentable or patented material, any improvement thereon\u037e and (c) for material which is protected by trade secret, any new material derived from such existing trade secret material, including new material which may be protected under applicable copyright, patent, or trade secret law. 6.4.4 Notification of Suspected Disclosure.\n\n\n\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2.pdf\nSection: 12.6 OTHER DEFINITIONAL TERMS, TERMS OF CONSTRUCTION\nPage: 13\n\nAll covenants, terms, definition and other provisions from other agreements incorporated into this Agreement by reference will survive termination of this Agreement. References to statutes, regulations or laws, include any amendments, modifications or replacements of such statutes, regulations, or laws.\n",
+  "generated_answer": "Based on the provided context, the following are important things that you should know about the Development Agreement between DOT COM LLC (Developer) and Pelican Delivers Inc. (Client):\n\n**Key Obligations:**\n\n* The Developer is obligated to design, develop, and deliver the \"Pelican Delivers Application Phase 1\" and related services, work product, and documentation.\n* The Client is obligated to pay the Developer's Fees, Expenses (if any), and Bonus via wire transfer to the Developer's bank account.\n* The Client must provide reasonable assistance to the Developer in completing the Services and producing the Deliverables.\n* The Client must perform Acceptance Tests within designated time periods to determine if Deliverables conform to the Service Order and Specifications.\n\n**Confidentiality and Non-Disclosure:**\n\n* The parties agree to maintain confidential information in confidence and not disclose it to any third party without written consent.\n* The Receiving Party must undertake reasonable measures to maintain and preserve the Confidential Information of the Disclosing Party.\n* The Receiving Party must immediately notify the Disclosing Party of any actual or suspected misuse, misappropriation, or unauthorized disclosure of Confidential Information.\n* Confidential Information does not include information that is available to the public or that becomes available to the public through no act or failure to act by the Receiving Party.\n\n**Termination Rules:**\n\n* The Agreement can be terminated immediately by either party under certain conditions, including material breach, non-payment of undisputed fees, misappropriation of confidential information, or illegal activities.\n* Either party may terminate this Agreement with two weeks' written notice.\n* Upon termination of the Agreement or any Statement of Work (SOW), the Client must pay any outstanding fees and the Developer will refund any non-accrued pre-paid fees.\n\n**Other Key Provisions:**\n\n* The parties acknowledge that this agreement does not create an exclusive business relationship.\n* The Client and the Developer agree to refrain from making negative statements or posts about each other, their companies, employees, and affiliates online or offline.\n* The Developer agrees to defend, indemnify, and hold harmless the Client from losses, claims, liabilities, and damages arising from the Developer's material breach, gross negligence, willful misconduct, or violation of laws and regulations.\n\n**Survival of Obligations:**\n\n* All covenants, terms, definitions, and other provisions from other agreements incorporated into this Agreement by reference will survive termination of this Agreement.\n* References to statutes, regulations, or laws include any amendments, modifications, or replacements of such statutes, regulations, or laws.",
+  "citations": [
+    {
+      "document": "PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2.pdf",
+      "page": 7,
+      "section": "6.4 CONFIDENTIALITY AND NON-DISCLOSURE"
+    },
+    {
+      "document": "PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2.pdf",
+      "page": 13,
+      "section": "12.6 OTHER DEFINITIONAL TERMS, TERMS OF CONSTRUCTION"
+    },
+    {
+      "document": "PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2.pdf",
+      "page": 3,
+      "section": "3.8 CLIENT ASSISTANCE"
+    }
+  ]
+}
+================================================================================

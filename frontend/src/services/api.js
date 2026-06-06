@@ -67,7 +67,8 @@ export const documentService = {
       },
       onUploadProgress: (progressEvent) => {
         if (onProgress && progressEvent.total) {
-          const percent = Math.round((progressEvent.loaded * 100) / progressEvent.total);
+          // Cap network upload progress at 90% since backend processing takes time
+          const percent = Math.round((progressEvent.loaded * 90) / progressEvent.total);
           onProgress(percent);
         }
       },
@@ -78,6 +79,20 @@ export const documentService = {
   async delete(docId) {
     const response = await api.delete(`/api/v1/documents/${docId}`);
     return response.data;
+  },
+
+  async download(docId, filename) {
+    const response = await api.get(`/api/v1/documents/${docId}/download`, {
+      responseType: 'blob',
+    });
+    const url = window.URL.createObjectURL(new Blob([response.data]));
+    const link = document.createElement('a');
+    link.href = url;
+    link.setAttribute('download', filename);
+    document.body.appendChild(link);
+    link.click();
+    link.parentNode.removeChild(link);
+    window.URL.revokeObjectURL(url);
   },
 };
 
@@ -126,16 +141,22 @@ export const chatService = {
     return response.data;
   },
 
-  async sendMessage(chatId, question) {
-    const response = await api.post(`/api/v1/chats/${chatId}/messages`, { question });
-    return response.data; // Expected: MessageResponse
+  async sendMessage(chatId, question, summaryStyle = "executive") {
+    const payload = { question, summary_style: summaryStyle };
+    const response = await api.post(`/api/v1/chats/${chatId}/messages`, payload);
+    return response.data;
   },
 };
 
 export const profileService = {
-  async getProfile() {
+  async getCurrentUser() {
     const response = await api.get('/api/v1/auth/me');
-    return response.data; // Expected: { id, email, full_name, created_at }
+    return response.data;
+  },
+
+  async updateProfile(data) {
+    const response = await api.patch('/api/v1/auth/me', data);
+    return response.data;
   }
 };
 

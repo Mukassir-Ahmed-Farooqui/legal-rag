@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import { Routes, Route, Navigate, useNavigate } from 'react-router-dom';
+import React, { useState, useEffect, useRef } from 'react';
+import { Routes, Route, Navigate, useNavigate, Outlet } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
 import { useAuth } from './hooks/useAuth';
 import { useDocuments } from './hooks/useDocuments';
 import { useChat } from './hooks/useChat';
-import { LoginPage } from './components/auth/LoginPage';
-import { RegisterPage } from './components/auth/RegisterPage';
+import { LandingPage } from './components/landing/LandingPage';
 import { ProtectedRoute } from './components/ProtectedRoute';
 import { DocumentsPanel } from './components/documents/DocumentsPanel';
 import { ChatArea } from './components/chat/ChatArea';
@@ -27,6 +26,7 @@ import {
   Database,
   ChevronDown,
   Settings,
+  PanelLeft,
 } from 'lucide-react';
 
 
@@ -103,10 +103,32 @@ const DashboardLayout = () => {
             console.error("Auto-create failed", err);
           }
         } else {
-          setChats(loadedChats);
           const targetId = loadedChats[0].id;
-          setActiveChatId(targetId);
-          loadChatMessages(targetId);
+          try {
+            const detail = await chatService.getDetail(targetId);
+            if (detail.messages && detail.messages.length === 0) {
+              setChats(loadedChats);
+              setActiveChatId(targetId);
+              setMessages([]);
+            } else {
+              const defaultWorkspaceMode = localStorage.getItem('cs_default_workspace') || 'all';
+              const initialSelection = defaultWorkspaceMode === 'all' 
+                ? loadedDocs.map(d => d.doc_id) 
+                : [];
+              const newChat = await chatService.create(initialSelection);
+              if (isMounted) {
+                setChats([newChat, ...loadedChats]);
+                setActiveChatId(newChat.id);
+                setMessages([]);
+              }
+            }
+          } catch (err) {
+            console.error("Auto-create fresh chat failed", err);
+            // Fallback to loading the recent one
+            setChats(loadedChats);
+            setActiveChatId(targetId);
+            loadChatMessages(targetId);
+          }
         }
       }
       setIsLoadingChats(false);
@@ -122,6 +144,58 @@ const DashboardLayout = () => {
   const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
   const [editingChatId, setEditingChatId] = useState(null);
   const [editingTitle, setEditingTitle] = useState('');
+
+  // Sidebar Modernization States
+  const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(
+    localStorage.getItem('isSidebarCollapsed') === 'true'
+  );
+  const [sidebarWidth, setSidebarWidth] = useState(
+    parseInt(localStorage.getItem('sidebarWidth')) || 260
+  );
+  const isResizing = useRef(false);
+
+  // Responsive auto-collapse
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768 && !isSidebarCollapsed) {
+        setIsSidebarCollapsed(true);
+      }
+    };
+    window.addEventListener('resize', handleResize);
+    handleResize(); // Check initially
+    return () => window.removeEventListener('resize', handleResize);
+  }, [isSidebarCollapsed]);
+
+  // Sidebar drag to resize
+  const handleMouseDown = (e) => {
+    e.preventDefault();
+    isResizing.current = true;
+    document.addEventListener('mousemove', handleMouseMove);
+    document.addEventListener('mouseup', handleMouseUp);
+    document.body.style.cursor = 'col-resize';
+  };
+
+  const handleMouseMove = (e) => {
+    if (!isResizing.current) return;
+    let newWidth = e.clientX;
+    if (newWidth < 220) newWidth = 220;
+    if (newWidth > 500) newWidth = 500;
+    setSidebarWidth(newWidth);
+  };
+
+  const handleMouseUp = () => {
+    isResizing.current = false;
+    document.removeEventListener('mousemove', handleMouseMove);
+    document.removeEventListener('mouseup', handleMouseUp);
+    document.body.style.cursor = 'default';
+    localStorage.setItem('sidebarWidth', sidebarWidth);
+  };
+
+  const toggleSidebar = () => {
+    const newState = !isSidebarCollapsed;
+    setIsSidebarCollapsed(newState);
+    localStorage.setItem('isSidebarCollapsed', newState);
+  };
 
   const handleLogout = () => {
     const confirm = window.confirm('Are you sure you want to sign out?');
@@ -171,14 +245,21 @@ const DashboardLayout = () => {
       {/* Premium Top Navigation Bar */}
       <header className="h-14 bg-slate-900 border-b border-slate-800 flex items-center justify-between px-6 shrink-0 shadow-md z-10 select-none">
         <div className="flex items-center gap-2.5">
+          <button 
+            onClick={toggleSidebar}
+            className="p-1.5 hover:bg-slate-800 rounded-lg text-slate-400 hover:text-white transition-colors cursor-pointer mr-1"
+            title="Toggle Sidebar"
+          >
+            <PanelLeft className="h-5 w-5" />
+          </button>
           <div className="h-9 w-9 rounded-lg bg-blue-650 flex items-center justify-center text-white shadow-lg">
             <Shield className="h-5 w-5" />
           </div>
           <div>
             <h1 className="text-sm font-extrabold text-white tracking-wider uppercase flex items-center gap-1.5">
-              ClauseScope <span className="text-[10px] bg-blue-500/20 text-blue-400 px-1.5 py-0.5 rounded font-normal normal-case">AI</span>
+              OpenDoc
             </h1>
-            <p className="text-[9px] text-slate-400 font-medium">AI-Powered Contract Intelligence Platform</p>
+            <p className="text-[9px] text-slate-400 font-medium">AI-Powered Document Intelligence Platform</p>
           </div>
         </div>
 
@@ -192,7 +273,7 @@ const DashboardLayout = () => {
               {getInitials(user?.full_name)}
             </div>
             <div className="text-left hidden sm:block">
-              <p className="text-xs font-bold text-slate-200">{user?.full_name || 'Legal Analyst'}</p>
+              <p className="text-xs font-bold text-slate-200">{user?.full_name || 'User'}</p>
               <p className="text-[9px] text-slate-450 font-mono truncate max-w-[120px]">{user?.email}</p>
             </div>
             <ChevronDown className="h-3.5 w-3.5 text-slate-400 shrink-0" />
@@ -240,11 +321,14 @@ const DashboardLayout = () => {
       </header>
 
       {/* Main Workspace (Three Columns Layout) */}
-      <main className="flex-1 flex min-h-0 overflow-hidden">
+      <main className="flex-1 flex min-h-0 overflow-hidden relative">
         
-        {/* Column 1: Left Chat Sidebar (245px width) */}
-        <aside className="w-[245px] bg-slate-900 border-r border-slate-800 flex flex-col min-h-0 shrink-0 text-slate-300 select-none">
-          <div className="p-4 border-b border-slate-800 shrink-0">
+        {/* Column 1: Left Chat Sidebar (Resizable & Collapsible) */}
+        <aside 
+          className={`bg-slate-900 border-r border-slate-800 flex flex-col min-h-0 shrink-0 text-slate-300 select-none transition-all duration-300 ${isSidebarCollapsed ? 'w-0 border-r-0 opacity-0 overflow-hidden' : 'opacity-100'}`}
+          style={{ width: isSidebarCollapsed ? 0 : sidebarWidth }}
+        >
+          <div className="p-4 border-b border-slate-800 shrink-0 min-w-[220px]">
             <button
               onClick={handleNewChatClick}
               className="w-full py-2.5 px-4 bg-blue-650 hover:bg-blue-600 active:bg-blue-700 text-white text-xs font-extrabold rounded-xl shadow-md transition-all flex items-center justify-center gap-2 cursor-pointer border border-blue-500/30"
@@ -257,7 +341,7 @@ const DashboardLayout = () => {
 
           <div className="flex-1 overflow-y-auto p-2 space-y-1">
             <div className="px-2 py-1.5 text-[10px] font-extrabold text-slate-500 uppercase tracking-wider">
-              Chat Sessions
+              Chat history
             </div>
             {isLoadingChats && chats.length === 0 ? (
               <div className="p-2 space-y-2">
@@ -356,37 +440,54 @@ const DashboardLayout = () => {
           </div>
         </aside>
 
+        {/* Drag Handle for Resizing */}
+        {!isSidebarCollapsed && (
+          <div 
+            onMouseDown={handleMouseDown}
+            className="w-1 cursor-col-resize hover:bg-blue-500/50 active:bg-blue-500 transition-colors shrink-0 z-10"
+          />
+        )}
+
         {/* Column 2: Query Workspace (Center) */}
         <section className="flex-1 flex flex-col min-h-0 bg-slate-50/30">
           {/* Query Context / Scope Selector Header */}
           <div className="p-4 bg-white border-b border-slate-200 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 shrink-0 select-none">
             <div className="min-w-0 flex flex-col gap-1.5">
               <h3 className="text-xs font-extrabold text-slate-400 uppercase tracking-wider">
-                Audit Query Workspace
+                Document Workspace
               </h3>
               <div className="flex items-center gap-2">
                 <span className="text-[10.5px] uppercase font-bold text-slate-400 select-none">Current Workspace:</span>
                 <span className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold border transition-all ${
                   selectedDocIds.length > 0 
                     ? 'bg-blue-50 text-blue-700 border-blue-100 shadow-2xs' 
-                    : 'bg-slate-100 text-slate-700 border-slate-200'
+                    : (documents.length > 0 ? 'bg-red-50 text-red-700 border-red-200 shadow-2xs' : 'bg-slate-100 text-slate-700 border-slate-200')
                 }`}>
-                  {selectedDocIds.length === 0 ? (
+                  {selectedDocIds.length === 0 && documents.length > 0 ? (
                     <>
-                      <Globe className="h-3.5 w-3.5 shrink-0 text-slate-500" />
-                      <span>All Contracts (Corpus-wide)</span>
+                      <span className="text-red-600">⚠ No documents selected</span>
+                    </>
+                  ) : selectedDocIds.length === 0 && documents.length === 0 ? (
+                    <>
+                      <FileText className="h-3.5 w-3.5 shrink-0 text-slate-500" />
+                      <span>0 documents</span>
+                    </>
+                  ) : selectedDocIds.length === documents.length ? (
+                    <>
+                      <Globe className="h-3.5 w-3.5 shrink-0 text-blue-600" />
+                      <span>All documents selected ({documents.length})</span>
                     </>
                   ) : selectedDocIds.length === 1 ? (
                     <>
                       <FileText className="h-3.5 w-3.5 shrink-0 text-blue-600" />
                       <span className="truncate max-w-[200px]" title={documents.find((doc) => doc.doc_id === selectedDocIds[0])?.filename || ''}>
-                        {truncateFilename(documents.find((doc) => doc.doc_id === selectedDocIds[0])?.filename || 'Active Contract', 32)}
+                        {truncateFilename(documents.find((doc) => doc.doc_id === selectedDocIds[0])?.filename || 'Selected Document', 32)}
                       </span>
                     </>
                   ) : (
                     <>
                       <FileText className="h-3.5 w-3.5 shrink-0 text-blue-600" />
-                      <span>{selectedDocIds.length} Selected Contracts</span>
+                      <span>{selectedDocIds.length} Selected Documents</span>
                     </>
                   )}
                 </span>
@@ -434,11 +535,7 @@ const DashboardLayout = () => {
             onSend={askQuestion}
             disabled={isQuerying || isLoadingMessages}
             selectedDocIds={selectedDocIds}
-            placeholder={
-              selectedDocIds.length > 0 
-                ? `Ask a question about the ${selectedDocIds.length} selected ${selectedDocIds.length === 1 ? 'agreement' : 'agreements'}...` 
-                : 'Analyze agreements, retrieve evidence, and get citation-backed answers...'
-            }
+            documents={documents}
           />
         </section>
 
@@ -494,13 +591,12 @@ export const App = () => {
   return (
     <AuthProvider>
       <Routes>
-        {/* Public Login/Register Routes */}
-        <Route path="/login" element={<LoginPage />} />
-        <Route path="/register" element={<RegisterPage />} />
+        {/* Public Landing Page */}
+        <Route path="/" element={<LandingPage />} />
 
         {/* Protected Dashboard Route */}
-        <Route element={<ProtectedRoute />}>
-          <Route path="/" element={<DashboardLayout />} />
+        <Route element={<ProtectedRoute><Outlet /></ProtectedRoute>}>
+          <Route path="/chat" element={<DashboardLayout />} />
           <Route path="/settings" element={<SettingsPage />} />
         </Route>
 

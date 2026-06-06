@@ -137,7 +137,7 @@ export const MessageBubble = ({ message }) => {
       <div className="max-w-[80%] space-y-2.5 flex-1">
         {/* Header row */}
         <div className="flex items-center gap-2 text-xs font-semibold text-slate-500 select-none">
-          <span className="text-slate-800 font-bold">ClauseScope</span>
+          <span className="text-slate-800 font-bold">OpenDoc</span>
           <span>•</span>
           <span>{formatTime(message.timestamp)}</span>
         </div>

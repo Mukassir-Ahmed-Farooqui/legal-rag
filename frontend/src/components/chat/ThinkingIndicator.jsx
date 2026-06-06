@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { Shield } from 'lucide-react';
 
 const LOADING_STEPS = [
-  "Searching agreements...",
-  "Retrieving evidence...",
-  "Generating legal analysis..."
+  "Searching documents...",
+  "Retrieving context...",
+  "Synthesizing response..."
 ];
 
 export const ThinkingIndicator = () => {
@@ -14,11 +14,11 @@ export const ThinkingIndicator = () => {
     const interval = setInterval(() => {
       setStepIndex((prevIndex) => {
         // Keep repeating the last step once reached, or cycle.
-        // Let's cycle or stay on the final step "Generating legal analysis..." which fits long queries
+        // Let's cycle or stay on the final step "Synthesizing response..." which fits long queries
         if (prevIndex < LOADING_STEPS.length - 1) {
           return prevIndex + 1;
         }
-        return prevIndex; // Remain on "Generating legal analysis..."
+        return prevIndex; // Remain on "Synthesizing response..."
       });
     }, 2500);
 
@@ -34,7 +34,7 @@ export const ThinkingIndicator = () => {
 
       <div className="max-w-[75%] space-y-2">
         <div className="flex items-center gap-2 text-xs font-semibold text-slate-550">
-          <span className="text-slate-800 font-bold">ClauseScope Pipeline</span>
+          <span className="text-slate-800 font-bold">OpenDoc Pipeline</span>
           <span>•</span>
           <span className="text-blue-650 font-bold transition-all duration-500 ease-in-out">
             {LOADING_STEPS[stepIndex]}
