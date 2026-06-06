@@ -5,8 +5,8 @@ from fastapi import APIRouter, Depends, HTTPException, status, BackgroundTasks
 from sqlalchemy.orm import Session
 from sqlalchemy.sql import func
 
-from src.auth import get_current_user
-from src.db import get_db
+from src.auth.dependencies import get_current_user
+from src.db.database import get_db
 from src.db.models import User, Chat, Message, Document
 from src.models.requests import (
     ChatCreateRequest,

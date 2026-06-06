@@ -6,8 +6,8 @@ from src.services.document_service import (
     list_documents,
     delete_document,
 )
-from src.auth import get_current_user
-from src.db import get_db
+from src.auth.dependencies import get_current_user
+from src.db.database import get_db
 from src.db.models import User
 from src.services import audit_service
 

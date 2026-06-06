@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import { authService } from '../../services/api';
 import { Shield } from 'lucide-react';
 import toast from 'react-hot-toast';
+import { useAuth } from '../../hooks/useAuth';
 
 export const LoginPage = () => {
   const [email, setEmail] = useState('');
@@ -10,6 +10,7 @@ export const LoginPage = () => {
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
+  const { login } = useAuth();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -17,8 +18,7 @@ export const LoginPage = () => {
     setLoading(true);
 
     try {
-      const data = await authService.login(email, password);
-      localStorage.setItem('token', data.access_token);
+      await login(email, password);
       toast.success('Successfully logged in!');
       navigate('/chat');
     } catch (err) {

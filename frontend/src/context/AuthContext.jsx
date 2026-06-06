@@ -1,5 +1,5 @@
 import React, { createContext, useState, useEffect } from 'react';
-import { authService, profileService } from '../services/api';
+import api, { authService, profileService } from '../services/api';
 
 export const AuthContext = createContext(undefined);
 
@@ -62,6 +62,7 @@ export const AuthProvider = ({ children }) => {
     try {
       const data = await authService.login(email, password);
       localStorage.setItem('token', data.access_token);
+      api.defaults.headers.common['Authorization'] = `Bearer ${data.access_token}`;
       setToken(data.access_token);
       const decoded = decodeToken(data.access_token);
       if (decoded) {
@@ -90,6 +91,7 @@ export const AuthProvider = ({ children }) => {
 
   const logout = () => {
     localStorage.removeItem('token');
+    delete api.defaults.headers.common['Authorization'];
     setToken(null);
     setUser(null);
   };

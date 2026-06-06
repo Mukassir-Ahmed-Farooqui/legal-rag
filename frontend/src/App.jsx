@@ -12,7 +12,7 @@ import { ChatArea } from './components/chat/ChatArea';
 import { InputBar } from './components/chat/InputBar';
 import { SettingsPage } from './components/settings/SettingsPage';
 import { Toaster } from 'react-hot-toast';
-import { truncateFilename } from './services/api';
+import { truncateFilename, chatService, documentService } from './services/api';
 import {
   Shield,
   LogOut,
@@ -31,20 +31,24 @@ import {
 
 
 const DashboardLayout = () => {
-  const { user, logout } = useAuth();
+  const { user, logout, isAuthenticated } = useAuth();
   const navigate = useNavigate();
-  const { documents, uploadProgress, uploadDocument, deleteDocument } = useDocuments();
+  const { documents, setDocuments, isLoading: isDocsLoading, setIsLoading: setDocsLoading, uploadProgress, uploadDocument, deleteDocument } = useDocuments();
   
-  const { isAuthenticated } = useAuth();
   const {
     chats,
+    setChats,
     activeChatId,
+    setActiveChatId,
     activeChat,
     selectedDocIds,
     messages,
+    setMessages,
     isQuerying,
     isLoadingChats,
+    setIsLoadingChats,
     isLoadingMessages,
+    loadChatMessages,
     askQuestion,
     selectChat,
     handleCreateChat,
@@ -52,6 +56,66 @@ const DashboardLayout = () => {
     handleDeleteChat,
     handleUpdateWorkspaceDocs,
   } = useChat(isAuthenticated, documents);
+
+  useEffect(() => {
+    const token = localStorage.getItem('token');
+    if (!token || !isAuthenticated) {
+      setChats([]);
+      setDocuments([]);
+      setActiveChatId(null);
+      setMessages([]);
+      return;
+    }
+
+    let isMounted = true;
+    const loadWorkspace = async () => {
+      setIsLoadingChats(true);
+      setDocsLoading(true);
+
+      const [chatsResult, docsResult] = await Promise.allSettled([
+        chatService.list(),
+        documentService.list()
+      ]);
+
+      if (!isMounted) return;
+
+      let loadedDocs = [];
+      if (docsResult.status === 'fulfilled') {
+        loadedDocs = docsResult.value;
+        setDocuments(loadedDocs);
+      }
+      setDocsLoading(false);
+
+      if (chatsResult.status === 'fulfilled') {
+        const loadedChats = chatsResult.value;
+        if (loadedChats.length === 0) {
+          try {
+            const defaultWorkspaceMode = localStorage.getItem('cs_default_workspace') || 'all';
+            const initialSelection = defaultWorkspaceMode === 'all' 
+              ? loadedDocs.map(d => d.doc_id) 
+              : [];
+            const newChat = await chatService.create(initialSelection);
+            if (isMounted) {
+              setChats([newChat]);
+              setActiveChatId(newChat.id);
+            }
+          } catch (err) {
+            console.error("Auto-create failed", err);
+          }
+        } else {
+          setChats(loadedChats);
+          const targetId = loadedChats[0].id;
+          setActiveChatId(targetId);
+          loadChatMessages(targetId);
+        }
+      }
+      setIsLoadingChats(false);
+    };
+
+    loadWorkspace();
+
+    return () => { isMounted = false; };
+  }, [isAuthenticated]);
 
   // Layout states
   const [isDocsOpen, setIsDocsOpen] = useState(true);
@@ -196,12 +260,9 @@ const DashboardLayout = () => {
               Chat Sessions
             </div>
             {isLoadingChats && chats.length === 0 ? (
-              <div className="p-2 space-y-2 animate-pulse">
-                {[1, 2, 3, 4].map((i) => (
-                  <div key={i} className="flex items-center gap-2 px-3 py-2.5 rounded-xl bg-slate-800/40">
-                    <div className="h-4.5 w-4.5 rounded bg-slate-700/60" />
-                    <div className="h-3 bg-slate-700/60 rounded flex-1" />
-                  </div>
+              <div className="p-2 space-y-2">
+                {[1, 2, 3].map((i) => (
+                  <div key={i} className="skeleton-chat-item" />
                 ))}
               </div>
             ) : chats.length === 0 ? (

@@ -6,8 +6,8 @@ from src.api.dependencies import get_rag_pipeline
 from src.chain import LegalRAG
 from src.models.requests import QueryRequest
 from src.models.responses import QueryResponse
-from src.auth import get_current_user
-from src.db import get_db
+from src.auth.dependencies import get_current_user
+from src.db.database import get_db
 from src.db.models import User, Document
 from src.services import audit_service
 

@@ -12,17 +12,15 @@ export const useDocuments = () => {
     try {
       const docs = await documentService.list();
       setDocuments(docs);
+      return docs;
     } catch (error) {
       console.error('Failed to list documents:', error);
       toast.error('Failed to load documents.');
+      throw error;
     } finally {
       setIsLoading(false);
     }
   }, []);
-
-  useEffect(() => {
-    fetchDocuments();
-  }, [fetchDocuments]);
 
   const uploadDocument = async (file) => {
     if (!file.name.toLowerCase().endsWith('.pdf')) {
@@ -65,7 +63,9 @@ export const useDocuments = () => {
 
   return {
     documents,
+    setDocuments,
     isLoading,
+    setIsLoading,
     uploadProgress,
     refresh: fetchDocuments,
     uploadDocument,

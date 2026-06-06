@@ -4,8 +4,8 @@ from sqlalchemy.orm import Session
 
 from src.models.responses import UploadResponse
 from src.services.upload_service import ingest_uploaded_pdf
-from src.auth import get_current_user
-from src.db import get_db
+from src.auth.dependencies import get_current_user
+from src.db.database import get_db
 from src.db.models import User, Document
 
 router = APIRouter()

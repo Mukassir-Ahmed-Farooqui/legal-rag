@@ -10,7 +10,7 @@ from src.auth.security import hash_password, verify_password
 from src.auth.jwt import create_access_token
 from src.db.database import get_db
 from src.db.models import User
-from src.auth import get_current_user
+from src.auth.dependencies import get_current_user
 
 router = APIRouter()
 

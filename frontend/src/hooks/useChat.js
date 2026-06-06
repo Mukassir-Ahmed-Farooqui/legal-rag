@@ -70,17 +70,9 @@ export const useChat = (isAuthenticated, documents = []) => {
     }
   }, [loadChatMessages, documents]);
 
-  // Handle loading chat list when authentication changes
-  useEffect(() => {
-    if (isAuthenticated) {
-      loadChats();
-    } else {
-      // Clear state when logged out
-      setChats([]);
-      setActiveChatId(null);
-      setMessages([]);
-    }
-  }, [isAuthenticated, loadChats]);
+  // Automatic fetching removed to allow parallel loadWorkspace in DashboardLayout
+  // State cleared when user logs out is now handled inside loadWorkspace or auth logic
+
 
   // Switch active chat session
   const selectChat = async (chatId) => {
@@ -246,13 +238,18 @@ export const useChat = (isAuthenticated, documents = []) => {
 
   return {
     chats,
+    setChats,
     activeChatId,
+    setActiveChatId,
     activeChat,
     selectedDocIds,
     messages,
+    setMessages,
     isQuerying,
     isLoadingChats,
+    setIsLoadingChats,
     isLoadingMessages,
+    loadChatMessages,
     askQuestion,
     selectChat,
     handleCreateChat,
