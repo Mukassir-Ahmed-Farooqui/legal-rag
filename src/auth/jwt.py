@@ -48,10 +48,7 @@ def verify_access_token(token: str) -> dict[str, Any]:
     Returns the payload dict on success.
     Raises JWTError on invalid/expired tokens.
     """
-    try:
-        payload = jwt.decode(token, JWT_SECRET_KEY, algorithms=[JWT_ALGORITHM])
-    except JWTError:
-        raise
+    payload = jwt.decode(token, JWT_SECRET_KEY, algorithms=[JWT_ALGORITHM])
 
     if "sub" not in payload or "email" not in payload:
         raise JWTError("Token payload missing required claims (sub, email)")

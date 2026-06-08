@@ -4,6 +4,7 @@ Authentication routes: register and login.
 
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
+from sqlalchemy.exc import IntegrityError
 
 from src.auth.schemas import RegisterRequest, LoginRequest, TokenResponse, UserUpdateRequest
 from src.auth.security import hash_password, verify_password
@@ -43,7 +44,14 @@ def register(body: RegisterRequest, db: Session = Depends(get_db)):
         full_name=body.full_name,
     )
     db.add(user)
-    db.commit()
+    try:
+        db.commit()
+    except IntegrityError:
+        db.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_409_CONFLICT,
+            detail="Email already registered",
+        )
     db.refresh(user)
 
     return {"message": "user created", "user_id": str(user.id)}

@@ -18,6 +18,7 @@ export const AuthModal = ({ mode, onClose, onSwitchMode }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (loading) return;
     setError(null);
     setLoading(true);
 
@@ -115,10 +116,11 @@ export const AuthModal = ({ mode, onClose, onSwitchMode }) => {
               <input
                 type="password"
                 required
+                minLength={8}
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 className="w-full px-3 py-2.5 bg-slate-50 border border-slate-200 rounded-lg focus:bg-white focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all text-sm outline-none"
-                placeholder="••••••••"
+                placeholder="•••••••• (min 8 characters)"
               />
             </div>
 

@@ -3807,3 +3807,55 @@
   ]
 }
 ================================================================================
+{
+  "timestamp": "2026-06-08T15:09:35.453302",
+  "query": "[Format Instruction: Provide a bullet list of critical points and key highlights.]\n\nSummarize the key findings in this document",
+  "doc_id": [
+    "58664db2-0fa6-4736-8fab-dabae31c346a"
+  ],
+  "retrieved_sections_count": 1,
+  "retrieved_sections": [
+    {
+      "rank": 1,
+      "chunk_id": "summary_58664db2-0fa6-4736-8fab-dabae31c346a",
+      "heading": "Document Summary",
+      "page_num": 1,
+      "dense_score": 1.0
+    }
+  ],
+  "bm25_scores": [],
+  "rrf_fusion": [],
+  "top_sections_selected": [
+    {
+      "chunk_id": "summary_58664db2-0fa6-4736-8fab-dabae31c346a",
+      "heading": "Document Summary",
+      "page_num": 1,
+      "dense_score": 1.0
+    }
+  ],
+  "retrieved_sentences_count": 1,
+  "retrieved_sentences": [
+    {
+      "rank": 1,
+      "chunk_id": "summary_58664db2-0fa6-4736-8fab-dabae31c346a",
+      "section_id": null,
+      "heading": "Document Summary",
+      "page_num": 1,
+      "dense_score": 1.0,
+      "text": "Comprehensive summary could not be fully compiled due to LLM error. Section outline:\n\nSection BETA CONSULTING AGREEMENT:..."
+    }
+  ],
+  "context_sent_to_llm": "Source [1]\nDocument: beta_contract.pdf\nSection: Document Summary\nPage: 1\n\nComprehensive summary could not be fully compiled due to LLM error. Section outline:\n\nSection BETA CONSULTING AGREEMENT: Project Codename: TIGER-456 Termination: This agreement may be terminated with 90 days written notice. Liability: Liability is capped at $500,000. Governing Law: New York....",
+  "generated_answer": "Based on the provided context, here are the critical points and key highlights:\n\n* **Project Codename:** TIGER-456\n* **Termination:** This agreement may be terminated with 90 days written notice.\n* **Liability:** Liability is capped at $500,000.\n* **Governing Law:** New York (no specific section mentioned, but mentioned in the Document Summary section)",
+  "citations": [
+    {
+      "document": "beta_contract.pdf",
+      "page": 1,
+      "section": "Document Summary",
+      "chunk_id": "summary_58664db2-0fa6-4736-8fab-dabae31c346a",
+      "score": 1.0,
+      "preview": "Comprehensive summary could not be fully compiled due to LLM error. Section outline:\n\nSection BETA CONSULTING AGREEMENT: Project Codename: TIGER-456 Termination: This agreement may be terminated with ..."
+    }
+  ]
+}
+================================================================================

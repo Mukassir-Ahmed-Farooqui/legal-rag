@@ -38,12 +38,6 @@ def get_current_user(
         )
 
     user_id = payload.get("sub")
-    if not user_id:
-        raise HTTPException(
-            status_code=status.HTTP_401_UNAUTHORIZED,
-            detail="Token missing user identifier",
-            headers={"WWW-Authenticate": "Bearer"},
-        )
 
     user = db.query(User).filter(User.id == user_id).first()
     if not user:

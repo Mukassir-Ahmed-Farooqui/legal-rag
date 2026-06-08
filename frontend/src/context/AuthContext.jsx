@@ -19,7 +19,7 @@ function decodeToken(token) {
     return {
       id: decoded.sub || '',
       email: decoded.email || '',
-      full_name: decoded.full_name || decoded.email?.split('@')[0] || 'User',
+      full_name: decoded.full_name || null,
       created_at: null,
     };
   } catch (e) {
@@ -34,29 +34,33 @@ export const AuthProvider = ({ children }) => {
   const navigate = useNavigate();
 
   useEffect(() => {
+    let cancelled = false;
     const initAuth = async () => {
       if (token) {
         const decodedUser = decodeToken(token);
         if (decodedUser) {
-          setUser(decodedUser);
+          if (!cancelled) setUser(decodedUser);
           try {
             const profile = await profileService.getCurrentUser();
-            setUser((prev) => ({
-              ...prev,
-              full_name: profile.full_name,
-              created_at: profile.created_at,
-            }));
+            if (!cancelled) {
+              setUser((prev) => ({
+                ...prev,
+                full_name: profile.full_name,
+                created_at: profile.created_at,
+              }));
+            }
           } catch (e) {
-            console.error("Failed to fetch profile metadata:", e);
+            if (!cancelled) console.error("Failed to fetch profile metadata:", e);
           }
         } else {
           localStorage.removeItem('token');
-          setToken(null);
+          if (!cancelled) setToken(null);
         }
       }
-      setIsLoading(false);
+      if (!cancelled) setIsLoading(false);
     };
     initAuth();
+    return () => { cancelled = true; };
   }, [token]);
 
   const login = async (email, password) => {
@@ -66,12 +70,7 @@ export const AuthProvider = ({ children }) => {
       localStorage.setItem('token', data.access_token);
       api.defaults.headers.common['Authorization'] = `Bearer ${data.access_token}`;
       setToken(data.access_token);
-      const decoded = decodeToken(data.access_token);
-      if (decoded) {
-        setUser(decoded);
-      }
     } catch (error) {
-      logout();
       throw error;
     } finally {
       setIsLoading(false);
@@ -81,9 +80,14 @@ export const AuthProvider = ({ children }) => {
   const register = async (email, password, fullName) => {
     setIsLoading(true);
     try {
-      await authService.register(email, password, fullName);
-      // Auto login after registration
-      await login(email, password);
+      const data = await authService.register(email, password, fullName);
+      if (data.access_token) {
+        localStorage.setItem('token', data.access_token);
+        api.defaults.headers.common['Authorization'] = `Bearer ${data.access_token}`;
+        setToken(data.access_token);
+      } else {
+        await login(email, password);
+      }
     } catch (error) {
       throw error;
     } finally {

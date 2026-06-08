@@ -1,34 +1,53 @@
-# Citation Fix Status
+# Project Status
 
-## What's Wrong
-The citation system has several interconnected bugs making evidence panels disconnected from answers and missing key data (score, preview text).
+> Last updated: 2026-06-08
 
-## Changes Made
+---
 
-### ✅ `src/models/responses.py` — Fixed
-Added `score` and `preview` fields to the `Citation` Pydantic model (previously only had `document`, `page`, `section`).
+## Citation System — All Fixed ✅
 
-### ✅ `src/workflows/legal_graph.py` — Fixed
-- `citation_node` now only returns chunks actually cited via `[N]` references in the answer text (was dumping ALL retrieved chunks blindly)
-- Fixed O(n²) `.index()` bug — replaced with `enumerate()`
-- Added fallback: if answer has zero `[N]` citations, returns all chunks so user still sees evidence
-- Added `_build_prompt_template()` to route COMPARE queries to a separate prompt
+| File | Status | What |
+|------|--------|------|
+| `src/models/responses.py` | ✅ | Added `score` + `preview` to Citation model |
+| `src/workflows/legal_graph.py` | ✅ | Only returns cited chunks, fixed O(n²) bug, added compare prompt routing |
+| `src/prompts/legal_qa.py` | ✅ | Added `LEGAL_COMPARE_PROMPT`, escaped `{{}}` to fix KeyError |
+| `src/api/routes/chats.py` | ✅ | Both Citation() constructors now pass `score` + `preview` |
+| `frontend/src/components/chat/MessageBubble.jsx` | ✅ | Overflow fixes: `min-w-0`, `overflow-hidden`, `break-words` |
 
-### ✅ `src/prompts/legal_qa.py` — Fixed
-Added `LEGAL_COMPARE_PROMPT` with side-by-side comparison format requiring visible evidence quotes per document.
+---
 
-### ✅ `src/api/routes/chats.py` — Fixed
-Both locations now pass `score` and `preview`:
-- **Line 188**: `get_chat_detail` route — now includes `score=c.get("score")` and `preview=c.get("preview")`
-- **Line 633**: `create_message` route — same fix applied
+## Auth System — All Fixed ✅
 
-### ✅ `src/api/routes/query.py` — Fine
-Passes raw dicts directly through `QueryResponse`, Pydantic handles serialization.
+| # | Severity | Issue | Status |
+|---|----------|-------|--------|
+| 1 | 🔴 Critical | CORS: `allow_credentials=True` + `allow_origins=["*"]` violates spec | ✅ |
+| 2 | 🔴 Critical | 401 interceptor breaks login errors, redirects to non-existent `/login` | ✅ |
+| 3 | 🔴 Critical | `login()` calls `logout()` on error destroying existing sessions | ✅ |
+| 4 | 🟠 High | No password strength validation | ✅ |
+| 5 | 🟠 High | ProtectedRoute only checks localStorage, not token expiry | ✅ |
+| 6 | 🟠 High | TOCTOU race in `/register` → 500 on duplicate email | ✅ |
+| 7 | 🟠 High | No rate limiting on login/register | ✅ |
+| 8 | 🟡 Medium | `isLoading` goes false before profile fetch completes | ✅ |
+| 9 | 🟡 Medium | `decodeToken` fabricates full_name from email prefix | ✅ |
+| 10 | 🟡 Medium | Register auto-login failure destroys session silently | ✅ |
+| 11 | 🟡 Medium | PATCH /me full_name missing max_length → potential 500 | ✅ |
+| 12 | 🟢 Low | No-op `except JWTError: raise` in jwt.py | ✅ |
+| 13 | 🟢 Low | Redundant `sub` check in dependencies.py | ✅ |
+| 14 | 🟢 Low | No debounce on submit button | ✅ |
+| 15 | 🟢 Low | Missing cleanup in useEffect initAuth | ✅ |
 
-### ✅ `frontend/src/components/chat/MessageBubble.jsx` — Fine
-Already reads `cit.score` and `cit.preview` — just needs backend to actually send them.
+---
 
-## Remaining
-1. ~~Fix `chats.py` line 188~~ ✅
-2. ~~Fix `chats.py` line 633~~ ✅
-3. Test end-to-end
+## Files Changed
+
+| File | What |
+|------|------|
+| `src/api/main.py` | CORS: `["*"]` → `["http://localhost:5173"]` |
+| `src/auth/schemas.py` | Password `min_length=8`, `full_name` max_length=255 |
+| `src/api/routes/auth.py` | TOCTOU IntegrityError catch, slowapi rate limiting (5/min) |
+| `src/auth/jwt.py` | Removed no-op try/except |
+| `src/auth/dependencies.py` | Removed redundant `sub` check |
+| `frontend/src/services/api.js` | 401 interceptor skips auth endpoints |
+| `frontend/src/context/AuthContext.jsx` | login no longer calls logout, unmount cleanup, no fake full_name |
+| `frontend/src/components/ProtectedRoute.jsx` | Token expiry check added |
+| `frontend/src/components/auth/AuthModal.jsx` | Password minLength=8, double-submit guard |

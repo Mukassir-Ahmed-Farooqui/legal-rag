@@ -2,14 +2,14 @@
 Pydantic schemas for authentication endpoints.
 """
 
-from pydantic import BaseModel, EmailStr
+from pydantic import BaseModel, EmailStr, Field
 
 
 class RegisterRequest(BaseModel):
     """POST /api/v1/auth/register request body."""
     email: EmailStr
-    password: str
-    full_name: str | None = None
+    password: str = Field(..., min_length=8, description="Password (min 8 characters)")
+    full_name: str | None = Field(None, min_length=1, max_length=255)
 
 
 class LoginRequest(BaseModel):
@@ -25,5 +25,5 @@ class TokenResponse(BaseModel):
 
 class UserUpdateRequest(BaseModel):
     """PATCH /api/v1/auth/me request body."""
-    full_name: str | None = None
+    full_name: str | None = Field(None, min_length=1, max_length=255)
 

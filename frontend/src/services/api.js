@@ -18,15 +18,17 @@ api.interceptors.request.use(
   (error) => Promise.reject(error)
 );
 
-// Auto redirect on 401
+// Auto redirect on 401 only for protected endpoints (skip auth endpoints)
 api.interceptors.response.use(
   (response) => response,
   (error) => {
     if (error.response && error.response.status === 401) {
-      localStorage.removeItem('token');
-      localStorage.removeItem('user');
-      if (!window.location.pathname.includes('/login') && !window.location.pathname.includes('/register')) {
-        window.location.href = '/login';
+      const requestUrl = error.config?.url || '';
+      const isAuthEndpoint = requestUrl.includes('/auth/login') || requestUrl.includes('/auth/register');
+      if (!isAuthEndpoint) {
+        localStorage.removeItem('token');
+        localStorage.removeItem('user');
+        window.location.href = '/';
       }
     }
     return Promise.reject(error);
