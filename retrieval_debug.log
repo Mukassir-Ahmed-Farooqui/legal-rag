@@ -96,3 +96,3714 @@
   ]
 }
 ================================================================================
+{
+  "timestamp": "2026-06-08T11:23:54.440923",
+  "query": "[Format Instruction: Provide a bullet list of critical points and key highlights.]\n\nWhat conclusions does this report draw?",
+  "doc_id": [
+    "b9e51fec-5db7-4843-9d5c-083c6ed8daf5"
+  ],
+  "retrieved_sections_count": 1,
+  "retrieved_sections": [
+    {
+      "rank": 1,
+      "chunk_id": "summary_b9e51fec-5db7-4843-9d5c-083c6ed8daf5",
+      "heading": "Document Summary",
+      "page_num": 1,
+      "dense_score": 1.0
+    }
+  ],
+  "bm25_scores": [],
+  "rrf_fusion": [],
+  "top_sections_selected": [
+    {
+      "chunk_id": "summary_b9e51fec-5db7-4843-9d5c-083c6ed8daf5",
+      "heading": "Document Summary",
+      "page_num": 1,
+      "dense_score": 1.0
+    }
+  ],
+  "retrieved_sentences_count": 1,
+  "retrieved_sentences": [
+    {
+      "rank": 1,
+      "chunk_id": "summary_b9e51fec-5db7-4843-9d5c-083c6ed8daf5",
+      "section_id": null,
+      "heading": "Document Summary",
+      "page_num": 1,
+      "dense_score": 1.0,
+      "text": "Comprehensive summary could not be fully compiled due to LLM error. Section outline:\n\nSection GAMMA EMPLOYMENT AGREEMENT..."
+    }
+  ],
+  "context_sent_to_llm": "\nDocument: gamma_contract.pdf\nSection: Document Summary\nPage: 1\n\nComprehensive summary could not be fully compiled due to LLM error. Section outline:\n\nSection GAMMA EMPLOYMENT AGREEMENT: Project Codename: DRAGON-789 Termination: Termination requires 15 days notice. Salary: Annual salary is $120,000.\n\nVacation: 25 paid vacation days....\n",
+  "generated_answer": "I could not find sufficient evidence in the provided documents to draw conclusions. The context only provides a summary of the document's sections and does not contain any conclusions or analysis.",
+  "citations": [
+    {
+      "document": "gamma_contract.pdf",
+      "page": 1,
+      "section": "Document Summary"
+    }
+  ]
+}
+================================================================================
+{
+  "timestamp": "2026-06-08T11:24:18.484983",
+  "query": "[Format Instruction: Provide a bullet list of critical points and key highlights.]\n\nsummary",
+  "doc_id": [
+    "b9e51fec-5db7-4843-9d5c-083c6ed8daf5"
+  ],
+  "retrieved_sections_count": 1,
+  "retrieved_sections": [
+    {
+      "rank": 1,
+      "chunk_id": "summary_b9e51fec-5db7-4843-9d5c-083c6ed8daf5",
+      "heading": "Document Summary",
+      "page_num": 1,
+      "dense_score": 1.0
+    }
+  ],
+  "bm25_scores": [],
+  "rrf_fusion": [],
+  "top_sections_selected": [
+    {
+      "chunk_id": "summary_b9e51fec-5db7-4843-9d5c-083c6ed8daf5",
+      "heading": "Document Summary",
+      "page_num": 1,
+      "dense_score": 1.0
+    }
+  ],
+  "retrieved_sentences_count": 1,
+  "retrieved_sentences": [
+    {
+      "rank": 1,
+      "chunk_id": "summary_b9e51fec-5db7-4843-9d5c-083c6ed8daf5",
+      "section_id": null,
+      "heading": "Document Summary",
+      "page_num": 1,
+      "dense_score": 1.0,
+      "text": "Comprehensive summary could not be fully compiled due to LLM error. Section outline:\n\nSection GAMMA EMPLOYMENT AGREEMENT..."
+    }
+  ],
+  "context_sent_to_llm": "\nDocument: gamma_contract.pdf\nSection: Document Summary\nPage: 1\n\nComprehensive summary could not be fully compiled due to LLM error. Section outline:\n\nSection GAMMA EMPLOYMENT AGREEMENT: Project Codename: DRAGON-789 Termination: Termination requires 15 days notice. Salary: Annual salary is $120,000.\n\nVacation: 25 paid vacation days....\n",
+  "generated_answer": "I could not find sufficient evidence in the provided documents to draw conclusions. However, I can provide a bullet list of critical points and key highlights based on the information available:\n\n* **Project Codename:** DRAGON-789\n* **Termination Requirements:**\n  * Termination requires 15 days notice\n* **Compensation:**\n  * Annual salary is $120,000\n* **Benefits:**\n  * 25 paid vacation days",
+  "citations": [
+    {
+      "document": "gamma_contract.pdf",
+      "page": 1,
+      "section": "Document Summary"
+    }
+  ]
+}
+================================================================================
+{
+  "timestamp": "2026-06-08T11:25:59.807253",
+  "query": "[Format Instruction: Provide a bullet list of critical points and key highlights.]\n\nsimple and very small comparison between the two documents",
+  "doc_id": [
+    "b9e51fec-5db7-4843-9d5c-083c6ed8daf5",
+    "e383ed0d-3507-46b4-8d5f-385e22fefc4c"
+  ],
+  "retrieved_sections_count": 1,
+  "retrieved_sections": [
+    {
+      "rank": 1,
+      "chunk_id": "summary_b9e51fec-5db7-4843-9d5c-083c6ed8daf5",
+      "heading": "Document Summary",
+      "page_num": 1,
+      "dense_score": 1.0
+    }
+  ],
+  "bm25_scores": [],
+  "rrf_fusion": [],
+  "top_sections_selected": [
+    {
+      "chunk_id": "summary_b9e51fec-5db7-4843-9d5c-083c6ed8daf5",
+      "heading": "Document Summary",
+      "page_num": 1,
+      "dense_score": 1.0
+    }
+  ],
+  "retrieved_sentences_count": 1,
+  "retrieved_sentences": [
+    {
+      "rank": 1,
+      "chunk_id": "summary_b9e51fec-5db7-4843-9d5c-083c6ed8daf5",
+      "section_id": null,
+      "heading": "Document Summary",
+      "page_num": 1,
+      "dense_score": 1.0,
+      "text": "Documents Analyzed: 2\n\nDocument: gamma_contract.pdf\nComprehensive summary could not be fully compiled due to LLM error. ..."
+    }
+  ],
+  "context_sent_to_llm": "\nDocument: gamma_contract.pdf, PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf\nSection: Document Summary\nPage: 1\n\nDocuments Analyzed: 2\n\nDocument: gamma_contract.pdf\nComprehensive summary could not be fully compiled due to LLM error. Section outline:\n\nSection GAMMA EMPLOYMENT AGREEMENT: Project Codename: DRAGON-789 Termination: Termination requires 15 days notice. Salary: Annual salary is $120,000.\n\nVacation: 25 paid vacation days....\n\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf\nComprehensive summary could not be fully compiled due to LLM error. Section outline:\n\nSection SOFTWARE DEVELOPMENT AGREEMENT: THIS SOFTWARE DEVELOPMENT AGREEMENT (Agreement ) is made December 3rd, 2018 (the Effective Date) by and between DOT COM LLC, OBA Seattle Software Developers, a Delaware limited liability company (Deve...\nSection 2. Statement of Work: Developer will design, develop, and deliver, satisfactory to Client, the \"Pelican Delivers Application Phase 1\" (collectively, the Subject Program), and all elated Project services (collectively, the ...\nSection 3.1 DELIVERY SCHEDULE\u037e MILESTONES: Each SOW will include a delivery schedule for Services and Deliverables (the Delivery Schedule) that will identify mutual agreed upon Project time deadlines concerning the performance of Services, del...\nSection 3.2 PROJECT DELIVERY AND INSTALLATION: As detailed in a SOW hereto, Developer will provide certain Services, Deliverables and Documentation to Client upon a designated Milestone in accordance with such Milestone's specific Specifications (...\nSection 3.3 ACCEPTANCE A\n\nOverall Findings:\nPlease compile a synthesized workspace overview based on the document summaries above.\n",
+  "generated_answer": "Based on the provided context, here's a bullet list of critical points and key highlights comparing the two documents:\n\n* **Document Type:**\n  * gamma_contract.pdf: Employment Agreement\n  * PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf: Software Development Agreement\n* **Project Codename:**\n  * gamma_contract.pdf: DRAGON-789\n  * PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf: Pelican Delivers Application Phase 1\n* **Termination Requirements:**\n  * gamma_contract.pdf: 15 days notice\n  * PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf: Not specified\n* **Compensation:**\n  * gamma_contract.pdf: Annual salary is $120,000\n  * PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf: Not specified\n* **Benefits:**\n  * gamma_contract.pdf: 25 paid vacation days\n  * PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf: Not specified",
+  "citations": [
+    {
+      "document": "gamma_contract.pdf, PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf",
+      "page": 1,
+      "section": "Document Summary"
+    }
+  ]
+}
+================================================================================
+{
+  "timestamp": "2026-06-08T11:29:15.674942",
+  "query": "[Format Instruction: Provide a bullet list of critical points and key highlights.]\n\nwhat is the termination date",
+  "doc_id": [
+    "e383ed0d-3507-46b4-8d5f-385e22fefc4c"
+  ],
+  "retrieved_sections_count": 1,
+  "retrieved_sections": [
+    {
+      "rank": 1,
+      "chunk_id": "summary_e383ed0d-3507-46b4-8d5f-385e22fefc4c",
+      "heading": "Document Summary",
+      "page_num": 1,
+      "dense_score": 1.0
+    }
+  ],
+  "bm25_scores": [],
+  "rrf_fusion": [],
+  "top_sections_selected": [
+    {
+      "chunk_id": "summary_e383ed0d-3507-46b4-8d5f-385e22fefc4c",
+      "heading": "Document Summary",
+      "page_num": 1,
+      "dense_score": 1.0
+    }
+  ],
+  "retrieved_sentences_count": 1,
+  "retrieved_sentences": [
+    {
+      "rank": 1,
+      "chunk_id": "summary_e383ed0d-3507-46b4-8d5f-385e22fefc4c",
+      "section_id": null,
+      "heading": "Document Summary",
+      "page_num": 1,
+      "dense_score": 1.0,
+      "text": "Comprehensive summary could not be fully compiled due to LLM error. Section outline:\n\nSection SOFTWARE DEVELOPMENT AGREE..."
+    }
+  ],
+  "context_sent_to_llm": "\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf\nSection: Document Summary\nPage: 1\n\nComprehensive summary could not be fully compiled due to LLM error. Section outline:\n\nSection SOFTWARE DEVELOPMENT AGREEMENT: THIS SOFTWARE DEVELOPMENT AGREEMENT (Agreement ) is made December 3rd, 2018 (the Effective Date) by and between DOT COM LLC, OBA Seattle Software Developers, a Delaware limited liability company (Deve...\nSection 2. Statement of Work: Developer will design, develop, and deliver, satisfactory to Client, the \"Pelican Delivers Application Phase 1\" (collectively, the Subject Program), and all elated Project services (collectively, the ...\nSection 3.1 DELIVERY SCHEDULE\u037e MILESTONES: Each SOW will include a delivery schedule for Services and Deliverables (the Delivery Schedule) that will identify mutual agreed upon Project time deadlines concerning the performance of Services, del...\nSection 3.2 PROJECT DELIVERY AND INSTALLATION: As detailed in a SOW hereto, Developer will provide certain Services, Deliverables and Documentation to Client upon a designated Milestone in accordance with such Milestone's specific Specifications (...\nSection 3.3 ACCEPTANCE A\n",
+  "generated_answer": "Based on the provided context, here's a bullet list of critical points and key highlights related to the termination date:\n\n* **Termination Requirements:**\n  * Termination requires 15 days notice\n  * The termination date is not explicitly stated in the provided context, but it can be calculated by adding 15 days to the date of notice.",
+  "citations": [
+    {
+      "document": "PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf",
+      "page": 1,
+      "section": "Document Summary"
+    }
+  ]
+}
+================================================================================
+{
+  "timestamp": "2026-06-08T11:33:49.730217",
+  "query": "[Format Instruction: Provide a bullet list of critical points and key highlights.]\n\nwhat is the termination date",
+  "doc_id": [
+    "e383ed0d-3507-46b4-8d5f-385e22fefc4c"
+  ],
+  "retrieved_sections_count": 1,
+  "retrieved_sections": [
+    {
+      "rank": 1,
+      "chunk_id": "summary_e383ed0d-3507-46b4-8d5f-385e22fefc4c",
+      "heading": "Document Summary",
+      "page_num": 1,
+      "dense_score": 1.0
+    }
+  ],
+  "bm25_scores": [],
+  "rrf_fusion": [],
+  "top_sections_selected": [
+    {
+      "chunk_id": "summary_e383ed0d-3507-46b4-8d5f-385e22fefc4c",
+      "heading": "Document Summary",
+      "page_num": 1,
+      "dense_score": 1.0
+    }
+  ],
+  "retrieved_sentences_count": 1,
+  "retrieved_sentences": [
+    {
+      "rank": 1,
+      "chunk_id": "summary_e383ed0d-3507-46b4-8d5f-385e22fefc4c",
+      "section_id": null,
+      "heading": "Document Summary",
+      "page_num": 1,
+      "dense_score": 1.0,
+      "text": "Comprehensive summary could not be fully compiled due to LLM error. Section outline:\n\nSection SOFTWARE DEVELOPMENT AGREE..."
+    }
+  ],
+  "context_sent_to_llm": "Source [1]\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf\nSection: Document Summary\nPage: 1\n\nComprehensive summary could not be fully compiled due to LLM error. Section outline:\n\nSection SOFTWARE DEVELOPMENT AGREEMENT: THIS SOFTWARE DEVELOPMENT AGREEMENT (Agreement ) is made December 3rd, 2018 (the Effective Date) by and between DOT COM LLC, OBA Seattle Software Developers, a Delaware limited liability company (Deve...\nSection 2. Statement of Work: Developer will design, develop, and deliver, satisfactory to Client, the \"Pelican Delivers Application Phase 1\" (collectively, the Subject Program), and all elated Project services (collectively, the ...\nSection 3.1 DELIVERY SCHEDULE\u037e MILESTONES: Each SOW will include a delivery schedule for Services and Deliverables (the Delivery Schedule) that will identify mutual agreed upon Project time deadlines concerning the performance of Services, del...\nSection 3.2 PROJECT DELIVERY AND INSTALLATION: As detailed in a SOW hereto, Developer will provide certain Services, Deliverables and Documentation to Client upon a designated Milestone in accordance with such Milestone's specific Specifications (...\nSection 3.3 ACCEPTANCE A",
+  "generated_answer": "Based on the provided context, here's a bullet list of critical points and key highlights related to the termination date:\n\n* **Termination Requirements:**\n  * Termination requires 15 days notice [1, Section: Document Summary, Page: 1]\n  * The termination date is not explicitly stated in the provided context, but it can be calculated by adding 15 days to the date of notice.\n  * The termination date is not specified in the provided documents, including the Employment Agreement [gamma_contract.pdf] and the Software Development Agreement [PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf].",
+  "citations": [
+    {
+      "document": "PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf",
+      "page": 1,
+      "section": "Document Summary"
+    }
+  ]
+}
+================================================================================
+{
+  "timestamp": "2026-06-08T12:24:58.647180",
+  "query": "[Format Instruction: Provide a bullet list of critical points and key highlights.]\n\nWhat are the main obligations or requirements?",
+  "doc_id": [
+    "58664db2-0fa6-4736-8fab-dabae31c346a"
+  ],
+  "retrieved_sections_count": 1,
+  "retrieved_sections": [
+    {
+      "rank": 1,
+      "chunk_id": "summary_58664db2-0fa6-4736-8fab-dabae31c346a",
+      "heading": "Document Summary",
+      "page_num": 1,
+      "dense_score": 1.0
+    }
+  ],
+  "bm25_scores": [],
+  "rrf_fusion": [],
+  "top_sections_selected": [
+    {
+      "chunk_id": "summary_58664db2-0fa6-4736-8fab-dabae31c346a",
+      "heading": "Document Summary",
+      "page_num": 1,
+      "dense_score": 1.0
+    }
+  ],
+  "retrieved_sentences_count": 1,
+  "retrieved_sentences": [
+    {
+      "rank": 1,
+      "chunk_id": "summary_58664db2-0fa6-4736-8fab-dabae31c346a",
+      "section_id": null,
+      "heading": "Document Summary",
+      "page_num": 1,
+      "dense_score": 1.0,
+      "text": "Comprehensive summary could not be fully compiled due to LLM error. Section outline:\n\nSection BETA CONSULTING AGREEMENT:..."
+    }
+  ],
+  "context_sent_to_llm": "Source [1]\nDocument: beta_contract.pdf\nSection: Document Summary\nPage: 1\n\nComprehensive summary could not be fully compiled due to LLM error. Section outline:\n\nSection BETA CONSULTING AGREEMENT: Project Codename: TIGER-456 Termination: This agreement may be terminated with 90 days written notice. Liability: Liability is capped at $500,000. Governing Law: New York....",
+  "generated_answer": "Based on the provided context, here are the main obligations or requirements:\n\n* The agreement may be terminated with 90 days written notice [1, Section BETA CONSULTING AGREEMENT: Termination].\n* Liability is capped at $500,000 [1, Section BETA CONSULTING AGREEMENT: Liability].\n* The governing law for this agreement is New York [1, Section BETA CONSULTING AGREEMENT: Governing Law].\n\nThese are the critical points and key highlights explicitly mentioned in the provided context.",
+  "citations": [
+    {
+      "document": "beta_contract.pdf",
+      "page": 1,
+      "section": "Document Summary",
+      "chunk_id": "summary_58664db2-0fa6-4736-8fab-dabae31c346a",
+      "score": 1.0,
+      "preview": "Comprehensive summary could not be fully compiled due to LLM error. Section outline:\n\nSection BETA CONSULTING AGREEMENT: Project Codename: TIGER-456 Termination: This agreement may be terminated with ..."
+    }
+  ]
+}
+================================================================================
+{
+  "timestamp": "2026-06-08T12:26:39.419269",
+  "query": "[Format Instruction: Provide a bullet list of critical points and key highlights.]\n\ncompare the two give documents in genral",
+  "doc_id": [
+    "58664db2-0fa6-4736-8fab-dabae31c346a",
+    "f063407f-8f61-40d6-bd52-e4932290c443"
+  ],
+  "retrieved_sections_count": 2,
+  "retrieved_sections": [
+    {
+      "rank": 1,
+      "chunk_id": "sec_8e60b72f",
+      "heading": "GAMMA EMPLOYMENT AGREEMENT",
+      "page_num": 1,
+      "dense_score": 0.4697
+    },
+    {
+      "rank": 2,
+      "chunk_id": "sec_f6f55e06",
+      "heading": "BETA CONSULTING AGREEMENT",
+      "page_num": 1,
+      "dense_score": 0.4453
+    }
+  ],
+  "bm25_scores": [
+    {
+      "rank": 1,
+      "chunk_id": "sec_8e60b72f",
+      "heading": "GAMMA EMPLOYMENT AGREEMENT",
+      "score": 0.0
+    },
+    {
+      "rank": 2,
+      "chunk_id": "sec_f6f55e06",
+      "heading": "BETA CONSULTING AGREEMENT",
+      "score": 0.0
+    }
+  ],
+  "rrf_fusion": [
+    {
+      "rank": 1,
+      "chunk_id": "sec_8e60b72f",
+      "fusion_score": 0.03278688524590164
+    },
+    {
+      "rank": 2,
+      "chunk_id": "sec_f6f55e06",
+      "fusion_score": 0.03225806451612903
+    }
+  ],
+  "top_sections_selected": [
+    {
+      "chunk_id": "sec_8e60b72f",
+      "heading": "GAMMA EMPLOYMENT AGREEMENT",
+      "page_num": 1,
+      "dense_score": 0.4697
+    },
+    {
+      "chunk_id": "sec_f6f55e06",
+      "heading": "BETA CONSULTING AGREEMENT",
+      "page_num": 1,
+      "dense_score": 0.4453
+    }
+  ],
+  "retrieved_sentences_count": 2,
+  "retrieved_sentences": [
+    {
+      "rank": 1,
+      "chunk_id": "sen_56686201",
+      "section_id": "sec_8e60b72f",
+      "heading": "GAMMA EMPLOYMENT AGREEMENT",
+      "page_num": 1,
+      "dense_score": 0.4697,
+      "text": "Project Codename: DRAGON-789 Termination: Termination requires 15 days notice. Salary: Annual salary is $120,000. Vacati..."
+    },
+    {
+      "rank": 2,
+      "chunk_id": "sen_19d229ab",
+      "section_id": "sec_f6f55e06",
+      "heading": "BETA CONSULTING AGREEMENT",
+      "page_num": 1,
+      "dense_score": 0.4453,
+      "text": "Project Codename: TIGER-456 Termination: This agreement may be terminated with 90 days written notice. Liability: Liabil..."
+    }
+  ],
+  "context_sent_to_llm": "Source [1]\nDocument: gamma_contract.pdf\nSection: GAMMA EMPLOYMENT AGREEMENT\nPage: 1\n\nProject Codename: DRAGON-789 Termination: Termination requires 15 days notice. Salary: Annual salary is $120,000. Vacation: 25 paid vacation days.\n\nSource [2]\nDocument: beta_contract.pdf\nSection: BETA CONSULTING AGREEMENT\nPage: 1\n\nProject Codename: TIGER-456 Termination: This agreement may be terminated with 90 days written notice. Liability: Liability is capped at $500,000. Governing Law: New York.",
+  "generated_answer": "Based on the provided context, here are the critical points and key highlights comparing the two documents:\n\n* **Termination Notice Periods:**\n  * GAMMA EMPLOYMENT AGREEMENT: 15 days notice [1, Section GAMMA EMPLOYMENT AGREEMENT: Termination]\n  * BETA CONSULTING AGREEMENT: 90 days written notice [2, Section BETA CONSULTING AGREEMENT: Termination]\n* **Salary:**\n  * GAMMA EMPLOYMENT AGREEMENT: Annual salary is $120,000 [1, Section GAMMA EMPLOYMENT AGREEMENT: Salary]\n  * No salary information is provided in BETA CONSULTING AGREEMENT [2, Section BETA CONSULTING AGREEMENT]\n* **Vacation Days:**\n  * GAMMA EMPLOYMENT AGREEMENT: 25 paid vacation days [1, Section GAMMA EMPLOYMENT AGREEMENT: Vacation]\n  * No vacation information is provided in BETA CONSULTING AGREEMENT [2, Section BETA CONSULTING AGREEMENT]\n* **Liability:**\n  * BETA CONSULTING AGREEMENT: Liability is capped at $500,000 [2, Section BETA CONSULTING AGREEMENT: Liability]\n  * No liability information is provided in GAMMA EMPLOYMENT AGREEMENT [1, Section GAMMA EMPLOYMENT AGREEMENT]\n* **Governing Law:**\n  * No governing law information is provided in GAMMA EMPLOYMENT AGREEMENT [1, Section GAMMA EMPLOYMENT AGREEMENT]\n  * BETA CONSULTING AGREEMENT: Governing law is New York [2, Section BETA CONSULTING AGREEMENT: Governing Law]",
+  "citations": [
+    {
+      "document": "gamma_contract.pdf",
+      "page": 1,
+      "section": "GAMMA EMPLOYMENT AGREEMENT",
+      "chunk_id": "sen_56686201",
+      "score": 0.4697,
+      "preview": "Project Codename: DRAGON-789 Termination: Termination requires 15 days notice. Salary: Annual salary is $120,000. Vacation: 25 paid vacation days."
+    },
+    {
+      "document": "beta_contract.pdf",
+      "page": 1,
+      "section": "BETA CONSULTING AGREEMENT",
+      "chunk_id": "sen_19d229ab",
+      "score": 0.4453,
+      "preview": "Project Codename: TIGER-456 Termination: This agreement may be terminated with 90 days written notice. Liability: Liability is capped at $500,000. Governing Law: New York."
+    }
+  ]
+}
+================================================================================
+{
+  "timestamp": "2026-06-08T12:27:46.491817",
+  "query": "[Format Instruction: Provide a bullet list of critical points and key highlights.]\n\ncompare the two give documents in genral",
+  "doc_id": [
+    "58664db2-0fa6-4736-8fab-dabae31c346a",
+    "f063407f-8f61-40d6-bd52-e4932290c443",
+    "2f789cea-ddba-4807-aa5a-49f344c74ca1"
+  ],
+  "retrieved_sections_count": 20,
+  "retrieved_sections": [
+    {
+      "rank": 1,
+      "chunk_id": "sec_4a5aa813",
+      "heading": "12.7 COUNTERPARTS",
+      "page_num": 13,
+      "dense_score": 0.5974
+    },
+    {
+      "rank": 2,
+      "chunk_id": "sec_da7c2b8d",
+      "heading": "3.8 CLIENT ASSISTANCE",
+      "page_num": 3,
+      "dense_score": 0.5778
+    },
+    {
+      "rank": 3,
+      "chunk_id": "sec_24ed8675",
+      "heading": "3.2 PROJECT DELIVERY AND INSTALLATION",
+      "page_num": 2,
+      "dense_score": 0.568
+    },
+    {
+      "rank": 4,
+      "chunk_id": "sec_5492f581",
+      "heading": "3.4 ACCEPTANCE OF MILESTONE DELIVERABLE\u037e CHANGE REQUESTS",
+      "page_num": 2,
+      "dense_score": 0.5651
+    },
+    {
+      "rank": 5,
+      "chunk_id": "sec_e5b19c0d",
+      "heading": "3.3 ACCEPTANCE AND BETA TESTS",
+      "page_num": 2,
+      "dense_score": 0.5517
+    },
+    {
+      "rank": 6,
+      "chunk_id": "sec_b2418557",
+      "heading": "3.7 FINAL DELIVERABLE AND SUBJECT PROGRAM TESTING",
+      "page_num": 3,
+      "dense_score": 0.5492
+    },
+    {
+      "rank": 7,
+      "chunk_id": "sec_9a75f09a",
+      "heading": "3.6 FAILURE OF DEVELOPER TO CORRECT DEFECTS",
+      "page_num": 3,
+      "dense_score": 0.541
+    },
+    {
+      "rank": 8,
+      "chunk_id": "sec_51419571",
+      "heading": "10.3 NON DISPARAGEMENT CLAUSE",
+      "page_num": 10,
+      "dense_score": 0.5396
+    },
+    {
+      "rank": 9,
+      "chunk_id": "sec_d41949f9",
+      "heading": "3.5 REJECTION OF MILESTONE DELIVERABLE",
+      "page_num": 2,
+      "dense_score": 0.5388
+    },
+    {
+      "rank": 10,
+      "chunk_id": "sec_ced396b7",
+      "heading": "12.8 ENTIRE AGREEMENT AND UNDERSTANDING",
+      "page_num": 13,
+      "dense_score": 0.5361
+    },
+    {
+      "rank": 11,
+      "chunk_id": "sec_e71bf9b5",
+      "heading": "13. Acknowledgement by Client",
+      "page_num": 14,
+      "dense_score": 0.5318
+    },
+    {
+      "rank": 12,
+      "chunk_id": "sec_d4a57cf5",
+      "heading": "4. Change Orders",
+      "page_num": 4,
+      "dense_score": 0.5263
+    },
+    {
+      "rank": 13,
+      "chunk_id": "sec_0cb6bccc",
+      "heading": "12.2 NOTICE",
+      "page_num": 12,
+      "dense_score": 0.5258
+    },
+    {
+      "rank": 14,
+      "chunk_id": "sec_93c9b2e7",
+      "heading": "12.6 OTHER DEFINITIONAL TERMS, TERMS OF CONSTRUCTION",
+      "page_num": 13,
+      "dense_score": 0.5241
+    },
+    {
+      "rank": 15,
+      "chunk_id": "sec_a1341b18",
+      "heading": "6.3 LICENSE TO CLIENT'S INTELLECTUAL PROPERTY",
+      "page_num": 6,
+      "dense_score": 0.524
+    },
+    {
+      "rank": 16,
+      "chunk_id": "sec_33cc2629",
+      "heading": "2. Statement of Work",
+      "page_num": 1,
+      "dense_score": 0.5217
+    },
+    {
+      "rank": 17,
+      "chunk_id": "sec_7a179bd6",
+      "heading": "6.4 CONFIDENTIALITY AND NON-DISCLOSURE",
+      "page_num": 7,
+      "dense_score": 0.517
+    },
+    {
+      "rank": 18,
+      "chunk_id": "sec_61dad6cd",
+      "heading": "6.2 DEVELOPER'S INTELLECTUAL PROPERTY",
+      "page_num": 6,
+      "dense_score": 0.5131
+    },
+    {
+      "rank": 19,
+      "chunk_id": "sec_25b7b2d9",
+      "heading": "6.1 WORK MADE FOR HIRE AND ASSIGNMENT OF RIGHTS",
+      "page_num": 6,
+      "dense_score": 0.5114
+    },
+    {
+      "rank": 20,
+      "chunk_id": "sec_b551685e",
+      "heading": "5.3 BONUS",
+      "page_num": 5,
+      "dense_score": 0.5098
+    }
+  ],
+  "bm25_scores": [
+    {
+      "rank": 1,
+      "chunk_id": "sec_25b7b2d9",
+      "heading": "6.1 WORK MADE FOR HIRE AND ASSIGNMENT OF RIGHTS",
+      "score": 6.8969194814637556
+    },
+    {
+      "rank": 2,
+      "chunk_id": "sec_24ed8675",
+      "heading": "3.2 PROJECT DELIVERY AND INSTALLATION",
+      "score": 6.803780049062373
+    },
+    {
+      "rank": 3,
+      "chunk_id": "sec_d4a57cf5",
+      "heading": "4. Change Orders",
+      "score": 6.41616569619995
+    },
+    {
+      "rank": 4,
+      "chunk_id": "sec_4a5aa813",
+      "heading": "12.7 COUNTERPARTS",
+      "score": 6.22944860107861
+    },
+    {
+      "rank": 5,
+      "chunk_id": "sec_7a179bd6",
+      "heading": "6.4 CONFIDENTIALITY AND NON-DISCLOSURE",
+      "score": 5.918063802691843
+    },
+    {
+      "rank": 6,
+      "chunk_id": "sec_a1341b18",
+      "heading": "6.3 LICENSE TO CLIENT'S INTELLECTUAL PROPERTY",
+      "score": 5.7814017234752315
+    },
+    {
+      "rank": 7,
+      "chunk_id": "sec_da7c2b8d",
+      "heading": "3.8 CLIENT ASSISTANCE",
+      "score": 5.454457427984355
+    },
+    {
+      "rank": 8,
+      "chunk_id": "sec_33cc2629",
+      "heading": "2. Statement of Work",
+      "score": 5.195478072555291
+    },
+    {
+      "rank": 9,
+      "chunk_id": "sec_51419571",
+      "heading": "10.3 NON DISPARAGEMENT CLAUSE",
+      "score": 4.98830649396484
+    },
+    {
+      "rank": 10,
+      "chunk_id": "sec_b2418557",
+      "heading": "3.7 FINAL DELIVERABLE AND SUBJECT PROGRAM TESTING",
+      "score": 4.826485559859972
+    },
+    {
+      "rank": 11,
+      "chunk_id": "sec_ced396b7",
+      "heading": "12.8 ENTIRE AGREEMENT AND UNDERSTANDING",
+      "score": 4.786775761148088
+    },
+    {
+      "rank": 12,
+      "chunk_id": "sec_d41949f9",
+      "heading": "3.5 REJECTION OF MILESTONE DELIVERABLE",
+      "score": 4.747412878638329
+    },
+    {
+      "rank": 13,
+      "chunk_id": "sec_93c9b2e7",
+      "heading": "12.6 OTHER DEFINITIONAL TERMS, TERMS OF CONSTRUCTION",
+      "score": 4.650934143107982
+    },
+    {
+      "rank": 14,
+      "chunk_id": "sec_e71bf9b5",
+      "heading": "13. Acknowledgement by Client",
+      "score": 4.530266722440469
+    },
+    {
+      "rank": 15,
+      "chunk_id": "sec_e5b19c0d",
+      "heading": "3.3 ACCEPTANCE AND BETA TESTS",
+      "score": 4.422069368730254
+    },
+    {
+      "rank": 16,
+      "chunk_id": "sec_b551685e",
+      "heading": "5.3 BONUS",
+      "score": 4.2291654037283
+    },
+    {
+      "rank": 17,
+      "chunk_id": "sec_61dad6cd",
+      "heading": "6.2 DEVELOPER'S INTELLECTUAL PROPERTY",
+      "score": 4.210514195028201
+    },
+    {
+      "rank": 18,
+      "chunk_id": "sec_5492f581",
+      "heading": "3.4 ACCEPTANCE OF MILESTONE DELIVERABLE\u037e CHANGE REQUESTS",
+      "score": 4.071273290371561
+    },
+    {
+      "rank": 19,
+      "chunk_id": "sec_9a75f09a",
+      "heading": "3.6 FAILURE OF DEVELOPER TO CORRECT DEFECTS",
+      "score": 3.9070499647714616
+    },
+    {
+      "rank": 20,
+      "chunk_id": "sec_0cb6bccc",
+      "heading": "12.2 NOTICE",
+      "score": 3.403001417697105
+    }
+  ],
+  "rrf_fusion": [
+    {
+      "rank": 1,
+      "chunk_id": "sec_4a5aa813",
+      "fusion_score": 0.032018442622950824
+    },
+    {
+      "rank": 2,
+      "chunk_id": "sec_24ed8675",
+      "fusion_score": 0.03200204813108039
+    },
+    {
+      "rank": 3,
+      "chunk_id": "sec_da7c2b8d",
+      "fusion_score": 0.031054405392392875
+    },
+    {
+      "rank": 4,
+      "chunk_id": "sec_d4a57cf5",
+      "fusion_score": 0.02976190476190476
+    },
+    {
+      "rank": 5,
+      "chunk_id": "sec_b2418557",
+      "fusion_score": 0.029437229437229435
+    },
+    {
+      "rank": 6,
+      "chunk_id": "sec_51419571",
+      "fusion_score": 0.02919863597612958
+    },
+    {
+      "rank": 7,
+      "chunk_id": "sec_25b7b2d9",
+      "fusion_score": 0.029051670471052088
+    },
+    {
+      "rank": 8,
+      "chunk_id": "sec_e5b19c0d",
+      "fusion_score": 0.02871794871794872
+    },
+    {
+      "rank": 9,
+      "chunk_id": "sec_a1341b18",
+      "fusion_score": 0.028484848484848488
+    },
+    {
+      "rank": 10,
+      "chunk_id": "sec_5492f581",
+      "fusion_score": 0.02844551282051282
+    },
+    {
+      "rank": 11,
+      "chunk_id": "sec_d41949f9",
+      "fusion_score": 0.028381642512077296
+    },
+    {
+      "rank": 12,
+      "chunk_id": "sec_7a179bd6",
+      "fusion_score": 0.028371628371628373
+    },
+    {
+      "rank": 13,
+      "chunk_id": "sec_ced396b7",
+      "fusion_score": 0.028370221327967807
+    },
+    {
+      "rank": 14,
+      "chunk_id": "sec_33cc2629",
+      "fusion_score": 0.02786377708978328
+    },
+    {
+      "rank": 15,
+      "chunk_id": "sec_e71bf9b5",
+      "fusion_score": 0.027598020555767037
+    },
+    {
+      "rank": 16,
+      "chunk_id": "sec_9a75f09a",
+      "fusion_score": 0.027583600982429624
+    },
+    {
+      "rank": 17,
+      "chunk_id": "sec_93c9b2e7",
+      "fusion_score": 0.027212143650499815
+    },
+    {
+      "rank": 18,
+      "chunk_id": "sec_0cb6bccc",
+      "fusion_score": 0.0261986301369863
+    },
+    {
+      "rank": 19,
+      "chunk_id": "sec_61dad6cd",
+      "fusion_score": 0.025807525807525808
+    },
+    {
+      "rank": 20,
+      "chunk_id": "sec_b551685e",
+      "fusion_score": 0.025657894736842105
+    }
+  ],
+  "top_sections_selected": [
+    {
+      "chunk_id": "sec_4a5aa813",
+      "heading": "12.7 COUNTERPARTS",
+      "page_num": 13,
+      "dense_score": 0.5974
+    },
+    {
+      "chunk_id": "sec_24ed8675",
+      "heading": "3.2 PROJECT DELIVERY AND INSTALLATION",
+      "page_num": 2,
+      "dense_score": 0.568
+    },
+    {
+      "chunk_id": "sec_da7c2b8d",
+      "heading": "3.8 CLIENT ASSISTANCE",
+      "page_num": 3,
+      "dense_score": 0.5778
+    }
+  ],
+  "retrieved_sentences_count": 3,
+  "retrieved_sentences": [
+    {
+      "rank": 1,
+      "chunk_id": "sen_39d67751",
+      "section_id": "sec_4a5aa813",
+      "heading": "12.7 COUNTERPARTS",
+      "page_num": 13,
+      "dense_score": 0.5974,
+      "text": "This Agreement may be executed in two or more counterparts, each of which shall be deemed an original, but all of which ..."
+    },
+    {
+      "rank": 2,
+      "chunk_id": "sen_63bb0a50",
+      "section_id": "sec_da7c2b8d",
+      "heading": "3.8 CLIENT ASSISTANCE",
+      "page_num": 3,
+      "dense_score": 0.5778,
+      "text": "Client shall provide Developer assistance to complete the Services, and produce the Deliverables, as reasonably requeste..."
+    },
+    {
+      "rank": 3,
+      "chunk_id": "sen_6b6df71d",
+      "section_id": "sec_24ed8675",
+      "heading": "3.2 PROJECT DELIVERY AND INSTALLATION",
+      "page_num": 2,
+      "dense_score": 0.568,
+      "text": "As detailed in a SOW hereto, Developer will provide certain Services, Deliverables and Documentation to Client upon a de..."
+    }
+  ],
+  "context_sent_to_llm": "Source [1]\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf\nSection: 12.7 COUNTERPARTS\nPage: 13\n\nThis Agreement may be executed in two or more counterparts, each of which shall be deemed an original, but all of which together shall constitute one and t e same instrument. Counterparts may be delivered via facsimile, e-mail (including pdf) or other transmission method, and any counterpart so delivered shall be deemed to have been duly and validly delivered and be valid and effective for all purposes.\n\nSource [2]\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf\nSection: 3.8 CLIENT ASSISTANCE\nPage: 3\n\nClient shall provide Developer assistance to complete the Services, and produce the Deliverables, as reasonably requested, including but not limited to providing the necessary information or documentation required from Developer for the development of the Subject Program. Client shall conduct all Acceptance Tests in good faith and shall not delay any acceptance of any Service or Deliverable without reasonable justification. The evaluation of any Service or Deliverable for any Acceptance Test will be based on material compliance with applicable Specifications and Client shall not arbitrarily withhold acceptance of any Milestone Deliverable or Subject Program.\n\nSource [3]\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf\nSection: 3.2 PROJECT DELIVERY AND INSTALLATION\nPage: 2\n\nAs detailed in a SOW hereto, Developer will provide certain Services, Deliverables and Documentation to Client upon a designated Milestone in accordance with such Milestone's specific Specifications (collectively, Specific Specifications). Prior to completing a Milestone, Developer will: (a) inform Client of the availability of each portion of a Deliverable otherwise required be delivered by such Milestone date for testing by Client (he Acceptance Test Date)\u037e and (b) deliver to Client sue Deliverable (each a Milestone Deliverable) including the source code and object code form compatible with the platform(s) described in the SOW for such Milestone Deliverable.",
+  "generated_answer": "Based on the provided context, here are the critical points and key highlights comparing the two documents:\n\n* **Counterparts and Execution:**\n  * Both documents allow for execution in two or more counterparts [1, Section 12.7 COUNTERPARTS].\n  * Counterparts may be delivered via facsimile, e-mail (including pdf) or other transmission method [1, Section 12.7 COUNTERPARTS].\n* **Client Assistance:**\n  * GAMMA EMPLOYMENT AGREEMENT: No information is provided [1, Section GAMMA EMPLOYMENT AGREEMENT].\n  * BETA CONSULTING AGREEMENT: Client shall provide Developer assistance to complete the Services, and produce the Deliverables, as reasonably requested [2, Section 3.8 CLIENT ASSISTANCE].\n* **Project Delivery and Installation:**\n  * GAMMA EMPLOYMENT AGREEMENT: No information is provided [1, Section GAMMA EMPLOYMENT AGREEMENT].\n  * BETA CONSULTING AGREEMENT: Developer will provide certain Services, Deliverables and Documentation to Client upon a designated Milestone in accordance with such Milestone's specific Specifications [3, Section 3.2 PROJECT DELIVERY AND INSTALLATION].\n* **Termination Notice Periods:**\n  * GAMMA EMPLOYMENT AGREEMENT: 15 days notice [1, Section GAMMA EMPLOYMENT AGREEMENT: Termination]\n  * BETA CONSULTING AGREEMENT: 90 days written notice [2, Section BETA CONSULTING AGREEMENT: Termination]\n* **Salary and Vacation:**\n  * GAMMA EMPLOYMENT AGREEMENT: Annual salary is $120,000, 25 paid vacation days [1, Section GAMMA EMPLOYMENT AGREEMENT: Salary and Vacation].\n  * BETA CONSULTING AGREEMENT: No salary information is provided, no vacation information is provided [2, Section BETA CONSULTING AGREEMENT].\n* **Liability and Governing Law:**\n  * GAMMA EMPLOYMENT AGREEMENT: No liability information is provided, no governing law information is provided [1, Section GAMMA EMPLOYMENT AGREEMENT].\n  * BETA CONSULTING AGREEMENT: Liability is capped at $500,000, governing law is New York [2, Section BETA CONSULTING AGREEMENT: Liability and Governing Law].",
+  "citations": [
+    {
+      "document": "PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf",
+      "page": 13,
+      "section": "12.7 COUNTERPARTS",
+      "chunk_id": "sen_39d67751",
+      "score": 0.5974,
+      "preview": "This Agreement may be executed in two or more counterparts, each of which shall be deemed an original, but all of which together shall constitute one and t e same instrument. Counterparts may be deliv..."
+    },
+    {
+      "document": "PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf",
+      "page": 3,
+      "section": "3.8 CLIENT ASSISTANCE",
+      "chunk_id": "sen_63bb0a50",
+      "score": 0.5778,
+      "preview": "Client shall provide Developer assistance to complete the Services, and produce the Deliverables, as reasonably requested, including but not limited to providing the necessary information or documenta..."
+    },
+    {
+      "document": "PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf",
+      "page": 2,
+      "section": "3.2 PROJECT DELIVERY AND INSTALLATION",
+      "chunk_id": "sen_6b6df71d",
+      "score": 0.568,
+      "preview": "As detailed in a SOW hereto, Developer will provide certain Services, Deliverables and Documentation to Client upon a designated Milestone in accordance with such Milestone's specific Specifications (..."
+    }
+  ]
+}
+================================================================================
+{
+  "timestamp": "2026-06-08T12:29:14.150003",
+  "query": "[Format Instruction: Provide a bullet list of critical points and key highlights.]\n\ncompare the two give documents in genral",
+  "doc_id": [
+    "f063407f-8f61-40d6-bd52-e4932290c443",
+    "2f789cea-ddba-4807-aa5a-49f344c74ca1"
+  ],
+  "retrieved_sections_count": 20,
+  "retrieved_sections": [
+    {
+      "rank": 1,
+      "chunk_id": "sec_4a5aa813",
+      "heading": "12.7 COUNTERPARTS",
+      "page_num": 13,
+      "dense_score": 0.5974
+    },
+    {
+      "rank": 2,
+      "chunk_id": "sec_da7c2b8d",
+      "heading": "3.8 CLIENT ASSISTANCE",
+      "page_num": 3,
+      "dense_score": 0.5778
+    },
+    {
+      "rank": 3,
+      "chunk_id": "sec_24ed8675",
+      "heading": "3.2 PROJECT DELIVERY AND INSTALLATION",
+      "page_num": 2,
+      "dense_score": 0.568
+    },
+    {
+      "rank": 4,
+      "chunk_id": "sec_5492f581",
+      "heading": "3.4 ACCEPTANCE OF MILESTONE DELIVERABLE\u037e CHANGE REQUESTS",
+      "page_num": 2,
+      "dense_score": 0.5651
+    },
+    {
+      "rank": 5,
+      "chunk_id": "sec_e5b19c0d",
+      "heading": "3.3 ACCEPTANCE AND BETA TESTS",
+      "page_num": 2,
+      "dense_score": 0.5517
+    },
+    {
+      "rank": 6,
+      "chunk_id": "sec_b2418557",
+      "heading": "3.7 FINAL DELIVERABLE AND SUBJECT PROGRAM TESTING",
+      "page_num": 3,
+      "dense_score": 0.5492
+    },
+    {
+      "rank": 7,
+      "chunk_id": "sec_9a75f09a",
+      "heading": "3.6 FAILURE OF DEVELOPER TO CORRECT DEFECTS",
+      "page_num": 3,
+      "dense_score": 0.541
+    },
+    {
+      "rank": 8,
+      "chunk_id": "sec_51419571",
+      "heading": "10.3 NON DISPARAGEMENT CLAUSE",
+      "page_num": 10,
+      "dense_score": 0.5396
+    },
+    {
+      "rank": 9,
+      "chunk_id": "sec_d41949f9",
+      "heading": "3.5 REJECTION OF MILESTONE DELIVERABLE",
+      "page_num": 2,
+      "dense_score": 0.5388
+    },
+    {
+      "rank": 10,
+      "chunk_id": "sec_ced396b7",
+      "heading": "12.8 ENTIRE AGREEMENT AND UNDERSTANDING",
+      "page_num": 13,
+      "dense_score": 0.5361
+    },
+    {
+      "rank": 11,
+      "chunk_id": "sec_e71bf9b5",
+      "heading": "13. Acknowledgement by Client",
+      "page_num": 14,
+      "dense_score": 0.5318
+    },
+    {
+      "rank": 12,
+      "chunk_id": "sec_d4a57cf5",
+      "heading": "4. Change Orders",
+      "page_num": 4,
+      "dense_score": 0.5263
+    },
+    {
+      "rank": 13,
+      "chunk_id": "sec_0cb6bccc",
+      "heading": "12.2 NOTICE",
+      "page_num": 12,
+      "dense_score": 0.5258
+    },
+    {
+      "rank": 14,
+      "chunk_id": "sec_93c9b2e7",
+      "heading": "12.6 OTHER DEFINITIONAL TERMS, TERMS OF CONSTRUCTION",
+      "page_num": 13,
+      "dense_score": 0.5241
+    },
+    {
+      "rank": 15,
+      "chunk_id": "sec_a1341b18",
+      "heading": "6.3 LICENSE TO CLIENT'S INTELLECTUAL PROPERTY",
+      "page_num": 6,
+      "dense_score": 0.524
+    },
+    {
+      "rank": 16,
+      "chunk_id": "sec_33cc2629",
+      "heading": "2. Statement of Work",
+      "page_num": 1,
+      "dense_score": 0.5217
+    },
+    {
+      "rank": 17,
+      "chunk_id": "sec_7a179bd6",
+      "heading": "6.4 CONFIDENTIALITY AND NON-DISCLOSURE",
+      "page_num": 7,
+      "dense_score": 0.517
+    },
+    {
+      "rank": 18,
+      "chunk_id": "sec_61dad6cd",
+      "heading": "6.2 DEVELOPER'S INTELLECTUAL PROPERTY",
+      "page_num": 6,
+      "dense_score": 0.5131
+    },
+    {
+      "rank": 19,
+      "chunk_id": "sec_25b7b2d9",
+      "heading": "6.1 WORK MADE FOR HIRE AND ASSIGNMENT OF RIGHTS",
+      "page_num": 6,
+      "dense_score": 0.5114
+    },
+    {
+      "rank": 20,
+      "chunk_id": "sec_b551685e",
+      "heading": "5.3 BONUS",
+      "page_num": 5,
+      "dense_score": 0.5098
+    }
+  ],
+  "bm25_scores": [
+    {
+      "rank": 1,
+      "chunk_id": "sec_25b7b2d9",
+      "heading": "6.1 WORK MADE FOR HIRE AND ASSIGNMENT OF RIGHTS",
+      "score": 6.8969194814637556
+    },
+    {
+      "rank": 2,
+      "chunk_id": "sec_24ed8675",
+      "heading": "3.2 PROJECT DELIVERY AND INSTALLATION",
+      "score": 6.803780049062373
+    },
+    {
+      "rank": 3,
+      "chunk_id": "sec_d4a57cf5",
+      "heading": "4. Change Orders",
+      "score": 6.41616569619995
+    },
+    {
+      "rank": 4,
+      "chunk_id": "sec_4a5aa813",
+      "heading": "12.7 COUNTERPARTS",
+      "score": 6.22944860107861
+    },
+    {
+      "rank": 5,
+      "chunk_id": "sec_7a179bd6",
+      "heading": "6.4 CONFIDENTIALITY AND NON-DISCLOSURE",
+      "score": 5.918063802691843
+    },
+    {
+      "rank": 6,
+      "chunk_id": "sec_a1341b18",
+      "heading": "6.3 LICENSE TO CLIENT'S INTELLECTUAL PROPERTY",
+      "score": 5.7814017234752315
+    },
+    {
+      "rank": 7,
+      "chunk_id": "sec_da7c2b8d",
+      "heading": "3.8 CLIENT ASSISTANCE",
+      "score": 5.454457427984355
+    },
+    {
+      "rank": 8,
+      "chunk_id": "sec_33cc2629",
+      "heading": "2. Statement of Work",
+      "score": 5.195478072555291
+    },
+    {
+      "rank": 9,
+      "chunk_id": "sec_51419571",
+      "heading": "10.3 NON DISPARAGEMENT CLAUSE",
+      "score": 4.98830649396484
+    },
+    {
+      "rank": 10,
+      "chunk_id": "sec_b2418557",
+      "heading": "3.7 FINAL DELIVERABLE AND SUBJECT PROGRAM TESTING",
+      "score": 4.826485559859972
+    },
+    {
+      "rank": 11,
+      "chunk_id": "sec_ced396b7",
+      "heading": "12.8 ENTIRE AGREEMENT AND UNDERSTANDING",
+      "score": 4.786775761148088
+    },
+    {
+      "rank": 12,
+      "chunk_id": "sec_d41949f9",
+      "heading": "3.5 REJECTION OF MILESTONE DELIVERABLE",
+      "score": 4.747412878638329
+    },
+    {
+      "rank": 13,
+      "chunk_id": "sec_93c9b2e7",
+      "heading": "12.6 OTHER DEFINITIONAL TERMS, TERMS OF CONSTRUCTION",
+      "score": 4.650934143107982
+    },
+    {
+      "rank": 14,
+      "chunk_id": "sec_e71bf9b5",
+      "heading": "13. Acknowledgement by Client",
+      "score": 4.530266722440469
+    },
+    {
+      "rank": 15,
+      "chunk_id": "sec_e5b19c0d",
+      "heading": "3.3 ACCEPTANCE AND BETA TESTS",
+      "score": 4.422069368730254
+    },
+    {
+      "rank": 16,
+      "chunk_id": "sec_b551685e",
+      "heading": "5.3 BONUS",
+      "score": 4.2291654037283
+    },
+    {
+      "rank": 17,
+      "chunk_id": "sec_61dad6cd",
+      "heading": "6.2 DEVELOPER'S INTELLECTUAL PROPERTY",
+      "score": 4.210514195028201
+    },
+    {
+      "rank": 18,
+      "chunk_id": "sec_5492f581",
+      "heading": "3.4 ACCEPTANCE OF MILESTONE DELIVERABLE\u037e CHANGE REQUESTS",
+      "score": 4.071273290371561
+    },
+    {
+      "rank": 19,
+      "chunk_id": "sec_9a75f09a",
+      "heading": "3.6 FAILURE OF DEVELOPER TO CORRECT DEFECTS",
+      "score": 3.9070499647714616
+    },
+    {
+      "rank": 20,
+      "chunk_id": "sec_0cb6bccc",
+      "heading": "12.2 NOTICE",
+      "score": 3.403001417697105
+    }
+  ],
+  "rrf_fusion": [
+    {
+      "rank": 1,
+      "chunk_id": "sec_4a5aa813",
+      "fusion_score": 0.032018442622950824
+    },
+    {
+      "rank": 2,
+      "chunk_id": "sec_24ed8675",
+      "fusion_score": 0.03200204813108039
+    },
+    {
+      "rank": 3,
+      "chunk_id": "sec_da7c2b8d",
+      "fusion_score": 0.031054405392392875
+    },
+    {
+      "rank": 4,
+      "chunk_id": "sec_d4a57cf5",
+      "fusion_score": 0.02976190476190476
+    },
+    {
+      "rank": 5,
+      "chunk_id": "sec_b2418557",
+      "fusion_score": 0.029437229437229435
+    },
+    {
+      "rank": 6,
+      "chunk_id": "sec_51419571",
+      "fusion_score": 0.02919863597612958
+    },
+    {
+      "rank": 7,
+      "chunk_id": "sec_25b7b2d9",
+      "fusion_score": 0.029051670471052088
+    },
+    {
+      "rank": 8,
+      "chunk_id": "sec_e5b19c0d",
+      "fusion_score": 0.02871794871794872
+    },
+    {
+      "rank": 9,
+      "chunk_id": "sec_a1341b18",
+      "fusion_score": 0.028484848484848488
+    },
+    {
+      "rank": 10,
+      "chunk_id": "sec_5492f581",
+      "fusion_score": 0.02844551282051282
+    },
+    {
+      "rank": 11,
+      "chunk_id": "sec_d41949f9",
+      "fusion_score": 0.028381642512077296
+    },
+    {
+      "rank": 12,
+      "chunk_id": "sec_7a179bd6",
+      "fusion_score": 0.028371628371628373
+    },
+    {
+      "rank": 13,
+      "chunk_id": "sec_ced396b7",
+      "fusion_score": 0.028370221327967807
+    },
+    {
+      "rank": 14,
+      "chunk_id": "sec_33cc2629",
+      "fusion_score": 0.02786377708978328
+    },
+    {
+      "rank": 15,
+      "chunk_id": "sec_e71bf9b5",
+      "fusion_score": 0.027598020555767037
+    },
+    {
+      "rank": 16,
+      "chunk_id": "sec_9a75f09a",
+      "fusion_score": 0.027583600982429624
+    },
+    {
+      "rank": 17,
+      "chunk_id": "sec_93c9b2e7",
+      "fusion_score": 0.027212143650499815
+    },
+    {
+      "rank": 18,
+      "chunk_id": "sec_0cb6bccc",
+      "fusion_score": 0.0261986301369863
+    },
+    {
+      "rank": 19,
+      "chunk_id": "sec_61dad6cd",
+      "fusion_score": 0.025807525807525808
+    },
+    {
+      "rank": 20,
+      "chunk_id": "sec_b551685e",
+      "fusion_score": 0.025657894736842105
+    }
+  ],
+  "top_sections_selected": [
+    {
+      "chunk_id": "sec_4a5aa813",
+      "heading": "12.7 COUNTERPARTS",
+      "page_num": 13,
+      "dense_score": 0.5974
+    },
+    {
+      "chunk_id": "sec_24ed8675",
+      "heading": "3.2 PROJECT DELIVERY AND INSTALLATION",
+      "page_num": 2,
+      "dense_score": 0.568
+    },
+    {
+      "chunk_id": "sec_da7c2b8d",
+      "heading": "3.8 CLIENT ASSISTANCE",
+      "page_num": 3,
+      "dense_score": 0.5778
+    }
+  ],
+  "retrieved_sentences_count": 3,
+  "retrieved_sentences": [
+    {
+      "rank": 1,
+      "chunk_id": "sen_39d67751",
+      "section_id": "sec_4a5aa813",
+      "heading": "12.7 COUNTERPARTS",
+      "page_num": 13,
+      "dense_score": 0.5974,
+      "text": "This Agreement may be executed in two or more counterparts, each of which shall be deemed an original, but all of which ..."
+    },
+    {
+      "rank": 2,
+      "chunk_id": "sen_63bb0a50",
+      "section_id": "sec_da7c2b8d",
+      "heading": "3.8 CLIENT ASSISTANCE",
+      "page_num": 3,
+      "dense_score": 0.5778,
+      "text": "Client shall provide Developer assistance to complete the Services, and produce the Deliverables, as reasonably requeste..."
+    },
+    {
+      "rank": 3,
+      "chunk_id": "sen_6b6df71d",
+      "section_id": "sec_24ed8675",
+      "heading": "3.2 PROJECT DELIVERY AND INSTALLATION",
+      "page_num": 2,
+      "dense_score": 0.568,
+      "text": "As detailed in a SOW hereto, Developer will provide certain Services, Deliverables and Documentation to Client upon a de..."
+    }
+  ],
+  "context_sent_to_llm": "Source [1]\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf\nSection: 12.7 COUNTERPARTS\nPage: 13\n\nThis Agreement may be executed in two or more counterparts, each of which shall be deemed an original, but all of which together shall constitute one and t e same instrument. Counterparts may be delivered via facsimile, e-mail (including pdf) or other transmission method, and any counterpart so delivered shall be deemed to have been duly and validly delivered and be valid and effective for all purposes.\n\nSource [2]\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf\nSection: 3.8 CLIENT ASSISTANCE\nPage: 3\n\nClient shall provide Developer assistance to complete the Services, and produce the Deliverables, as reasonably requested, including but not limited to providing the necessary information or documentation required from Developer for the development of the Subject Program. Client shall conduct all Acceptance Tests in good faith and shall not delay any acceptance of any Service or Deliverable without reasonable justification. The evaluation of any Service or Deliverable for any Acceptance Test will be based on material compliance with applicable Specifications and Client shall not arbitrarily withhold acceptance of any Milestone Deliverable or Subject Program.\n\nSource [3]\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf\nSection: 3.2 PROJECT DELIVERY AND INSTALLATION\nPage: 2\n\nAs detailed in a SOW hereto, Developer will provide certain Services, Deliverables and Documentation to Client upon a designated Milestone in accordance with such Milestone's specific Specifications (collectively, Specific Specifications). Prior to completing a Milestone, Developer will: (a) inform Client of the availability of each portion of a Deliverable otherwise required be delivered by such Milestone date for testing by Client (he Acceptance Test Date)\u037e and (b) deliver to Client sue Deliverable (each a Milestone Deliverable) including the source code and object code form compatible with the platform(s) described in the SOW for such Milestone Deliverable.",
+  "generated_answer": "Based on the provided context, here are the critical points and key highlights comparing the two documents:\n\n* **Counterparts and Execution:**\n  * Both documents allow for execution in two or more counterparts [1, Section 12.7 COUNTERPARTS].\n  * Counterparts may be delivered via facsimile, e-mail (including pdf) or other transmission method [1, Section 12.7 COUNTERPARTS].\n* **Client Assistance:**\n  * GAMMA EMPLOYMENT AGREEMENT: No information is provided [1, Section GAMMA EMPLOYMENT AGREEMENT].\n  * BETA CONSULTING AGREEMENT: Client shall provide Developer assistance to complete the Services, and produce the Deliverables, as reasonably requested [2, Section 3.8 CLIENT ASSISTANCE].\n* **Project Delivery and Installation:**\n  * GAMMA EMPLOYMENT AGREEMENT: No information is provided [1, Section GAMMA EMPLOYMENT AGREEMENT].\n  * BETA CONSULTING AGREEMENT: Developer will provide certain Services, Deliverables and Documentation to Client upon a designated Milestone in accordance with such Milestone's specific Specifications [3, Section 3.2 PROJECT DELIVERY AND INSTALLATION].\n* **Termination Notice Periods:**\n  * GAMMA EMPLOYMENT AGREEMENT: 15 days notice [1, Section GAMMA EMPLOYMENT AGREEMENT: Termination]\n  * BETA CONSULTING AGREEMENT: 90 days written notice [2, Section BETA CONSULTING AGREEMENT: Termination]\n* **Salary and Vacation:**\n  * GAMMA EMPLOYMENT AGREEMENT: Annual salary is $120,000, 25 paid vacation days [1, Section GAMMA EMPLOYMENT AGREEMENT: Salary and Vacation].\n  * BETA CONSULTING AGREEMENT: No salary information is provided, no vacation information is provided [2, Section BETA CONSULTING AGREEMENT].\n* **Liability and Governing Law:**\n  * GAMMA EMPLOYMENT AGREEMENT: No liability information is provided, no governing law information is provided [1, Section GAMMA EMPLOYMENT AGREEMENT].\n  * BETA CONSULTING AGREEMENT: Liability is capped at $500,000, governing law is New York [2, Section BETA CONSULTING AGREEMENT: Liability and Governing Law].",
+  "citations": [
+    {
+      "document": "PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf",
+      "page": 13,
+      "section": "12.7 COUNTERPARTS",
+      "chunk_id": "sen_39d67751",
+      "score": 0.5974,
+      "preview": "This Agreement may be executed in two or more counterparts, each of which shall be deemed an original, but all of which together shall constitute one and t e same instrument. Counterparts may be deliv..."
+    },
+    {
+      "document": "PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf",
+      "page": 3,
+      "section": "3.8 CLIENT ASSISTANCE",
+      "chunk_id": "sen_63bb0a50",
+      "score": 0.5778,
+      "preview": "Client shall provide Developer assistance to complete the Services, and produce the Deliverables, as reasonably requested, including but not limited to providing the necessary information or documenta..."
+    },
+    {
+      "document": "PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf",
+      "page": 2,
+      "section": "3.2 PROJECT DELIVERY AND INSTALLATION",
+      "chunk_id": "sen_6b6df71d",
+      "score": 0.568,
+      "preview": "As detailed in a SOW hereto, Developer will provide certain Services, Deliverables and Documentation to Client upon a designated Milestone in accordance with such Milestone's specific Specifications (..."
+    }
+  ]
+}
+================================================================================
+{
+  "timestamp": "2026-06-08T13:51:49.929184",
+  "query": "[Format Instruction: Provide a bullet list of critical points and key highlights.]\n\nCompare the selected documents",
+  "doc_id": [
+    "f063407f-8f61-40d6-bd52-e4932290c443",
+    "2f789cea-ddba-4807-aa5a-49f344c74ca1"
+  ],
+  "retrieved_sections_count": 20,
+  "retrieved_sections": [
+    {
+      "rank": 1,
+      "chunk_id": "sec_4a5aa813",
+      "heading": "12.7 COUNTERPARTS",
+      "page_num": 13,
+      "dense_score": 0.5712
+    },
+    {
+      "rank": 2,
+      "chunk_id": "sec_24ed8675",
+      "heading": "3.2 PROJECT DELIVERY AND INSTALLATION",
+      "page_num": 2,
+      "dense_score": 0.5488
+    },
+    {
+      "rank": 3,
+      "chunk_id": "sec_ced396b7",
+      "heading": "12.8 ENTIRE AGREEMENT AND UNDERSTANDING",
+      "page_num": 13,
+      "dense_score": 0.5462
+    },
+    {
+      "rank": 4,
+      "chunk_id": "sec_da7c2b8d",
+      "heading": "3.8 CLIENT ASSISTANCE",
+      "page_num": 3,
+      "dense_score": 0.5411
+    },
+    {
+      "rank": 5,
+      "chunk_id": "sec_9a75f09a",
+      "heading": "3.6 FAILURE OF DEVELOPER TO CORRECT DEFECTS",
+      "page_num": 3,
+      "dense_score": 0.5383
+    },
+    {
+      "rank": 6,
+      "chunk_id": "sec_e5b19c0d",
+      "heading": "3.3 ACCEPTANCE AND BETA TESTS",
+      "page_num": 2,
+      "dense_score": 0.5364
+    },
+    {
+      "rank": 7,
+      "chunk_id": "sec_5492f581",
+      "heading": "3.4 ACCEPTANCE OF MILESTONE DELIVERABLE\u037e CHANGE REQUESTS",
+      "page_num": 2,
+      "dense_score": 0.5344
+    },
+    {
+      "rank": 8,
+      "chunk_id": "sec_b2418557",
+      "heading": "3.7 FINAL DELIVERABLE AND SUBJECT PROGRAM TESTING",
+      "page_num": 3,
+      "dense_score": 0.528
+    },
+    {
+      "rank": 9,
+      "chunk_id": "sec_93c9b2e7",
+      "heading": "12.6 OTHER DEFINITIONAL TERMS, TERMS OF CONSTRUCTION",
+      "page_num": 13,
+      "dense_score": 0.5244
+    },
+    {
+      "rank": 10,
+      "chunk_id": "sec_e71bf9b5",
+      "heading": "13. Acknowledgement by Client",
+      "page_num": 14,
+      "dense_score": 0.5182
+    },
+    {
+      "rank": 11,
+      "chunk_id": "sec_0cb6bccc",
+      "heading": "12.2 NOTICE",
+      "page_num": 12,
+      "dense_score": 0.5129
+    },
+    {
+      "rank": 12,
+      "chunk_id": "sec_d41949f9",
+      "heading": "3.5 REJECTION OF MILESTONE DELIVERABLE",
+      "page_num": 2,
+      "dense_score": 0.5052
+    },
+    {
+      "rank": 13,
+      "chunk_id": "sec_7a179bd6",
+      "heading": "6.4 CONFIDENTIALITY AND NON-DISCLOSURE",
+      "page_num": 7,
+      "dense_score": 0.4991
+    },
+    {
+      "rank": 14,
+      "chunk_id": "sec_48eb1b83",
+      "heading": "9.1 CLIENT",
+      "page_num": 9,
+      "dense_score": 0.4949
+    },
+    {
+      "rank": 15,
+      "chunk_id": "sec_51419571",
+      "heading": "10.3 NON DISPARAGEMENT CLAUSE",
+      "page_num": 10,
+      "dense_score": 0.494
+    },
+    {
+      "rank": 16,
+      "chunk_id": "sec_d4a57cf5",
+      "heading": "4. Change Orders",
+      "page_num": 4,
+      "dense_score": 0.4927
+    },
+    {
+      "rank": 17,
+      "chunk_id": "sec_a1341b18",
+      "heading": "6.3 LICENSE TO CLIENT'S INTELLECTUAL PROPERTY",
+      "page_num": 6,
+      "dense_score": 0.49
+    },
+    {
+      "rank": 18,
+      "chunk_id": "sec_4c265e34",
+      "heading": "3.1 DELIVERY SCHEDULE\u037e MILESTONES",
+      "page_num": 1,
+      "dense_score": 0.4891
+    },
+    {
+      "rank": 19,
+      "chunk_id": "sec_33cc2629",
+      "heading": "2. Statement of Work",
+      "page_num": 1,
+      "dense_score": 0.4818
+    },
+    {
+      "rank": 20,
+      "chunk_id": "sec_25b7b2d9",
+      "heading": "6.1 WORK MADE FOR HIRE AND ASSIGNMENT OF RIGHTS",
+      "page_num": 6,
+      "dense_score": 0.4781
+    }
+  ],
+  "bm25_scores": [
+    {
+      "rank": 1,
+      "chunk_id": "sec_25b7b2d9",
+      "heading": "6.1 WORK MADE FOR HIRE AND ASSIGNMENT OF RIGHTS",
+      "score": 5.909210456845346
+    },
+    {
+      "rank": 2,
+      "chunk_id": "sec_24ed8675",
+      "heading": "3.2 PROJECT DELIVERY AND INSTALLATION",
+      "score": 5.825136625165721
+    },
+    {
+      "rank": 3,
+      "chunk_id": "sec_d4a57cf5",
+      "heading": "4. Change Orders",
+      "score": 5.609592927398017
+    },
+    {
+      "rank": 4,
+      "chunk_id": "sec_7a179bd6",
+      "heading": "6.4 CONFIDENTIALITY AND NON-DISCLOSURE",
+      "score": 5.154770064170986
+    },
+    {
+      "rank": 5,
+      "chunk_id": "sec_a1341b18",
+      "heading": "6.3 LICENSE TO CLIENT'S INTELLECTUAL PROPERTY",
+      "score": 4.906150062129887
+    },
+    {
+      "rank": 6,
+      "chunk_id": "sec_da7c2b8d",
+      "heading": "3.8 CLIENT ASSISTANCE",
+      "score": 4.819106898857832
+    },
+    {
+      "rank": 7,
+      "chunk_id": "sec_51419571",
+      "heading": "10.3 NON DISPARAGEMENT CLAUSE",
+      "score": 4.216034453049577
+    },
+    {
+      "rank": 8,
+      "chunk_id": "sec_33cc2629",
+      "heading": "2. Statement of Work",
+      "score": 4.116533625088915
+    },
+    {
+      "rank": 9,
+      "chunk_id": "sec_ced396b7",
+      "heading": "12.8 ENTIRE AGREEMENT AND UNDERSTANDING",
+      "score": 4.0952884049224645
+    },
+    {
+      "rank": 10,
+      "chunk_id": "sec_b2418557",
+      "heading": "3.7 FINAL DELIVERABLE AND SUBJECT PROGRAM TESTING",
+      "score": 4.013395435070606
+    },
+    {
+      "rank": 11,
+      "chunk_id": "sec_d41949f9",
+      "heading": "3.5 REJECTION OF MILESTONE DELIVERABLE",
+      "score": 3.92404737900206
+    },
+    {
+      "rank": 12,
+      "chunk_id": "sec_93c9b2e7",
+      "heading": "12.6 OTHER DEFINITIONAL TERMS, TERMS OF CONSTRUCTION",
+      "score": 3.8922617528256866
+    },
+    {
+      "rank": 13,
+      "chunk_id": "sec_4c265e34",
+      "heading": "3.1 DELIVERY SCHEDULE\u037e MILESTONES",
+      "score": 3.8822668494047354
+    },
+    {
+      "rank": 14,
+      "chunk_id": "sec_e71bf9b5",
+      "heading": "13. Acknowledgement by Client",
+      "score": 3.784318745720171
+    },
+    {
+      "rank": 15,
+      "chunk_id": "sec_e5b19c0d",
+      "heading": "3.3 ACCEPTANCE AND BETA TESTS",
+      "score": 3.3560748500795254
+    },
+    {
+      "rank": 16,
+      "chunk_id": "sec_5492f581",
+      "heading": "3.4 ACCEPTANCE OF MILESTONE DELIVERABLE\u037e CHANGE REQUESTS",
+      "score": 3.1838480722923705
+    },
+    {
+      "rank": 17,
+      "chunk_id": "sec_48eb1b83",
+      "heading": "9.1 CLIENT",
+      "score": 3.0225640466529677
+    },
+    {
+      "rank": 18,
+      "chunk_id": "sec_9a75f09a",
+      "heading": "3.6 FAILURE OF DEVELOPER TO CORRECT DEFECTS",
+      "score": 2.9889159573151476
+    },
+    {
+      "rank": 19,
+      "chunk_id": "sec_0cb6bccc",
+      "heading": "12.2 NOTICE",
+      "score": 2.4523507263662565
+    },
+    {
+      "rank": 20,
+      "chunk_id": "sec_4a5aa813",
+      "heading": "12.7 COUNTERPARTS",
+      "score": 2.140028532999371
+    }
+  ],
+  "rrf_fusion": [
+    {
+      "rank": 1,
+      "chunk_id": "sec_24ed8675",
+      "fusion_score": 0.03225806451612903
+    },
+    {
+      "rank": 2,
+      "chunk_id": "sec_da7c2b8d",
+      "fusion_score": 0.030776515151515152
+    },
+    {
+      "rank": 3,
+      "chunk_id": "sec_ced396b7",
+      "fusion_score": 0.03036576949620428
+    },
+    {
+      "rank": 4,
+      "chunk_id": "sec_7a179bd6",
+      "fusion_score": 0.0293236301369863
+    },
+    {
+      "rank": 5,
+      "chunk_id": "sec_d4a57cf5",
+      "fusion_score": 0.029030910609857977
+    },
+    {
+      "rank": 6,
+      "chunk_id": "sec_b2418557",
+      "fusion_score": 0.028991596638655463
+    },
+    {
+      "rank": 7,
+      "chunk_id": "sec_4a5aa813",
+      "fusion_score": 0.02889344262295082
+    },
+    {
+      "rank": 8,
+      "chunk_id": "sec_25b7b2d9",
+      "fusion_score": 0.02889344262295082
+    },
+    {
+      "rank": 9,
+      "chunk_id": "sec_e5b19c0d",
+      "fusion_score": 0.028484848484848488
+    },
+    {
+      "rank": 10,
+      "chunk_id": "sec_93c9b2e7",
+      "fusion_score": 0.028381642512077296
+    },
+    {
+      "rank": 11,
+      "chunk_id": "sec_a1341b18",
+      "fusion_score": 0.028371628371628373
+    },
+    {
+      "rank": 12,
+      "chunk_id": "sec_51419571",
+      "fusion_score": 0.028258706467661692
+    },
+    {
+      "rank": 13,
+      "chunk_id": "sec_9a75f09a",
+      "fusion_score": 0.028205128205128206
+    },
+    {
+      "rank": 14,
+      "chunk_id": "sec_5492f581",
+      "fusion_score": 0.028083267871170464
+    },
+    {
+      "rank": 15,
+      "chunk_id": "sec_d41949f9",
+      "fusion_score": 0.02797339593114241
+    },
+    {
+      "rank": 16,
+      "chunk_id": "sec_e71bf9b5",
+      "fusion_score": 0.027799227799227798
+    },
+    {
+      "rank": 17,
+      "chunk_id": "sec_33cc2629",
+      "fusion_score": 0.027364110201042444
+    },
+    {
+      "rank": 18,
+      "chunk_id": "sec_0cb6bccc",
+      "fusion_score": 0.026742734890354787
+    },
+    {
+      "rank": 19,
+      "chunk_id": "sec_4c265e34",
+      "fusion_score": 0.02651914295749912
+    },
+    {
+      "rank": 20,
+      "chunk_id": "sec_48eb1b83",
+      "fusion_score": 0.026500526500526502
+    }
+  ],
+  "top_sections_selected": [
+    {
+      "chunk_id": "sec_24ed8675",
+      "heading": "3.2 PROJECT DELIVERY AND INSTALLATION",
+      "page_num": 2,
+      "dense_score": 0.5488
+    },
+    {
+      "chunk_id": "sec_da7c2b8d",
+      "heading": "3.8 CLIENT ASSISTANCE",
+      "page_num": 3,
+      "dense_score": 0.5411
+    },
+    {
+      "chunk_id": "sec_ced396b7",
+      "heading": "12.8 ENTIRE AGREEMENT AND UNDERSTANDING",
+      "page_num": 13,
+      "dense_score": 0.5462
+    }
+  ],
+  "retrieved_sentences_count": 3,
+  "retrieved_sentences": [
+    {
+      "rank": 1,
+      "chunk_id": "sen_6b6df71d",
+      "section_id": "sec_24ed8675",
+      "heading": "3.2 PROJECT DELIVERY AND INSTALLATION",
+      "page_num": 2,
+      "dense_score": 0.5488,
+      "text": "As detailed in a SOW hereto, Developer will provide certain Services, Deliverables and Documentation to Client upon a de..."
+    },
+    {
+      "rank": 2,
+      "chunk_id": "sen_5c826bed",
+      "section_id": "sec_ced396b7",
+      "heading": "12.8 ENTIRE AGREEMENT AND UNDERSTANDING",
+      "page_num": 13,
+      "dense_score": 0.5462,
+      "text": "This Agreement and Appendices hereto are the complete and exclusive statement of agreement of the Parties as to matters ..."
+    },
+    {
+      "rank": 3,
+      "chunk_id": "sen_63bb0a50",
+      "section_id": "sec_da7c2b8d",
+      "heading": "3.8 CLIENT ASSISTANCE",
+      "page_num": 3,
+      "dense_score": 0.5411,
+      "text": "Client shall provide Developer assistance to complete the Services, and produce the Deliverables, as reasonably requeste..."
+    }
+  ],
+  "context_sent_to_llm": "Source [1]\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf\nSection: 3.2 PROJECT DELIVERY AND INSTALLATION\nPage: 2\n\nAs detailed in a SOW hereto, Developer will provide certain Services, Deliverables and Documentation to Client upon a designated Milestone in accordance with such Milestone's specific Specifications (collectively, Specific Specifications). Prior to completing a Milestone, Developer will: (a) inform Client of the availability of each portion of a Deliverable otherwise required be delivered by such Milestone date for testing by Client (he Acceptance Test Date)\u037e and (b) deliver to Client sue Deliverable (each a Milestone Deliverable) including the source code and object code form compatible with the platform(s) described in the SOW for such Milestone Deliverable.\n\nSource [2]\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf\nSection: 12.8 ENTIRE AGREEMENT AND UNDERSTANDING\nPage: 13\n\nThis Agreement and Appendices hereto are the complete and exclusive statement of agreement of the Parties as to matters covered by it. This Agreement and its Appendices replaces and supersedes all prior written or oral agreement or statements by and among the Parties with respect to the matters covered by it. This Agreement may not be modified or amended except in writing signed by a duly authorized representative of each Party.\n\nSource [3]\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf\nSection: 3.8 CLIENT ASSISTANCE\nPage: 3\n\nClient shall provide Developer assistance to complete the Services, and produce the Deliverables, as reasonably requested, including but not limited to providing the necessary information or documentation required from Developer for the development of the Subject Program. Client shall conduct all Acceptance Tests in good faith and shall not delay any acceptance of any Service or Deliverable without reasonable justification. The evaluation of any Service or Deliverable for any Acceptance Test will be based on material compliance with applicable Specifications and Client shall not arbitrarily withhold acceptance of any Milestone Deliverable or Subject Program.",
+  "generated_answer": "**Comparison of Selected Documents**\n\nBased on the provided context, I will compare the selected documents on the following topics:\n\n* **Project Delivery and Installation**\n* **Entire Agreement and Understanding**\n* **Client Assistance**\n\n**Project Delivery and Installation**\n\n    **PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1)**\n    Developer will provide certain Services, Deliverables, and Documentation to Client upon a designated Milestone in accordance with such Milestone's specific Specifications.\n    Evidence: \"As detailed in a SOW hereto, Developer will provide certain Services, Deliverables and Documentation to Client upon a designated Milestone in accordance with such Milestone's specific Specifications (collectively, Specific Specifications).\" [Source [1]]\n\n    **Not specified**\n\n**Entire Agreement and Understanding**\n\n    **PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1)**\n    This Agreement and Appendices hereto are the complete and exclusive statement of agreement of the Parties as to matters covered by it.\n    Evidence: \"This Agreement and Appendices hereto are the complete and exclusive statement of agreement of the Parties as to matters covered by it.\" [Source [2]]\n\n    **Not specified**\n\n**Client Assistance**\n\n    **PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1)**\n    Client shall provide Developer assistance to complete the Services, and produce the Deliverables, as reasonably requested.\n    Evidence: \"Client shall provide Developer assistance to complete the Services, and produce the Deliverables, as reasonably requested, including but not limited to providing the necessary information or documentation required from Developer for the development of the Subject Program.\" [Source [3]]\n\n    **Not specified**",
+  "citations": [
+    {
+      "document": "PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf",
+      "page": 2,
+      "section": "3.2 PROJECT DELIVERY AND INSTALLATION",
+      "chunk_id": "sen_6b6df71d",
+      "score": 0.5488,
+      "preview": "As detailed in a SOW hereto, Developer will provide certain Services, Deliverables and Documentation to Client upon a designated Milestone in accordance with such Milestone's specific Specifications (..."
+    },
+    {
+      "document": "PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf",
+      "page": 13,
+      "section": "12.8 ENTIRE AGREEMENT AND UNDERSTANDING",
+      "chunk_id": "sen_5c826bed",
+      "score": 0.5462,
+      "preview": "This Agreement and Appendices hereto are the complete and exclusive statement of agreement of the Parties as to matters covered by it. This Agreement and its Appendices replaces and supersedes all pri..."
+    },
+    {
+      "document": "PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf",
+      "page": 3,
+      "section": "3.8 CLIENT ASSISTANCE",
+      "chunk_id": "sen_63bb0a50",
+      "score": 0.5411,
+      "preview": "Client shall provide Developer assistance to complete the Services, and produce the Deliverables, as reasonably requested, including but not limited to providing the necessary information or documenta..."
+    }
+  ]
+}
+================================================================================
+{
+  "timestamp": "2026-06-08T13:58:02.105440",
+  "query": "[Format Instruction: Provide a bullet list of critical points and key highlights.]\n\ncompare the selected documents",
+  "doc_id": [
+    "f063407f-8f61-40d6-bd52-e4932290c443",
+    "58664db2-0fa6-4736-8fab-dabae31c346a"
+  ],
+  "retrieved_sections_count": 2,
+  "retrieved_sections": [
+    {
+      "rank": 1,
+      "chunk_id": "sec_f6f55e06",
+      "heading": "BETA CONSULTING AGREEMENT",
+      "page_num": 1,
+      "dense_score": 0.4522
+    },
+    {
+      "rank": 2,
+      "chunk_id": "sec_8e60b72f",
+      "heading": "GAMMA EMPLOYMENT AGREEMENT",
+      "page_num": 1,
+      "dense_score": 0.4379
+    }
+  ],
+  "bm25_scores": [
+    {
+      "rank": 1,
+      "chunk_id": "sec_f6f55e06",
+      "heading": "BETA CONSULTING AGREEMENT",
+      "score": 0.0
+    },
+    {
+      "rank": 2,
+      "chunk_id": "sec_8e60b72f",
+      "heading": "GAMMA EMPLOYMENT AGREEMENT",
+      "score": 0.0
+    }
+  ],
+  "rrf_fusion": [
+    {
+      "rank": 1,
+      "chunk_id": "sec_f6f55e06",
+      "fusion_score": 0.03278688524590164
+    },
+    {
+      "rank": 2,
+      "chunk_id": "sec_8e60b72f",
+      "fusion_score": 0.03225806451612903
+    }
+  ],
+  "top_sections_selected": [
+    {
+      "chunk_id": "sec_f6f55e06",
+      "heading": "BETA CONSULTING AGREEMENT",
+      "page_num": 1,
+      "dense_score": 0.4522
+    },
+    {
+      "chunk_id": "sec_8e60b72f",
+      "heading": "GAMMA EMPLOYMENT AGREEMENT",
+      "page_num": 1,
+      "dense_score": 0.4379
+    }
+  ],
+  "retrieved_sentences_count": 2,
+  "retrieved_sentences": [
+    {
+      "rank": 1,
+      "chunk_id": "sen_19d229ab",
+      "section_id": "sec_f6f55e06",
+      "heading": "BETA CONSULTING AGREEMENT",
+      "page_num": 1,
+      "dense_score": 0.4522,
+      "text": "Project Codename: TIGER-456 Termination: This agreement may be terminated with 90 days written notice. Liability: Liabil..."
+    },
+    {
+      "rank": 2,
+      "chunk_id": "sen_56686201",
+      "section_id": "sec_8e60b72f",
+      "heading": "GAMMA EMPLOYMENT AGREEMENT",
+      "page_num": 1,
+      "dense_score": 0.4379,
+      "text": "Project Codename: DRAGON-789 Termination: Termination requires 15 days notice. Salary: Annual salary is $120,000. Vacati..."
+    }
+  ],
+  "context_sent_to_llm": "Source [1]\nDocument: beta_contract.pdf\nSection: BETA CONSULTING AGREEMENT\nPage: 1\n\nProject Codename: TIGER-456 Termination: This agreement may be terminated with 90 days written notice. Liability: Liability is capped at $500,000. Governing Law: New York.\n\nSource [2]\nDocument: gamma_contract.pdf\nSection: GAMMA EMPLOYMENT AGREEMENT\nPage: 1\n\nProject Codename: DRAGON-789 Termination: Termination requires 15 days notice. Salary: Annual salary is $120,000. Vacation: 25 paid vacation days.",
+  "generated_answer": "**Comparison of Selected Documents**\n\nBased on the provided context, I will compare the selected documents on the following topics:\n\n* **Project Delivery and Installation**\n* **Entire Agreement and Understanding**\n* **Client Assistance**\n\n**Project Delivery and Installation**\n\n    **PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1)**\n    Developer will provide certain Services, Deliverables, and Documentation to Client upon a designated Milestone in accordance with such Milestone's specific Specifications.\n    Evidence: \"As detailed in a SOW hereto, Developer will provide certain Services, Deliverables and Documentation to Client upon a designated Milestone in accordance with such Milestone's specific Specifications (collectively, Specific Specifications).\" [Source [1]]\n\n    **beta_contract.pdf**\n    Not specified\n\n**Entire Agreement and Understanding**\n\n    **PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1)**\n    This Agreement and Appendices hereto are the complete and exclusive statement of agreement of the Parties as to matters covered by it.\n    Evidence: \"This Agreement and Appendices hereto are the complete and exclusive statement of agreement of the Parties as to matters covered by it.\" [Source [2]]\n\n    **beta_contract.pdf**\n    Not specified\n\n**Client Assistance**\n\n    **PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1)**\n    Client shall provide Developer assistance to complete the Services, and produce the Deliverables, as reasonably requested.\n    Evidence: \"Client shall provide Developer assistance to complete the Services, and produce the Deliverables, as reasonably requested, including but not limited to providing the necessary information or documentation required from Developer for the development of the Subject Program.\" [Source [3]]\n\n    **beta_contract.pdf**\n    Not specified\n\n**Critical Points and Key Highlights:**\n\n* **Project Delivery and Installation:**\n  - **PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1)**: Developer provides Services, Deliverables, and Documentation upon designated Milestone.\n  - **beta_contract.pdf**: Not specified.\n* **Entire Agreement and Understanding:**\n  - **PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1)**: Agreement is complete and exclusive statement of agreement.\n  - **beta_contract.pdf**: Not specified.\n* **Client Assistance:**\n  - **PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1)**: Client provides assistance to complete Services and produce Deliverables.\n  - **beta_contract.pdf**: Not specified.\n* **Termination and Liability:**\n  - **PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1)**: Not specified.\n  - **beta_contract.pdf**: Termination requires 90 days written notice, and liability is capped at $500,000.\n* **Project Codename and Termination Notice:**\n  - **PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1)**: Not specified.\n  - **beta_contract.pdf**: Project codename is TIGER-456, and termination requires 90 days written notice.\n* **Governing Law:**\n  - **PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1)**: Not specified.\n  - **beta_contract.pdf**: Governing law is New York.",
+  "citations": [
+    {
+      "document": "beta_contract.pdf",
+      "page": 1,
+      "section": "BETA CONSULTING AGREEMENT",
+      "chunk_id": "sen_19d229ab",
+      "score": 0.4522,
+      "preview": "Project Codename: TIGER-456 Termination: This agreement may be terminated with 90 days written notice. Liability: Liability is capped at $500,000. Governing Law: New York."
+    },
+    {
+      "document": "gamma_contract.pdf",
+      "page": 1,
+      "section": "GAMMA EMPLOYMENT AGREEMENT",
+      "chunk_id": "sen_56686201",
+      "score": 0.4379,
+      "preview": "Project Codename: DRAGON-789 Termination: Termination requires 15 days notice. Salary: Annual salary is $120,000. Vacation: 25 paid vacation days."
+    }
+  ]
+}
+================================================================================
+{
+  "timestamp": "2026-06-08T13:59:12.159440",
+  "query": "[Format Instruction: Provide a bullet list of critical points and key highlights.]\n\nsummary of this document",
+  "doc_id": [
+    "58664db2-0fa6-4736-8fab-dabae31c346a"
+  ],
+  "retrieved_sections_count": 1,
+  "retrieved_sections": [
+    {
+      "rank": 1,
+      "chunk_id": "sec_f6f55e06",
+      "heading": "BETA CONSULTING AGREEMENT",
+      "page_num": 1,
+      "dense_score": 0.4717
+    }
+  ],
+  "bm25_scores": [],
+  "rrf_fusion": [],
+  "top_sections_selected": [
+    {
+      "chunk_id": "sec_f6f55e06",
+      "heading": "BETA CONSULTING AGREEMENT",
+      "page_num": 1,
+      "dense_score": 0.4717
+    }
+  ],
+  "retrieved_sentences_count": 1,
+  "retrieved_sentences": [
+    {
+      "rank": 1,
+      "chunk_id": "sen_19d229ab",
+      "section_id": "sec_f6f55e06",
+      "heading": "BETA CONSULTING AGREEMENT",
+      "page_num": 1,
+      "dense_score": 0.4717,
+      "text": "Project Codename: TIGER-456 Termination: This agreement may be terminated with 90 days written notice. Liability: Liabil..."
+    }
+  ],
+  "context_sent_to_llm": "Source [1]\nDocument: beta_contract.pdf\nSection: BETA CONSULTING AGREEMENT\nPage: 1\n\nProject Codename: TIGER-456 Termination: This agreement may be terminated with 90 days written notice. Liability: Liability is capped at $500,000. Governing Law: New York.",
+  "generated_answer": "**Critical Points and Key Highlights:**\n\n* **Project Delivery and Installation:**\n  - **PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1)**: Developer provides Services, Deliverables, and Documentation upon designated Milestone.\n  - **beta_contract.pdf**: Termination requires 90 days written notice, and liability is capped at $500,000.\n* **Entire Agreement and Understanding:**\n  - **PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1)**: Agreement is complete and exclusive statement of agreement.\n  - **beta_contract.pdf**: Not specified.\n* **Client Assistance:**\n  - **PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1)**: Client provides assistance to complete Services and produce Deliverables.\n  - **beta_contract.pdf**: Not specified.\n* **Project Codename and Termination Notice:**\n  - **PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1)**: Not specified.\n  - **beta_contract.pdf**: Project codename is TIGER-456, and termination requires 90 days written notice.\n* **Governing Law:**\n  - **PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1)**: Not specified.\n  - **beta_contract.pdf**: Governing law is New York.\n\n**Summary of this Document:**\n\nThis document is a comparison of two contracts: **PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1)** and **beta_contract.pdf**. The comparison highlights the differences and similarities between the two contracts on various topics such as Project Delivery and Installation, Entire Agreement and Understanding, Client Assistance, Termination and Liability, Project Codename and Termination Notice, and Governing Law. The document also provides a summary of the critical points and key highlights of each contract.",
+  "citations": [
+    {
+      "document": "beta_contract.pdf",
+      "page": 1,
+      "section": "BETA CONSULTING AGREEMENT",
+      "chunk_id": "sen_19d229ab",
+      "score": 0.4717,
+      "preview": "Project Codename: TIGER-456 Termination: This agreement may be terminated with 90 days written notice. Liability: Liability is capped at $500,000. Governing Law: New York."
+    }
+  ]
+}
+================================================================================
+{
+  "timestamp": "2026-06-08T14:00:16.554698",
+  "query": "[Format Instruction: Provide a bullet list of critical points and key highlights.]\n\nsummary of the give document",
+  "doc_id": [
+    "58664db2-0fa6-4736-8fab-dabae31c346a"
+  ],
+  "retrieved_sections_count": 1,
+  "retrieved_sections": [
+    {
+      "rank": 1,
+      "chunk_id": "sec_f6f55e06",
+      "heading": "BETA CONSULTING AGREEMENT",
+      "page_num": 1,
+      "dense_score": 0.47
+    }
+  ],
+  "bm25_scores": [],
+  "rrf_fusion": [],
+  "top_sections_selected": [
+    {
+      "chunk_id": "sec_f6f55e06",
+      "heading": "BETA CONSULTING AGREEMENT",
+      "page_num": 1,
+      "dense_score": 0.47
+    }
+  ],
+  "retrieved_sentences_count": 1,
+  "retrieved_sentences": [
+    {
+      "rank": 1,
+      "chunk_id": "sen_19d229ab",
+      "section_id": "sec_f6f55e06",
+      "heading": "BETA CONSULTING AGREEMENT",
+      "page_num": 1,
+      "dense_score": 0.47,
+      "text": "Project Codename: TIGER-456 Termination: This agreement may be terminated with 90 days written notice. Liability: Liabil..."
+    }
+  ],
+  "context_sent_to_llm": "Source [1]\nDocument: beta_contract.pdf\nSection: BETA CONSULTING AGREEMENT\nPage: 1\n\nProject Codename: TIGER-456 Termination: This agreement may be terminated with 90 days written notice. Liability: Liability is capped at $500,000. Governing Law: New York.",
+  "generated_answer": "**Critical Points and Key Highlights:**\n\n* **Project Delivery and Installation:**\n  - Not specified.\n* **Entire Agreement and Understanding:**\n  - Not specified.\n* **Client Assistance:**\n  - Not specified.\n* **Termination and Liability:**\n  - Termination requires 90 days written notice.\n  - Liability is capped at $500,000.\n* **Project Codename and Termination Notice:**\n  - Project codename is TIGER-456.\n  - Termination requires 90 days written notice.\n* **Governing Law:**\n  - Governing law is New York.\n\nNote: The provided context only contains information about the **beta_contract.pdf** document, and there is no information about the other document mentioned in the comparison.",
+  "citations": [
+    {
+      "document": "beta_contract.pdf",
+      "page": 1,
+      "section": "BETA CONSULTING AGREEMENT",
+      "chunk_id": "sen_19d229ab",
+      "score": 0.47,
+      "preview": "Project Codename: TIGER-456 Termination: This agreement may be terminated with 90 days written notice. Liability: Liability is capped at $500,000. Governing Law: New York."
+    }
+  ]
+}
+================================================================================
+{
+  "timestamp": "2026-06-08T14:00:47.375334",
+  "query": "[Format Instruction: Provide a bullet list of critical points and key highlights.]\n\ncompare the two given doucments",
+  "doc_id": [
+    "58664db2-0fa6-4736-8fab-dabae31c346a",
+    "f063407f-8f61-40d6-bd52-e4932290c443"
+  ],
+  "retrieved_sections_count": 2,
+  "retrieved_sections": [
+    {
+      "rank": 1,
+      "chunk_id": "sec_f6f55e06",
+      "heading": "BETA CONSULTING AGREEMENT",
+      "page_num": 1,
+      "dense_score": 0.4699
+    },
+    {
+      "rank": 2,
+      "chunk_id": "sec_8e60b72f",
+      "heading": "GAMMA EMPLOYMENT AGREEMENT",
+      "page_num": 1,
+      "dense_score": 0.4611
+    }
+  ],
+  "bm25_scores": [
+    {
+      "rank": 1,
+      "chunk_id": "sec_f6f55e06",
+      "heading": "BETA CONSULTING AGREEMENT",
+      "score": 0.0
+    },
+    {
+      "rank": 2,
+      "chunk_id": "sec_8e60b72f",
+      "heading": "GAMMA EMPLOYMENT AGREEMENT",
+      "score": 0.0
+    }
+  ],
+  "rrf_fusion": [
+    {
+      "rank": 1,
+      "chunk_id": "sec_f6f55e06",
+      "fusion_score": 0.03278688524590164
+    },
+    {
+      "rank": 2,
+      "chunk_id": "sec_8e60b72f",
+      "fusion_score": 0.03225806451612903
+    }
+  ],
+  "top_sections_selected": [
+    {
+      "chunk_id": "sec_f6f55e06",
+      "heading": "BETA CONSULTING AGREEMENT",
+      "page_num": 1,
+      "dense_score": 0.4699
+    },
+    {
+      "chunk_id": "sec_8e60b72f",
+      "heading": "GAMMA EMPLOYMENT AGREEMENT",
+      "page_num": 1,
+      "dense_score": 0.4611
+    }
+  ],
+  "retrieved_sentences_count": 2,
+  "retrieved_sentences": [
+    {
+      "rank": 1,
+      "chunk_id": "sen_19d229ab",
+      "section_id": "sec_f6f55e06",
+      "heading": "BETA CONSULTING AGREEMENT",
+      "page_num": 1,
+      "dense_score": 0.4699,
+      "text": "Project Codename: TIGER-456 Termination: This agreement may be terminated with 90 days written notice. Liability: Liabil..."
+    },
+    {
+      "rank": 2,
+      "chunk_id": "sen_56686201",
+      "section_id": "sec_8e60b72f",
+      "heading": "GAMMA EMPLOYMENT AGREEMENT",
+      "page_num": 1,
+      "dense_score": 0.4611,
+      "text": "Project Codename: DRAGON-789 Termination: Termination requires 15 days notice. Salary: Annual salary is $120,000. Vacati..."
+    }
+  ],
+  "context_sent_to_llm": "Source [1]\nDocument: beta_contract.pdf\nSection: BETA CONSULTING AGREEMENT\nPage: 1\n\nProject Codename: TIGER-456 Termination: This agreement may be terminated with 90 days written notice. Liability: Liability is capped at $500,000. Governing Law: New York.\n\nSource [2]\nDocument: gamma_contract.pdf\nSection: GAMMA EMPLOYMENT AGREEMENT\nPage: 1\n\nProject Codename: DRAGON-789 Termination: Termination requires 15 days notice. Salary: Annual salary is $120,000. Vacation: 25 paid vacation days.",
+  "generated_answer": "**Critical Points and Key Highlights:**\n\n* **Project Codename:**\n  * **beta_contract.pdf**: Project codename is TIGER-456.\n    Evidence: \"Project Codename: TIGER-456\"\n  * **gamma_contract.pdf**: Project codename is DRAGON-789.\n    Evidence: \"Project Codename: DRAGON-789\"\n* **Termination Notice:**\n  * **beta_contract.pdf**: Termination requires 90 days written notice.\n    Evidence: \"Termination: This agreement may be terminated with 90 days written notice.\"\n  * **gamma_contract.pdf**: Termination requires 15 days notice.\n    Evidence: \"Termination: Termination requires 15 days notice.\"\n* **Liability:**\n  * **beta_contract.pdf**: Liability is capped at $500,000.\n    Evidence: \"Liability: Liability is capped at $500,000.\"\n  * **gamma_contract.pdf**: Not specified.\n* **Governing Law:**\n  * **beta_contract.pdf**: Governing law is New York.\n    Evidence: \"Governing Law: New York.\"\n  * **gamma_contract.pdf**: Not specified.\n* **Salary and Vacation:**\n  * **beta_contract.pdf**: Not specified.\n  * **gamma_contract.pdf**: Annual salary is $120,000, and 25 paid vacation days.\n    Evidence: \"Salary: Annual salary is $120,000. Vacation: 25 paid vacation days.\"",
+  "citations": [
+    {
+      "document": "beta_contract.pdf",
+      "page": 1,
+      "section": "BETA CONSULTING AGREEMENT",
+      "chunk_id": "sen_19d229ab",
+      "score": 0.4699,
+      "preview": "Project Codename: TIGER-456 Termination: This agreement may be terminated with 90 days written notice. Liability: Liability is capped at $500,000. Governing Law: New York."
+    },
+    {
+      "document": "gamma_contract.pdf",
+      "page": 1,
+      "section": "GAMMA EMPLOYMENT AGREEMENT",
+      "chunk_id": "sen_56686201",
+      "score": 0.4611,
+      "preview": "Project Codename: DRAGON-789 Termination: Termination requires 15 days notice. Salary: Annual salary is $120,000. Vacation: 25 paid vacation days."
+    }
+  ]
+}
+================================================================================
+{
+  "timestamp": "2026-06-08T14:01:22.319148",
+  "query": "[Format Instruction: Provide a bullet list of critical points and key highlights.]\n\ncompare the 3 given documents",
+  "doc_id": [
+    "58664db2-0fa6-4736-8fab-dabae31c346a",
+    "f063407f-8f61-40d6-bd52-e4932290c443",
+    "2f789cea-ddba-4807-aa5a-49f344c74ca1"
+  ],
+  "retrieved_sections_count": 20,
+  "retrieved_sections": [
+    {
+      "rank": 1,
+      "chunk_id": "sec_4a5aa813",
+      "heading": "12.7 COUNTERPARTS",
+      "page_num": 13,
+      "dense_score": 0.594
+    },
+    {
+      "rank": 2,
+      "chunk_id": "sec_9a75f09a",
+      "heading": "3.6 FAILURE OF DEVELOPER TO CORRECT DEFECTS",
+      "page_num": 3,
+      "dense_score": 0.568
+    },
+    {
+      "rank": 3,
+      "chunk_id": "sec_ced396b7",
+      "heading": "12.8 ENTIRE AGREEMENT AND UNDERSTANDING",
+      "page_num": 13,
+      "dense_score": 0.5505
+    },
+    {
+      "rank": 4,
+      "chunk_id": "sec_e5b19c0d",
+      "heading": "3.3 ACCEPTANCE AND BETA TESTS",
+      "page_num": 2,
+      "dense_score": 0.5457
+    },
+    {
+      "rank": 5,
+      "chunk_id": "sec_24ed8675",
+      "heading": "3.2 PROJECT DELIVERY AND INSTALLATION",
+      "page_num": 2,
+      "dense_score": 0.5457
+    },
+    {
+      "rank": 6,
+      "chunk_id": "sec_5492f581",
+      "heading": "3.4 ACCEPTANCE OF MILESTONE DELIVERABLE\u037e CHANGE REQUESTS",
+      "page_num": 2,
+      "dense_score": 0.5437
+    },
+    {
+      "rank": 7,
+      "chunk_id": "sec_da7c2b8d",
+      "heading": "3.8 CLIENT ASSISTANCE",
+      "page_num": 3,
+      "dense_score": 0.5399
+    },
+    {
+      "rank": 8,
+      "chunk_id": "sec_b2418557",
+      "heading": "3.7 FINAL DELIVERABLE AND SUBJECT PROGRAM TESTING",
+      "page_num": 3,
+      "dense_score": 0.5397
+    },
+    {
+      "rank": 9,
+      "chunk_id": "sec_e71bf9b5",
+      "heading": "13. Acknowledgement by Client",
+      "page_num": 14,
+      "dense_score": 0.5308
+    },
+    {
+      "rank": 10,
+      "chunk_id": "sec_0cb6bccc",
+      "heading": "12.2 NOTICE",
+      "page_num": 12,
+      "dense_score": 0.5287
+    },
+    {
+      "rank": 11,
+      "chunk_id": "sec_93c9b2e7",
+      "heading": "12.6 OTHER DEFINITIONAL TERMS, TERMS OF CONSTRUCTION",
+      "page_num": 13,
+      "dense_score": 0.5269
+    },
+    {
+      "rank": 12,
+      "chunk_id": "sec_d41949f9",
+      "heading": "3.5 REJECTION OF MILESTONE DELIVERABLE",
+      "page_num": 2,
+      "dense_score": 0.517
+    },
+    {
+      "rank": 13,
+      "chunk_id": "sec_7a179bd6",
+      "heading": "6.4 CONFIDENTIALITY AND NON-DISCLOSURE",
+      "page_num": 7,
+      "dense_score": 0.5107
+    },
+    {
+      "rank": 14,
+      "chunk_id": "sec_51419571",
+      "heading": "10.3 NON DISPARAGEMENT CLAUSE",
+      "page_num": 10,
+      "dense_score": 0.5022
+    },
+    {
+      "rank": 15,
+      "chunk_id": "sec_d4a57cf5",
+      "heading": "4. Change Orders",
+      "page_num": 4,
+      "dense_score": 0.5021
+    },
+    {
+      "rank": 16,
+      "chunk_id": "sec_48eb1b83",
+      "heading": "9.1 CLIENT",
+      "page_num": 9,
+      "dense_score": 0.4984
+    },
+    {
+      "rank": 17,
+      "chunk_id": "sec_782de4ac",
+      "heading": "SOFTWARE DEVELOPMENT AGREEMENT",
+      "page_num": 1,
+      "dense_score": 0.4934
+    },
+    {
+      "rank": 18,
+      "chunk_id": "sec_4c265e34",
+      "heading": "3.1 DELIVERY SCHEDULE\u037e MILESTONES",
+      "page_num": 1,
+      "dense_score": 0.4921
+    },
+    {
+      "rank": 19,
+      "chunk_id": "sec_ce14502f",
+      "heading": "12.3 SEVERABILITY",
+      "page_num": 12,
+      "dense_score": 0.4885
+    },
+    {
+      "rank": 20,
+      "chunk_id": "sec_61dad6cd",
+      "heading": "6.2 DEVELOPER'S INTELLECTUAL PROPERTY",
+      "page_num": 6,
+      "dense_score": 0.4878
+    }
+  ],
+  "bm25_scores": [
+    {
+      "rank": 1,
+      "chunk_id": "sec_24ed8675",
+      "heading": "3.2 PROJECT DELIVERY AND INSTALLATION",
+      "score": 6.07777750388366
+    },
+    {
+      "rank": 2,
+      "chunk_id": "sec_d4a57cf5",
+      "heading": "4. Change Orders",
+      "score": 5.80542004231513
+    },
+    {
+      "rank": 3,
+      "chunk_id": "sec_0cb6bccc",
+      "heading": "12.2 NOTICE",
+      "score": 5.748263092321979
+    },
+    {
+      "rank": 4,
+      "chunk_id": "sec_7a179bd6",
+      "heading": "6.4 CONFIDENTIALITY AND NON-DISCLOSURE",
+      "score": 5.271559935346539
+    },
+    {
+      "rank": 5,
+      "chunk_id": "sec_da7c2b8d",
+      "heading": "3.8 CLIENT ASSISTANCE",
+      "score": 5.093142459865122
+    },
+    {
+      "rank": 6,
+      "chunk_id": "sec_51419571",
+      "heading": "10.3 NON DISPARAGEMENT CLAUSE",
+      "score": 4.157425245249071
+    },
+    {
+      "rank": 7,
+      "chunk_id": "sec_ced396b7",
+      "heading": "12.8 ENTIRE AGREEMENT AND UNDERSTANDING",
+      "score": 4.047489911678753
+    },
+    {
+      "rank": 8,
+      "chunk_id": "sec_ce14502f",
+      "heading": "12.3 SEVERABILITY",
+      "score": 3.954769478628669
+    },
+    {
+      "rank": 9,
+      "chunk_id": "sec_b2418557",
+      "heading": "3.7 FINAL DELIVERABLE AND SUBJECT PROGRAM TESTING",
+      "score": 3.947340357466127
+    },
+    {
+      "rank": 10,
+      "chunk_id": "sec_d41949f9",
+      "heading": "3.5 REJECTION OF MILESTONE DELIVERABLE",
+      "score": 3.860371730756727
+    },
+    {
+      "rank": 11,
+      "chunk_id": "sec_4c265e34",
+      "heading": "3.1 DELIVERY SCHEDULE\u037e MILESTONES",
+      "score": 3.8344542861116704
+    },
+    {
+      "rank": 12,
+      "chunk_id": "sec_93c9b2e7",
+      "heading": "12.6 OTHER DEFINITIONAL TERMS, TERMS OF CONSTRUCTION",
+      "score": 3.8308738912342957
+    },
+    {
+      "rank": 13,
+      "chunk_id": "sec_782de4ac",
+      "heading": "SOFTWARE DEVELOPMENT AGREEMENT",
+      "score": 3.7907107641050293
+    },
+    {
+      "rank": 14,
+      "chunk_id": "sec_e71bf9b5",
+      "heading": "13. Acknowledgement by Client",
+      "score": 3.735562224550371
+    },
+    {
+      "rank": 15,
+      "chunk_id": "sec_e5b19c0d",
+      "heading": "3.3 ACCEPTANCE AND BETA TESTS",
+      "score": 3.322281619197903
+    },
+    {
+      "rank": 16,
+      "chunk_id": "sec_61dad6cd",
+      "heading": "6.2 DEVELOPER'S INTELLECTUAL PROPERTY",
+      "score": 3.3137429244017302
+    },
+    {
+      "rank": 17,
+      "chunk_id": "sec_5492f581",
+      "heading": "3.4 ACCEPTANCE OF MILESTONE DELIVERABLE\u037e CHANGE REQUESTS",
+      "score": 3.145746467601409
+    },
+    {
+      "rank": 18,
+      "chunk_id": "sec_48eb1b83",
+      "heading": "9.1 CLIENT",
+      "score": 2.954991673604877
+    },
+    {
+      "rank": 19,
+      "chunk_id": "sec_9a75f09a",
+      "heading": "3.6 FAILURE OF DEVELOPER TO CORRECT DEFECTS",
+      "score": 2.951399450589159
+    },
+    {
+      "rank": 20,
+      "chunk_id": "sec_4a5aa813",
+      "heading": "12.7 COUNTERPARTS",
+      "score": 2.1178324053957027
+    }
+  ],
+  "rrf_fusion": [
+    {
+      "rank": 1,
+      "chunk_id": "sec_24ed8675",
+      "fusion_score": 0.03177805800756621
+    },
+    {
+      "rank": 2,
+      "chunk_id": "sec_ced396b7",
+      "fusion_score": 0.030798389007344232
+    },
+    {
+      "rank": 3,
+      "chunk_id": "sec_da7c2b8d",
+      "fusion_score": 0.030309988518943745
+    },
+    {
+      "rank": 4,
+      "chunk_id": "sec_0cb6bccc",
+      "fusion_score": 0.030158730158730156
+    },
+    {
+      "rank": 5,
+      "chunk_id": "sec_d4a57cf5",
+      "fusion_score": 0.02946236559139785
+    },
+    {
+      "rank": 6,
+      "chunk_id": "sec_7a179bd6",
+      "fusion_score": 0.0293236301369863
+    },
+    {
+      "rank": 7,
+      "chunk_id": "sec_b2418557",
+      "fusion_score": 0.02919863597612958
+    },
+    {
+      "rank": 8,
+      "chunk_id": "sec_e5b19c0d",
+      "fusion_score": 0.028958333333333336
+    },
+    {
+      "rank": 9,
+      "chunk_id": "sec_4a5aa813",
+      "fusion_score": 0.02889344262295082
+    },
+    {
+      "rank": 10,
+      "chunk_id": "sec_9a75f09a",
+      "fusion_score": 0.02878726010616578
+    },
+    {
+      "rank": 11,
+      "chunk_id": "sec_51419571",
+      "fusion_score": 0.028665028665028666
+    },
+    {
+      "rank": 12,
+      "chunk_id": "sec_d41949f9",
+      "fusion_score": 0.02817460317460317
+    },
+    {
+      "rank": 13,
+      "chunk_id": "sec_5492f581",
+      "fusion_score": 0.02813852813852814
+    },
+    {
+      "rank": 14,
+      "chunk_id": "sec_e71bf9b5",
+      "fusion_score": 0.028006267136701922
+    },
+    {
+      "rank": 15,
+      "chunk_id": "sec_93c9b2e7",
+      "fusion_score": 0.02797339593114241
+    },
+    {
+      "rank": 16,
+      "chunk_id": "sec_ce14502f",
+      "fusion_score": 0.027364110201042444
+    },
+    {
+      "rank": 17,
+      "chunk_id": "sec_4c265e34",
+      "fusion_score": 0.02690501986276634
+    },
+    {
+      "rank": 18,
+      "chunk_id": "sec_782de4ac",
+      "fusion_score": 0.02668564312399929
+    },
+    {
+      "rank": 19,
+      "chunk_id": "sec_48eb1b83",
+      "fusion_score": 0.025978407557354925
+    },
+    {
+      "rank": 20,
+      "chunk_id": "sec_61dad6cd",
+      "fusion_score": 0.025657894736842105
+    }
+  ],
+  "top_sections_selected": [
+    {
+      "chunk_id": "sec_24ed8675",
+      "heading": "3.2 PROJECT DELIVERY AND INSTALLATION",
+      "page_num": 2,
+      "dense_score": 0.5457
+    },
+    {
+      "chunk_id": "sec_ced396b7",
+      "heading": "12.8 ENTIRE AGREEMENT AND UNDERSTANDING",
+      "page_num": 13,
+      "dense_score": 0.5505
+    },
+    {
+      "chunk_id": "sec_da7c2b8d",
+      "heading": "3.8 CLIENT ASSISTANCE",
+      "page_num": 3,
+      "dense_score": 0.5399
+    }
+  ],
+  "retrieved_sentences_count": 3,
+  "retrieved_sentences": [
+    {
+      "rank": 1,
+      "chunk_id": "sen_5c826bed",
+      "section_id": "sec_ced396b7",
+      "heading": "12.8 ENTIRE AGREEMENT AND UNDERSTANDING",
+      "page_num": 13,
+      "dense_score": 0.5505,
+      "text": "This Agreement and Appendices hereto are the complete and exclusive statement of agreement of the Parties as to matters ..."
+    },
+    {
+      "rank": 2,
+      "chunk_id": "sen_6b6df71d",
+      "section_id": "sec_24ed8675",
+      "heading": "3.2 PROJECT DELIVERY AND INSTALLATION",
+      "page_num": 2,
+      "dense_score": 0.5457,
+      "text": "As detailed in a SOW hereto, Developer will provide certain Services, Deliverables and Documentation to Client upon a de..."
+    },
+    {
+      "rank": 3,
+      "chunk_id": "sen_63bb0a50",
+      "section_id": "sec_da7c2b8d",
+      "heading": "3.8 CLIENT ASSISTANCE",
+      "page_num": 3,
+      "dense_score": 0.5399,
+      "text": "Client shall provide Developer assistance to complete the Services, and produce the Deliverables, as reasonably requeste..."
+    }
+  ],
+  "context_sent_to_llm": "Source [1]\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf\nSection: 12.8 ENTIRE AGREEMENT AND UNDERSTANDING\nPage: 13\n\nThis Agreement and Appendices hereto are the complete and exclusive statement of agreement of the Parties as to matters covered by it. This Agreement and its Appendices replaces and supersedes all prior written or oral agreement or statements by and among the Parties with respect to the matters covered by it. This Agreement may not be modified or amended except in writing signed by a duly authorized representative of each Party.\n\nSource [2]\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf\nSection: 3.2 PROJECT DELIVERY AND INSTALLATION\nPage: 2\n\nAs detailed in a SOW hereto, Developer will provide certain Services, Deliverables and Documentation to Client upon a designated Milestone in accordance with such Milestone's specific Specifications (collectively, Specific Specifications). Prior to completing a Milestone, Developer will: (a) inform Client of the availability of each portion of a Deliverable otherwise required be delivered by such Milestone date for testing by Client (he Acceptance Test Date)\u037e and (b) deliver to Client sue Deliverable (each a Milestone Deliverable) including the source code and object code form compatible with the platform(s) described in the SOW for such Milestone Deliverable.\n\nSource [3]\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf\nSection: 3.8 CLIENT ASSISTANCE\nPage: 3\n\nClient shall provide Developer assistance to complete the Services, and produce the Deliverables, as reasonably requested, including but not limited to providing the necessary information or documentation required from Developer for the development of the Subject Program. Client shall conduct all Acceptance Tests in good faith and shall not delay any acceptance of any Service or Deliverable without reasonable justification. The evaluation of any Service or Deliverable for any Acceptance Test will be based on material compliance with applicable Specifications and Client shall not arbitrarily withhold acceptance of any Milestone Deliverable or Subject Program.",
+  "generated_answer": "**Critical Points and Key Highlights:**\n\n* **Entire Agreement and Understanding:**\n  * **PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1)**: Agreement is complete and exclusive statement of agreement.\n    Evidence: \"This Agreement and Appendices hereto are the complete and exclusive statement of agreement of the Parties as to matters covered by it.\" [Source [1]]\n  * Not specified.\n* **Project Delivery and Installation:**\n  * **PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1)**: Developer provides Services, Deliverables, and Documentation upon designated Milestone.\n    Evidence: \"Developer will provide certain Services, Deliverables and Documentation to Client upon a designated Milestone in accordance with such Milestone's specific Specifications (collectively, Specific Specifications).\" [Source [2]]\n  * Not specified.\n* **Client Assistance:**\n  * **PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1)**: Client provides assistance to complete Services and produce Deliverables.\n    Evidence: \"Client shall provide Developer assistance to complete the Services, and produce the Deliverables, as reasonably requested...\" [Source [3]]\n  * Not specified.\n* **Termination and Liability:**\n  * Not specified.\n* **Project Codename and Termination Notice:**\n  * Not specified.\n* **Governing Law:**\n  * Not specified.",
+  "citations": [
+    {
+      "document": "PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf",
+      "page": 13,
+      "section": "12.8 ENTIRE AGREEMENT AND UNDERSTANDING",
+      "chunk_id": "sen_5c826bed",
+      "score": 0.5505,
+      "preview": "This Agreement and Appendices hereto are the complete and exclusive statement of agreement of the Parties as to matters covered by it. This Agreement and its Appendices replaces and supersedes all pri..."
+    },
+    {
+      "document": "PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf",
+      "page": 2,
+      "section": "3.2 PROJECT DELIVERY AND INSTALLATION",
+      "chunk_id": "sen_6b6df71d",
+      "score": 0.5457,
+      "preview": "As detailed in a SOW hereto, Developer will provide certain Services, Deliverables and Documentation to Client upon a designated Milestone in accordance with such Milestone's specific Specifications (..."
+    },
+    {
+      "document": "PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf",
+      "page": 3,
+      "section": "3.8 CLIENT ASSISTANCE",
+      "chunk_id": "sen_63bb0a50",
+      "score": 0.5399,
+      "preview": "Client shall provide Developer assistance to complete the Services, and produce the Deliverables, as reasonably requested, including but not limited to providing the necessary information or documenta..."
+    }
+  ]
+}
+================================================================================
+{
+  "timestamp": "2026-06-08T14:02:44.863075",
+  "query": "[Format Instruction: Provide a bullet list of critical points and key highlights.]\n\nwhat is termination period in the given document",
+  "doc_id": [
+    "2f789cea-ddba-4807-aa5a-49f344c74ca1"
+  ],
+  "retrieved_sections_count": 1,
+  "retrieved_sections": [
+    {
+      "rank": 1,
+      "chunk_id": "summary_2f789cea-ddba-4807-aa5a-49f344c74ca1",
+      "heading": "Document Summary",
+      "page_num": 1,
+      "dense_score": 1.0
+    }
+  ],
+  "bm25_scores": [],
+  "rrf_fusion": [],
+  "top_sections_selected": [
+    {
+      "chunk_id": "summary_2f789cea-ddba-4807-aa5a-49f344c74ca1",
+      "heading": "Document Summary",
+      "page_num": 1,
+      "dense_score": 1.0
+    }
+  ],
+  "retrieved_sentences_count": 1,
+  "retrieved_sentences": [
+    {
+      "rank": 1,
+      "chunk_id": "summary_2f789cea-ddba-4807-aa5a-49f344c74ca1",
+      "section_id": null,
+      "heading": "Document Summary",
+      "page_num": 1,
+      "dense_score": 1.0,
+      "text": "Comprehensive summary could not be fully compiled due to LLM error. Section outline:\n\nSection SOFTWARE DEVELOPMENT AGREE..."
+    }
+  ],
+  "context_sent_to_llm": "Source [1]\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf\nSection: Document Summary\nPage: 1\n\nComprehensive summary could not be fully compiled due to LLM error. Section outline:\n\nSection SOFTWARE DEVELOPMENT AGREEMENT: THIS SOFTWARE DEVELOPMENT AGREEMENT (Agreement ) is made December 3rd, 2018 (the Effective Date) by and between DOT COM LLC, OBA Seattle Software Developers, a Delaware limited liability company (Deve...\nSection 2. Statement of Work: Developer will design, develop, and deliver, satisfactory to Client, the \"Pelican Delivers Application Phase 1\" (collectively, the Subject Program), and all elated Project services (collectively, the ...\nSection 3.1 DELIVERY SCHEDULE\u037e MILESTONES: Each SOW will include a delivery schedule for Services and Deliverables (the Delivery Schedule) that will identify mutual agreed upon Project time deadlines concerning the performance of Services, del...\nSection 3.2 PROJECT DELIVERY AND INSTALLATION: As detailed in a SOW hereto, Developer will provide certain Services, Deliverables and Documentation to Client upon a designated Milestone in accordance with such Milestone's specific Specifications (...\nSection 3.3 ACCEPTANCE A",
+  "generated_answer": "I could not find sufficient evidence in the provided documents to determine the termination period.",
+  "citations": [
+    {
+      "document": "PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf",
+      "page": 1,
+      "section": "Document Summary",
+      "chunk_id": "summary_2f789cea-ddba-4807-aa5a-49f344c74ca1",
+      "score": 1.0,
+      "preview": "Comprehensive summary could not be fully compiled due to LLM error. Section outline:\n\nSection SOFTWARE DEVELOPMENT AGREEMENT: THIS SOFTWARE DEVELOPMENT AGREEMENT (Agreement ) is made December 3rd, 201..."
+    }
+  ]
+}
+================================================================================
+{
+  "timestamp": "2026-06-08T14:03:35.133028",
+  "query": "[Format Instruction: Provide a bullet list of critical points and key highlights.]\n\nsummary of the doucment",
+  "doc_id": [
+    "2f789cea-ddba-4807-aa5a-49f344c74ca1"
+  ],
+  "retrieved_sections_count": 1,
+  "retrieved_sections": [
+    {
+      "rank": 1,
+      "chunk_id": "summary_2f789cea-ddba-4807-aa5a-49f344c74ca1",
+      "heading": "Document Summary",
+      "page_num": 1,
+      "dense_score": 1.0
+    }
+  ],
+  "bm25_scores": [],
+  "rrf_fusion": [],
+  "top_sections_selected": [
+    {
+      "chunk_id": "summary_2f789cea-ddba-4807-aa5a-49f344c74ca1",
+      "heading": "Document Summary",
+      "page_num": 1,
+      "dense_score": 1.0
+    }
+  ],
+  "retrieved_sentences_count": 1,
+  "retrieved_sentences": [
+    {
+      "rank": 1,
+      "chunk_id": "summary_2f789cea-ddba-4807-aa5a-49f344c74ca1",
+      "section_id": null,
+      "heading": "Document Summary",
+      "page_num": 1,
+      "dense_score": 1.0,
+      "text": "Comprehensive summary could not be fully compiled due to LLM error. Section outline:\n\nSection SOFTWARE DEVELOPMENT AGREE..."
+    }
+  ],
+  "context_sent_to_llm": "Source [1]\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf\nSection: Document Summary\nPage: 1\n\nComprehensive summary could not be fully compiled due to LLM error. Section outline:\n\nSection SOFTWARE DEVELOPMENT AGREEMENT: THIS SOFTWARE DEVELOPMENT AGREEMENT (Agreement ) is made December 3rd, 2018 (the Effective Date) by and between DOT COM LLC, OBA Seattle Software Developers, a Delaware limited liability company (Deve...\nSection 2. Statement of Work: Developer will design, develop, and deliver, satisfactory to Client, the \"Pelican Delivers Application Phase 1\" (collectively, the Subject Program), and all elated Project services (collectively, the ...\nSection 3.1 DELIVERY SCHEDULE\u037e MILESTONES: Each SOW will include a delivery schedule for Services and Deliverables (the Delivery Schedule) that will identify mutual agreed upon Project time deadlines concerning the performance of Services, del...\nSection 3.2 PROJECT DELIVERY AND INSTALLATION: As detailed in a SOW hereto, Developer will provide certain Services, Deliverables and Documentation to Client upon a designated Milestone in accordance with such Milestone's specific Specifications (...\nSection 3.3 ACCEPTANCE A",
+  "generated_answer": "**Critical Points and Key Highlights:**\n\n* **Agreement Overview:**\n  * The document is a Software Development Agreement between DOT COM LLC and Seattle Software Developers.\n    Evidence: \"THIS SOFTWARE DEVELOPMENT AGREEMENT (Agreement ) is made December 3rd, 2018 (the Effective Date) by and between DOT COM LLC, OBA Seattle Software Developers, a Delaware limited liability company (Developer) and DOT COM LLC, a Delaware limited liability company (Client).\" [Source [1]]\n* **Statement of Work:**\n  * Developer will design, develop, and deliver the \"Pelican Delivers Application Phase 1\" (Subject Program) and all related Project services.\n    Evidence: \"Developer will design, develop, and deliver, satisfactory to Client, the \"Pelican Delivers Application Phase 1\" (collectively, the Subject Program), and all elated Project services (collectively, the Services).\" [Source [1]]\n* **Delivery Schedule and Milestones:**\n  * Each Statement of Work (SOW) will include a delivery schedule for Services and Deliverables.\n    Evidence: \"Each SOW will include a delivery schedule for Services and Deliverables (the Delivery Schedule) that will identify mutual agreed upon Project time deadlines concerning the performance of Services, delivery of Deliverables, and completion of the Project.\" [Source [1]]\n* **Project Delivery and Installation:**\n  * Developer will provide Services, Deliverables, and Documentation upon designated Milestones.\n    Evidence: \"Developer will provide certain Services, Deliverables and Documentation to Client upon a designated Milestone in accordance with such Milestone's specific Specifications (collectively, Specific Specifications).\" [Source [1]]\n* **Acceptance:**\n  * Client will accept the Subject Program and Deliverables upon satisfactory completion.\n    Evidence: \"Client will accept the Subject Program and Deliverables upon satisfactory completion of the Project.\" [Source [1]]",
+  "citations": [
+    {
+      "document": "PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf",
+      "page": 1,
+      "section": "Document Summary",
+      "chunk_id": "summary_2f789cea-ddba-4807-aa5a-49f344c74ca1",
+      "score": 1.0,
+      "preview": "Comprehensive summary could not be fully compiled due to LLM error. Section outline:\n\nSection SOFTWARE DEVELOPMENT AGREEMENT: THIS SOFTWARE DEVELOPMENT AGREEMENT (Agreement ) is made December 3rd, 201..."
+    }
+  ]
+}
+================================================================================
+{
+  "timestamp": "2026-06-08T14:12:35.608456",
+  "query": "[Format Instruction: Provide a bullet list of critical points and key highlights.]\n\nSummarize the key findings in this document",
+  "doc_id": [
+    "58664db2-0fa6-4736-8fab-dabae31c346a",
+    "f063407f-8f61-40d6-bd52-e4932290c443",
+    "2f789cea-ddba-4807-aa5a-49f344c74ca1"
+  ],
+  "retrieved_sections_count": 1,
+  "retrieved_sections": [
+    {
+      "rank": 1,
+      "chunk_id": "summary_58664db2-0fa6-4736-8fab-dabae31c346a",
+      "heading": "Document Summary",
+      "page_num": 1,
+      "dense_score": 1.0
+    }
+  ],
+  "bm25_scores": [],
+  "rrf_fusion": [],
+  "top_sections_selected": [
+    {
+      "chunk_id": "summary_58664db2-0fa6-4736-8fab-dabae31c346a",
+      "heading": "Document Summary",
+      "page_num": 1,
+      "dense_score": 1.0
+    }
+  ],
+  "retrieved_sentences_count": 1,
+  "retrieved_sentences": [
+    {
+      "rank": 1,
+      "chunk_id": "summary_58664db2-0fa6-4736-8fab-dabae31c346a",
+      "section_id": null,
+      "heading": "Document Summary",
+      "page_num": 1,
+      "dense_score": 1.0,
+      "text": "Comprehensive summary could not be fully compiled due to LLM error. Section outline:\n\nSection SOFTWARE DEVELOPMENT AGREE..."
+    }
+  ],
+  "context_sent_to_llm": "Source [1]\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf\nSection: Document Summary\nPage: 1\n\nComprehensive summary could not be fully compiled due to LLM error. Section outline:\n\nSection SOFTWARE DEVELOPMENT AGREEMENT: THIS SOFTWARE DEVELOPMENT AGREEMENT (Agreement ) is made December 3rd, 2018 (the Effective Date) by and between DOT COM LLC, OBA Seattle Software Developers, a Delaware limited liability company (Deve...\nSection 2. Statement of Work: Developer will design, develop, and deliver, satisfactory to Client, the \"Pelican Delivers Application Phase 1\" (collectively, the Subject Program), and all elated Project services (collectively, the ...\nSection 3.1 DELIVERY SCHEDULE\u037e MILESTONES: Each SOW will include a delivery schedule for Services and Deliverables (the Delivery Schedule) that will identify mutual agreed upon Project time deadlines concerning the performance of Services, del...\nSection 3.2 PROJECT DELIVERY AND INSTALLATION: As detailed in a SOW hereto, Developer will provide certain Services, Deliverables and Documentation to Client upon a designated Milestone in accordance with such Milestone's specific Specifications (...\nSection 3.3 ACCEPTANCE A",
+  "generated_answer": "Based on the provided context, here are the critical points and key highlights:\n\n* The document is a Software Development Agreement between DOT COM LLC and OBA Seattle Software Developers, a Delaware limited liability company, dated December 3rd, 2018 [1].\n* The agreement is for the development of the \"Pelican Delivers Application Phase 1\" (collectively, the Subject Program) and all related Project services [1].\n* The Developer will design, develop, and deliver the Subject Program, and all related Project services, satisfactory to the Client [1].\n* Each Statement of Work (SOW) will include a delivery schedule for Services and Deliverables, identifying mutual agreed-upon Project time deadlines [1].\n* The Developer will provide certain Services, Deliverables, and Documentation to the Client upon a designated Milestone in accordance with such Milestone's specific Specifications [1].\n* The agreement does not specify the exact terms of the delivery schedule, milestones, or specifications, as these are to be detailed in a separate Statement of Work [1].\n\nNote: The context does not provide a comprehensive summary due to an LLM error, and some sections are not fully compiled.",
+  "citations": [
+    {
+      "document": "PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf",
+      "page": 1,
+      "section": "Document Summary",
+      "chunk_id": "summary_58664db2-0fa6-4736-8fab-dabae31c346a",
+      "score": 1.0,
+      "preview": "Comprehensive summary could not be fully compiled due to LLM error. Section outline:\n\nSection SOFTWARE DEVELOPMENT AGREEMENT: THIS SOFTWARE DEVELOPMENT AGREEMENT (Agreement ) is made December 3rd, 201..."
+    }
+  ]
+}
+================================================================================
+{
+  "timestamp": "2026-06-08T14:14:32.303266",
+  "query": "[Format Instruction: Provide a bullet list of critical points and key highlights.]\n\nsummarize the key findings in the given doc",
+  "doc_id": [
+    "58664db2-0fa6-4736-8fab-dabae31c346a"
+  ],
+  "retrieved_sections_count": 1,
+  "retrieved_sections": [
+    {
+      "rank": 1,
+      "chunk_id": "summary_58664db2-0fa6-4736-8fab-dabae31c346a",
+      "heading": "Document Summary",
+      "page_num": 1,
+      "dense_score": 1.0
+    }
+  ],
+  "bm25_scores": [],
+  "rrf_fusion": [],
+  "top_sections_selected": [
+    {
+      "chunk_id": "summary_58664db2-0fa6-4736-8fab-dabae31c346a",
+      "heading": "Document Summary",
+      "page_num": 1,
+      "dense_score": 1.0
+    }
+  ],
+  "retrieved_sentences_count": 1,
+  "retrieved_sentences": [
+    {
+      "rank": 1,
+      "chunk_id": "summary_58664db2-0fa6-4736-8fab-dabae31c346a",
+      "section_id": null,
+      "heading": "Document Summary",
+      "page_num": 1,
+      "dense_score": 1.0,
+      "text": "Comprehensive summary could not be fully compiled due to LLM error. Section outline:\n\nSection BETA CONSULTING AGREEMENT:..."
+    }
+  ],
+  "context_sent_to_llm": "Source [1]\nDocument: beta_contract.pdf\nSection: Document Summary\nPage: 1\n\nComprehensive summary could not be fully compiled due to LLM error. Section outline:\n\nSection BETA CONSULTING AGREEMENT: Project Codename: TIGER-456 Termination: This agreement may be terminated with 90 days written notice. Liability: Liability is capped at $500,000. Governing Law: New York....",
+  "generated_answer": "Based on the provided context, here are the critical points and key highlights:\n\n* The document is a Software Development Agreement between DOT COM LLC and OBA Seattle Software Developers, a Delaware limited liability company, dated December 3rd, 2018 [1].\n* The agreement is for the development of the \"Pelican Delivers Application Phase 1\" (collectively, the Subject Program) and all related Project services [1].\n* The Developer will design, develop, and deliver the Subject Program, and all related Project services, satisfactory to the Client [1].\n* Each Statement of Work (SOW) will include a delivery schedule for Services and Deliverables, identifying mutual agreed-upon Project time deadlines [1].\n* The Developer will provide certain Services, Deliverables, and Documentation to the Client upon a designated Milestone in accordance with such Milestone's specific Specifications [1].\n* The agreement does not specify the exact terms of the delivery schedule, milestones, or specifications, as these are to be detailed in a separate Statement of Work [1].\n* The agreement may be terminated with 90 days written notice [1].\n* Liability is capped at $500,000 [1].\n* The governing law for this agreement is New York [1].",
+  "citations": [
+    {
+      "document": "beta_contract.pdf",
+      "page": 1,
+      "section": "Document Summary",
+      "chunk_id": "summary_58664db2-0fa6-4736-8fab-dabae31c346a",
+      "score": 1.0,
+      "preview": "Comprehensive summary could not be fully compiled due to LLM error. Section outline:\n\nSection BETA CONSULTING AGREEMENT: Project Codename: TIGER-456 Termination: This agreement may be terminated with ..."
+    }
+  ]
+}
+================================================================================
+{
+  "timestamp": "2026-06-08T14:17:22.843602",
+  "query": "[Format Instruction: Provide a bullet list of critical points and key highlights.]\n\nSummarize the key findings in this document",
+  "doc_id": [
+    "d2010c0a-9e4e-4c7b-85b9-7bfcf0b761c2"
+  ],
+  "retrieved_sections_count": 1,
+  "retrieved_sections": [
+    {
+      "rank": 1,
+      "chunk_id": "summary_d2010c0a-9e4e-4c7b-85b9-7bfcf0b761c2",
+      "heading": "Document Summary",
+      "page_num": 1,
+      "dense_score": 1.0
+    }
+  ],
+  "bm25_scores": [],
+  "rrf_fusion": [],
+  "top_sections_selected": [
+    {
+      "chunk_id": "summary_d2010c0a-9e4e-4c7b-85b9-7bfcf0b761c2",
+      "heading": "Document Summary",
+      "page_num": 1,
+      "dense_score": 1.0
+    }
+  ],
+  "retrieved_sentences_count": 1,
+  "retrieved_sentences": [
+    {
+      "rank": 1,
+      "chunk_id": "summary_d2010c0a-9e4e-4c7b-85b9-7bfcf0b761c2",
+      "section_id": null,
+      "heading": "Document Summary",
+      "page_num": 1,
+      "dense_score": 1.0,
+      "text": "Comprehensive summary could not be fully compiled due to LLM error. Section outline:\n\nSection Summary: AI/ML student at ..."
+    }
+  ],
+  "context_sent_to_llm": "Source [1]\nDocument: MAFResume (3).pdf\nSection: Document Summary\nPage: 1\n\nComprehensive summary could not be fully compiled due to LLM error. Section outline:\n\nSection Summary: AI/ML student at CBIT with hands-on experience in deep learning, computer vision, and full-stack deployment. Built and shipped production-level projects using TensorFlow, FastAPI, React, and Docker. P...\nSection Explainable Fingerprint-Based Blood Group Detection: Built a 3-model ensemble (MobileNetV2, ResNet50, EfficientNet-B3) achieving 87% accuracy and 0.989 macro AUC across 8 blood group classes using Python, TensorFlow, and HuggingFace Hub\n\nImplemented Gra...\nSection Skills and Tools: Languages and Databases:\n\nPython, Java, C, JavaScript, HTML, CSS, SQLite3, MongoDB\n\nTools and Frameworks: Git, VS Code, Google Colab, Flask, FastAPI, Docker, React, Vite, Streamlit, TensorFlow, scikit...",
+  "generated_answer": "Based on the provided context, here are the critical points and key highlights:\n\n* The individual is an AI/ML student at CBIT with hands-on experience in deep learning, computer vision, and full-stack deployment [1].\n* They have built and shipped production-level projects using various technologies, including TensorFlow, FastAPI, React, and Docker [1].\n* The individual has implemented a 3-model ensemble (MobileNetV2, ResNet50, EfficientNet-B3) for blood group detection, achieving 87% accuracy and 0.989 macro AUC across 8 blood group classes [1].\n* The technologies used for this project include Python, TensorFlow, and HuggingFace Hub [1].\n* The individual has proficiency in multiple programming languages, including Python, Java, C, JavaScript, HTML, and CSS [1].\n* They also have experience with various databases, such as SQLite3 and MongoDB [1].\n* The individual is familiar with a range of tools and frameworks, including Git, VS Code, Google Colab, Flask, FastAPI, Docker, React, Vite, Streamlit, and TensorFlow [1].",
+  "citations": [
+    {
+      "document": "MAFResume (3).pdf",
+      "page": 1,
+      "section": "Document Summary",
+      "chunk_id": "summary_d2010c0a-9e4e-4c7b-85b9-7bfcf0b761c2",
+      "score": 1.0,
+      "preview": "Comprehensive summary could not be fully compiled due to LLM error. Section outline:\n\nSection Summary: AI/ML student at CBIT with hands-on experience in deep learning, computer vision, and full-stack ..."
+    }
+  ]
+}
+================================================================================
+{
+  "timestamp": "2026-06-08T14:20:04.953046",
+  "query": "[Format Instruction: Provide a bullet list of critical points and key highlights.]\n\nSummarize the key findings in this document",
+  "doc_id": [
+    "d2010c0a-9e4e-4c7b-85b9-7bfcf0b761c2"
+  ],
+  "retrieved_sections_count": 1,
+  "retrieved_sections": [
+    {
+      "rank": 1,
+      "chunk_id": "summary_d2010c0a-9e4e-4c7b-85b9-7bfcf0b761c2",
+      "heading": "Document Summary",
+      "page_num": 1,
+      "dense_score": 1.0
+    }
+  ],
+  "bm25_scores": [],
+  "rrf_fusion": [],
+  "top_sections_selected": [
+    {
+      "chunk_id": "summary_d2010c0a-9e4e-4c7b-85b9-7bfcf0b761c2",
+      "heading": "Document Summary",
+      "page_num": 1,
+      "dense_score": 1.0
+    }
+  ],
+  "retrieved_sentences_count": 1,
+  "retrieved_sentences": [
+    {
+      "rank": 1,
+      "chunk_id": "summary_d2010c0a-9e4e-4c7b-85b9-7bfcf0b761c2",
+      "section_id": null,
+      "heading": "Document Summary",
+      "page_num": 1,
+      "dense_score": 1.0,
+      "text": "Comprehensive summary could not be fully compiled due to LLM error. Section outline:\n\nSection Summary: AI/ML student at ..."
+    }
+  ],
+  "context_sent_to_llm": "Source [1]\nDocument: MAFResume (3).pdf\nSection: Document Summary\nPage: 1\n\nComprehensive summary could not be fully compiled due to LLM error. Section outline:\n\nSection Summary: AI/ML student at CBIT with hands-on experience in deep learning, computer vision, and full-stack deployment. Built and shipped production-level projects using TensorFlow, FastAPI, React, and Docker. P...\nSection Explainable Fingerprint-Based Blood Group Detection: Built a 3-model ensemble (MobileNetV2, ResNet50, EfficientNet-B3) achieving 87% accuracy and 0.989 macro AUC across 8 blood group classes using Python, TensorFlow, and HuggingFace Hub\n\nImplemented Gra...\nSection Skills and Tools: Languages and Databases:\n\nPython, Java, C, JavaScript, HTML, CSS, SQLite3, MongoDB\n\nTools and Frameworks: Git, VS Code, Google Colab, Flask, FastAPI, Docker, React, Vite, Streamlit, TensorFlow, scikit...",
+  "generated_answer": "Based on the provided context, here are the critical points and key highlights:\n\n* The individual is an AI/ML student at CBIT with hands-on experience in deep learning, computer vision, and full-stack deployment [1].\n* They have built and shipped production-level projects using various technologies, including TensorFlow, FastAPI, React, and Docker [1].\n* The individual has implemented a 3-model ensemble (MobileNetV2, ResNet50, EfficientNet-B3) for blood group detection, achieving 87% accuracy and 0.989 macro AUC across 8 blood group classes [1].\n* The technologies used for this project include Python, TensorFlow, and HuggingFace Hub [1].\n* The individual has proficiency in multiple programming languages, including Python, Java, C, JavaScript, HTML, and CSS [1].\n* They also have experience with various databases, such as SQLite3 and MongoDB [1].\n* The individual is familiar with a range of tools and frameworks, including Git, VS Code, Google Colab, Flask, FastAPI, Docker, React, Vite, Streamlit, and TensorFlow [1].",
+  "citations": [
+    {
+      "document": "MAFResume (3).pdf",
+      "page": 1,
+      "section": "Document Summary",
+      "chunk_id": "summary_d2010c0a-9e4e-4c7b-85b9-7bfcf0b761c2",
+      "score": 1.0,
+      "preview": "Comprehensive summary could not be fully compiled due to LLM error. Section outline:\n\nSection Summary: AI/ML student at CBIT with hands-on experience in deep learning, computer vision, and full-stack ..."
+    }
+  ]
+}
+================================================================================
+{
+  "timestamp": "2026-06-08T14:21:33.176049",
+  "query": "[Format Instruction: Provide a bullet list of critical points and key highlights.]\n\nSummarize the key findings in this document",
+  "doc_id": [
+    "2f789cea-ddba-4807-aa5a-49f344c74ca1"
+  ],
+  "retrieved_sections_count": 1,
+  "retrieved_sections": [
+    {
+      "rank": 1,
+      "chunk_id": "summary_2f789cea-ddba-4807-aa5a-49f344c74ca1",
+      "heading": "Document Summary",
+      "page_num": 1,
+      "dense_score": 1.0
+    }
+  ],
+  "bm25_scores": [],
+  "rrf_fusion": [],
+  "top_sections_selected": [
+    {
+      "chunk_id": "summary_2f789cea-ddba-4807-aa5a-49f344c74ca1",
+      "heading": "Document Summary",
+      "page_num": 1,
+      "dense_score": 1.0
+    }
+  ],
+  "retrieved_sentences_count": 1,
+  "retrieved_sentences": [
+    {
+      "rank": 1,
+      "chunk_id": "summary_2f789cea-ddba-4807-aa5a-49f344c74ca1",
+      "section_id": null,
+      "heading": "Document Summary",
+      "page_num": 1,
+      "dense_score": 1.0,
+      "text": "Comprehensive summary could not be fully compiled due to LLM error. Section outline:\n\nSection SOFTWARE DEVELOPMENT AGREE..."
+    }
+  ],
+  "context_sent_to_llm": "Source [1]\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf\nSection: Document Summary\nPage: 1\n\nComprehensive summary could not be fully compiled due to LLM error. Section outline:\n\nSection SOFTWARE DEVELOPMENT AGREEMENT: THIS SOFTWARE DEVELOPMENT AGREEMENT (Agreement ) is made December 3rd, 2018 (the Effective Date) by and between DOT COM LLC, OBA Seattle Software Developers, a Delaware limited liability company (Deve...\nSection 2. Statement of Work: Developer will design, develop, and deliver, satisfactory to Client, the \"Pelican Delivers Application Phase 1\" (collectively, the Subject Program), and all elated Project services (collectively, the ...\nSection 3.1 DELIVERY SCHEDULE\u037e MILESTONES: Each SOW will include a delivery schedule for Services and Deliverables (the Delivery Schedule) that will identify mutual agreed upon Project time deadlines concerning the performance of Services, del...\nSection 3.2 PROJECT DELIVERY AND INSTALLATION: As detailed in a SOW hereto, Developer will provide certain Services, Deliverables and Documentation to Client upon a designated Milestone in accordance with such Milestone's specific Specifications (...\nSection 3.3 ACCEPTANCE A",
+  "generated_answer": "Based on the provided context, here are the critical points and key highlights:\n\n* The document is a Software Development Agreement between DOT COM LLC and OBA Seattle Software Developers [1].\n* The agreement is made on December 3rd, 2018, and the effective date is also December 3rd, 2018 [1].\n* The developer will design, develop, and deliver the \"Pelican Delivers Application Phase 1\" (Subject Program) and all related Project services [1].\n* Each Statement of Work (SOW) will include a delivery schedule for Services and Deliverables, identifying mutual agreed-upon Project time deadlines [1].\n* The developer will provide certain Services, Deliverables, and Documentation to the Client upon a designated Milestone in accordance with such Milestone's specific Specifications [1].\n* The agreement includes provisions for acceptance, payment, and termination [1].\n* The document does not contain any information about the individual's skills, experience, or projects, as previously mentioned in the initial context [1].",
+  "citations": [
+    {
+      "document": "PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf",
+      "page": 1,
+      "section": "Document Summary",
+      "chunk_id": "summary_2f789cea-ddba-4807-aa5a-49f344c74ca1",
+      "score": 1.0,
+      "preview": "Comprehensive summary could not be fully compiled due to LLM error. Section outline:\n\nSection SOFTWARE DEVELOPMENT AGREEMENT: THIS SOFTWARE DEVELOPMENT AGREEMENT (Agreement ) is made December 3rd, 201..."
+    }
+  ]
+}
+================================================================================
+{
+  "timestamp": "2026-06-08T14:22:55.089069",
+  "query": "[Format Instruction: Provide a bullet list of critical points and key highlights.]\n\ncompare the given documents",
+  "doc_id": [
+    "58664db2-0fa6-4736-8fab-dabae31c346a",
+    "f063407f-8f61-40d6-bd52-e4932290c443"
+  ],
+  "retrieved_sections_count": 2,
+  "retrieved_sections": [
+    {
+      "rank": 1,
+      "chunk_id": "sec_f6f55e06",
+      "heading": "BETA CONSULTING AGREEMENT",
+      "page_num": 1,
+      "dense_score": 0.4545
+    },
+    {
+      "rank": 2,
+      "chunk_id": "sec_8e60b72f",
+      "heading": "GAMMA EMPLOYMENT AGREEMENT",
+      "page_num": 1,
+      "dense_score": 0.4492
+    }
+  ],
+  "bm25_scores": [
+    {
+      "rank": 1,
+      "chunk_id": "sec_f6f55e06",
+      "heading": "BETA CONSULTING AGREEMENT",
+      "score": 0.0
+    },
+    {
+      "rank": 2,
+      "chunk_id": "sec_8e60b72f",
+      "heading": "GAMMA EMPLOYMENT AGREEMENT",
+      "score": 0.0
+    }
+  ],
+  "rrf_fusion": [
+    {
+      "rank": 1,
+      "chunk_id": "sec_f6f55e06",
+      "fusion_score": 0.03278688524590164
+    },
+    {
+      "rank": 2,
+      "chunk_id": "sec_8e60b72f",
+      "fusion_score": 0.03225806451612903
+    }
+  ],
+  "top_sections_selected": [
+    {
+      "chunk_id": "sec_f6f55e06",
+      "heading": "BETA CONSULTING AGREEMENT",
+      "page_num": 1,
+      "dense_score": 0.4545
+    },
+    {
+      "chunk_id": "sec_8e60b72f",
+      "heading": "GAMMA EMPLOYMENT AGREEMENT",
+      "page_num": 1,
+      "dense_score": 0.4492
+    }
+  ],
+  "retrieved_sentences_count": 2,
+  "retrieved_sentences": [
+    {
+      "rank": 1,
+      "chunk_id": "sen_19d229ab",
+      "section_id": "sec_f6f55e06",
+      "heading": "BETA CONSULTING AGREEMENT",
+      "page_num": 1,
+      "dense_score": 0.4545,
+      "text": "Project Codename: TIGER-456 Termination: This agreement may be terminated with 90 days written notice. Liability: Liabil..."
+    },
+    {
+      "rank": 2,
+      "chunk_id": "sen_56686201",
+      "section_id": "sec_8e60b72f",
+      "heading": "GAMMA EMPLOYMENT AGREEMENT",
+      "page_num": 1,
+      "dense_score": 0.4492,
+      "text": "Project Codename: DRAGON-789 Termination: Termination requires 15 days notice. Salary: Annual salary is $120,000. Vacati..."
+    }
+  ],
+  "context_sent_to_llm": "Source [1]\nDocument: beta_contract.pdf\nSection: BETA CONSULTING AGREEMENT\nPage: 1\n\nProject Codename: TIGER-456 Termination: This agreement may be terminated with 90 days written notice. Liability: Liability is capped at $500,000. Governing Law: New York.\n\nSource [2]\nDocument: gamma_contract.pdf\nSection: GAMMA EMPLOYMENT AGREEMENT\nPage: 1\n\nProject Codename: DRAGON-789 Termination: Termination requires 15 days notice. Salary: Annual salary is $120,000. Vacation: 25 paid vacation days.",
+  "generated_answer": "**Comparison of Documents**\n\nBased on the provided context, here are the critical points and key highlights:\n\n* **Project Codename**\n\n    **beta_contract.pdf:**\n    The project codename is TIGER-456.\n    Evidence: \"Project Codename: TIGER-456\"\n\n    **gamma_contract.pdf:**\n    The project codename is DRAGON-789.\n    Evidence: \"Project Codename: DRAGON-789\"\n\n* **Termination Notice Period**\n\n    **beta_contract.pdf:**\n    The agreement may be terminated with 90 days written notice.\n    Evidence: \"Termination: This agreement may be terminated with 90 days written notice.\"\n\n    **gamma_contract.pdf:**\n    Termination requires 15 days notice.\n    Evidence: \"Termination requires 15 days notice.\"\n\n* **Liability Limitation**\n\n    **beta_contract.pdf:**\n    Liability is capped at $500,000.\n    Evidence: \"Liability: Liability is capped at $500,000.\"\n\n    **gamma_contract.pdf:**\n    Not specified.\n    Evidence: No mention of liability limitation.\n\n* **Salary**\n\n    **beta_contract.pdf:**\n    Not specified.\n    Evidence: No mention of salary.\n\n    **gamma_contract.pdf:**\n    Annual salary is $120,000.\n    Evidence: \"Salary: Annual salary is $120,000.\"\n\n* **Vacation Days**\n\n    **beta_contract.pdf:**\n    Not specified.\n    Evidence: No mention of vacation days.\n\n    **gamma_contract.pdf:**\n    25 paid vacation days.\n    Evidence: \"Vacation: 25 paid vacation days.\"\n\n* **Governing Law**\n\n    **beta_contract.pdf:**\n    New York.\n    Evidence: \"Governing Law: New York.\"\n\n    **gamma_contract.pdf:**\n    Not specified.\n    Evidence: No mention of governing law.",
+  "citations": [
+    {
+      "document": "beta_contract.pdf",
+      "page": 1,
+      "section": "BETA CONSULTING AGREEMENT",
+      "chunk_id": "sen_19d229ab",
+      "score": 0.4545,
+      "preview": "Project Codename: TIGER-456 Termination: This agreement may be terminated with 90 days written notice. Liability: Liability is capped at $500,000. Governing Law: New York."
+    },
+    {
+      "document": "gamma_contract.pdf",
+      "page": 1,
+      "section": "GAMMA EMPLOYMENT AGREEMENT",
+      "chunk_id": "sen_56686201",
+      "score": 0.4492,
+      "preview": "Project Codename: DRAGON-789 Termination: Termination requires 15 days notice. Salary: Annual salary is $120,000. Vacation: 25 paid vacation days."
+    }
+  ]
+}
+================================================================================
+{
+  "timestamp": "2026-06-08T14:25:20.931042",
+  "query": "[Format Instruction: Provide a bullet list of critical points and key highlights.]\n\ncompare the given documents",
+  "doc_id": [
+    "58664db2-0fa6-4736-8fab-dabae31c346a",
+    "f063407f-8f61-40d6-bd52-e4932290c443"
+  ],
+  "retrieved_sections_count": 2,
+  "retrieved_sections": [
+    {
+      "rank": 1,
+      "chunk_id": "sec_f6f55e06",
+      "heading": "BETA CONSULTING AGREEMENT",
+      "page_num": 1,
+      "dense_score": 0.4545
+    },
+    {
+      "rank": 2,
+      "chunk_id": "sec_8e60b72f",
+      "heading": "GAMMA EMPLOYMENT AGREEMENT",
+      "page_num": 1,
+      "dense_score": 0.4492
+    }
+  ],
+  "bm25_scores": [
+    {
+      "rank": 1,
+      "chunk_id": "sec_f6f55e06",
+      "heading": "BETA CONSULTING AGREEMENT",
+      "score": 0.0
+    },
+    {
+      "rank": 2,
+      "chunk_id": "sec_8e60b72f",
+      "heading": "GAMMA EMPLOYMENT AGREEMENT",
+      "score": 0.0
+    }
+  ],
+  "rrf_fusion": [
+    {
+      "rank": 1,
+      "chunk_id": "sec_f6f55e06",
+      "fusion_score": 0.03278688524590164
+    },
+    {
+      "rank": 2,
+      "chunk_id": "sec_8e60b72f",
+      "fusion_score": 0.03225806451612903
+    }
+  ],
+  "top_sections_selected": [
+    {
+      "chunk_id": "sec_f6f55e06",
+      "heading": "BETA CONSULTING AGREEMENT",
+      "page_num": 1,
+      "dense_score": 0.4545
+    },
+    {
+      "chunk_id": "sec_8e60b72f",
+      "heading": "GAMMA EMPLOYMENT AGREEMENT",
+      "page_num": 1,
+      "dense_score": 0.4492
+    }
+  ],
+  "retrieved_sentences_count": 2,
+  "retrieved_sentences": [
+    {
+      "rank": 1,
+      "chunk_id": "sen_19d229ab",
+      "section_id": "sec_f6f55e06",
+      "heading": "BETA CONSULTING AGREEMENT",
+      "page_num": 1,
+      "dense_score": 0.4545,
+      "text": "Project Codename: TIGER-456 Termination: This agreement may be terminated with 90 days written notice. Liability: Liabil..."
+    },
+    {
+      "rank": 2,
+      "chunk_id": "sen_56686201",
+      "section_id": "sec_8e60b72f",
+      "heading": "GAMMA EMPLOYMENT AGREEMENT",
+      "page_num": 1,
+      "dense_score": 0.4492,
+      "text": "Project Codename: DRAGON-789 Termination: Termination requires 15 days notice. Salary: Annual salary is $120,000. Vacati..."
+    }
+  ],
+  "context_sent_to_llm": "Source [1]\nDocument: beta_contract.pdf\nSection: BETA CONSULTING AGREEMENT\nPage: 1\n\nProject Codename: TIGER-456 Termination: This agreement may be terminated with 90 days written notice. Liability: Liability is capped at $500,000. Governing Law: New York.\n\nSource [2]\nDocument: gamma_contract.pdf\nSection: GAMMA EMPLOYMENT AGREEMENT\nPage: 1\n\nProject Codename: DRAGON-789 Termination: Termination requires 15 days notice. Salary: Annual salary is $120,000. Vacation: 25 paid vacation days.",
+  "generated_answer": "**Comparison of Documents**\n\nBased on the provided context, here are the critical points and key highlights:\n\n* **Project Codename**\n\n    **beta_contract.pdf:**\n    The project codename is TIGER-456.\n    Evidence: \"Project Codename: TIGER-456\" [1]\n\n    **gamma_contract.pdf:**\n    The project codename is DRAGON-789.\n    Evidence: \"Project Codename: DRAGON-789\" [2]\n\n* **Termination Notice Period**\n\n    **beta_contract.pdf:**\n    The agreement may be terminated with 90 days written notice.\n    Evidence: \"Termination: This agreement may be terminated with 90 days written notice.\" [1]\n\n    **gamma_contract.pdf:**\n    Termination requires 15 days notice.\n    Evidence: \"Termination requires 15 days notice.\" [2]\n\n* **Liability Limitation**\n\n    **beta_contract.pdf:**\n    Liability is capped at $500,000.\n    Evidence: \"Liability: Liability is capped at $500,000.\" [1]\n\n    **gamma_contract.pdf:**\n    Not specified.\n    Evidence: No mention of liability limitation.\n\n* **Salary**\n\n    **beta_contract.pdf:**\n    Not specified.\n    Evidence: No mention of salary.\n\n    **gamma_contract.pdf:**\n    Annual salary is $120,000.\n    Evidence: \"Salary: Annual salary is $120,000.\" [2]\n\n* **Vacation Days**\n\n    **beta_contract.pdf:**\n    Not specified.\n    Evidence: No mention of vacation days.\n\n    **gamma_contract.pdf:**\n    25 paid vacation days.\n    Evidence: \"Vacation: 25 paid vacation days.\" [2]\n\n* **Governing Law**\n\n    **beta_contract.pdf:**\n    New York.\n    Evidence: \"Governing Law: New York.\" [1]\n\n    **gamma_contract.pdf:**\n    Not specified.\n    Evidence: No mention of governing law.\n\n* **Project Type**\n\n    **beta_contract.pdf:**\n    Consulting agreement.\n    Evidence: \"BETA CONSULTING AGREEMENT\" [1]\n\n    **gamma_contract.pdf:**\n    Employment agreement.\n    Evidence: \"GAMMA EMPLOYMENT AGREEMENT\" [2]\n\n* **Project Duration**\n\n    **beta_contract.pdf:**\n    Not specified.\n    Evidence: No mention of project duration.\n\n    **gamma_contract.pdf:**\n    Not specified.\n    Evidence: No mention of project duration.",
+  "citations": [
+    {
+      "document": "beta_contract.pdf",
+      "page": 1,
+      "section": "BETA CONSULTING AGREEMENT",
+      "chunk_id": "sen_19d229ab",
+      "score": 0.4545,
+      "preview": "Project Codename: TIGER-456 Termination: This agreement may be terminated with 90 days written notice. Liability: Liability is capped at $500,000. Governing Law: New York."
+    },
+    {
+      "document": "gamma_contract.pdf",
+      "page": 1,
+      "section": "GAMMA EMPLOYMENT AGREEMENT",
+      "chunk_id": "sen_56686201",
+      "score": 0.4492,
+      "preview": "Project Codename: DRAGON-789 Termination: Termination requires 15 days notice. Salary: Annual salary is $120,000. Vacation: 25 paid vacation days."
+    }
+  ]
+}
+================================================================================
+{
+  "timestamp": "2026-06-08T14:29:04.573001",
+  "query": "[Format Instruction: Provide a bullet list of critical points and key highlights.]\n\ncompare the two given documents",
+  "doc_id": [
+    "58664db2-0fa6-4736-8fab-dabae31c346a",
+    "f063407f-8f61-40d6-bd52-e4932290c443"
+  ],
+  "retrieved_sections_count": 2,
+  "retrieved_sections": [
+    {
+      "rank": 1,
+      "chunk_id": "sec_f6f55e06",
+      "heading": "BETA CONSULTING AGREEMENT",
+      "page_num": 1,
+      "dense_score": 0.4621
+    },
+    {
+      "rank": 2,
+      "chunk_id": "sec_8e60b72f",
+      "heading": "GAMMA EMPLOYMENT AGREEMENT",
+      "page_num": 1,
+      "dense_score": 0.4544
+    }
+  ],
+  "bm25_scores": [
+    {
+      "rank": 1,
+      "chunk_id": "sec_f6f55e06",
+      "heading": "BETA CONSULTING AGREEMENT",
+      "score": 0.0
+    },
+    {
+      "rank": 2,
+      "chunk_id": "sec_8e60b72f",
+      "heading": "GAMMA EMPLOYMENT AGREEMENT",
+      "score": 0.0
+    }
+  ],
+  "rrf_fusion": [
+    {
+      "rank": 1,
+      "chunk_id": "sec_f6f55e06",
+      "fusion_score": 0.03278688524590164
+    },
+    {
+      "rank": 2,
+      "chunk_id": "sec_8e60b72f",
+      "fusion_score": 0.03225806451612903
+    }
+  ],
+  "top_sections_selected": [
+    {
+      "chunk_id": "sec_f6f55e06",
+      "heading": "BETA CONSULTING AGREEMENT",
+      "page_num": 1,
+      "dense_score": 0.4621
+    },
+    {
+      "chunk_id": "sec_8e60b72f",
+      "heading": "GAMMA EMPLOYMENT AGREEMENT",
+      "page_num": 1,
+      "dense_score": 0.4544
+    }
+  ],
+  "retrieved_sentences_count": 2,
+  "retrieved_sentences": [
+    {
+      "rank": 1,
+      "chunk_id": "sen_19d229ab",
+      "section_id": "sec_f6f55e06",
+      "heading": "BETA CONSULTING AGREEMENT",
+      "page_num": 1,
+      "dense_score": 0.4621,
+      "text": "Project Codename: TIGER-456 Termination: This agreement may be terminated with 90 days written notice. Liability: Liabil..."
+    },
+    {
+      "rank": 2,
+      "chunk_id": "sen_56686201",
+      "section_id": "sec_8e60b72f",
+      "heading": "GAMMA EMPLOYMENT AGREEMENT",
+      "page_num": 1,
+      "dense_score": 0.4544,
+      "text": "Project Codename: DRAGON-789 Termination: Termination requires 15 days notice. Salary: Annual salary is $120,000. Vacati..."
+    }
+  ],
+  "context_sent_to_llm": "Source [1]\nDocument: beta_contract.pdf\nSection: BETA CONSULTING AGREEMENT\nPage: 1\n\nProject Codename: TIGER-456 Termination: This agreement may be terminated with 90 days written notice. Liability: Liability is capped at $500,000. Governing Law: New York.\n\nSource [2]\nDocument: gamma_contract.pdf\nSection: GAMMA EMPLOYMENT AGREEMENT\nPage: 1\n\nProject Codename: DRAGON-789 Termination: Termination requires 15 days notice. Salary: Annual salary is $120,000. Vacation: 25 paid vacation days.",
+  "generated_answer": "**Comparison of Documents**\n\nBased on the provided context, here are the critical points and key highlights:\n\n* **Project Codename**\n    * **beta_contract.pdf:** The project codename is TIGER-456.\n    * **gamma_contract.pdf:** The project codename is DRAGON-789.\n* **Termination Notice Period**\n    * **beta_contract.pdf:** The agreement may be terminated with 90 days written notice.\n    * **gamma_contract.pdf:** Termination requires 15 days notice.\n* **Liability Limitation**\n    * **beta_contract.pdf:** Liability is capped at $500,000.\n    * **gamma_contract.pdf:** Not specified.\n* **Salary**\n    * **beta_contract.pdf:** Not specified.\n    * **gamma_contract.pdf:** Annual salary is $120,000.\n* **Vacation Days**\n    * **beta_contract.pdf:** Not specified.\n    * **gamma_contract.pdf:** 25 paid vacation days.\n* **Governing Law**\n    * **beta_contract.pdf:** New York.\n    * **gamma_contract.pdf:** Not specified.\n* **Project Type**\n    * **beta_contract.pdf:** Consulting agreement.\n    * **gamma_contract.pdf:** Employment agreement.\n* **Project Duration**\n    * **beta_contract.pdf:** Not specified.\n    * **gamma_contract.pdf:** Not specified.",
+  "citations": [
+    {
+      "document": "beta_contract.pdf",
+      "page": 1,
+      "section": "BETA CONSULTING AGREEMENT",
+      "chunk_id": "sen_19d229ab",
+      "score": 0.4621,
+      "preview": "Project Codename: TIGER-456 Termination: This agreement may be terminated with 90 days written notice. Liability: Liability is capped at $500,000. Governing Law: New York."
+    },
+    {
+      "document": "gamma_contract.pdf",
+      "page": 1,
+      "section": "GAMMA EMPLOYMENT AGREEMENT",
+      "chunk_id": "sen_56686201",
+      "score": 0.4544,
+      "preview": "Project Codename: DRAGON-789 Termination: Termination requires 15 days notice. Salary: Annual salary is $120,000. Vacation: 25 paid vacation days."
+    }
+  ]
+}
+================================================================================
+{
+  "timestamp": "2026-06-08T14:31:57.828863",
+  "query": "[Format Instruction: Provide a bullet list of critical points and key highlights.]\n\nsummary of the given documen",
+  "doc_id": [
+    "2f789cea-ddba-4807-aa5a-49f344c74ca1"
+  ],
+  "retrieved_sections_count": 20,
+  "retrieved_sections": [
+    {
+      "rank": 1,
+      "chunk_id": "sec_24ed8675",
+      "heading": "3.2 PROJECT DELIVERY AND INSTALLATION",
+      "page_num": 2,
+      "dense_score": 0.5849
+    },
+    {
+      "rank": 2,
+      "chunk_id": "sec_ced396b7",
+      "heading": "12.8 ENTIRE AGREEMENT AND UNDERSTANDING",
+      "page_num": 13,
+      "dense_score": 0.5526
+    },
+    {
+      "rank": 3,
+      "chunk_id": "sec_9a75f09a",
+      "heading": "3.6 FAILURE OF DEVELOPER TO CORRECT DEFECTS",
+      "page_num": 3,
+      "dense_score": 0.5518
+    },
+    {
+      "rank": 4,
+      "chunk_id": "sec_e5b19c0d",
+      "heading": "3.3 ACCEPTANCE AND BETA TESTS",
+      "page_num": 2,
+      "dense_score": 0.5499
+    },
+    {
+      "rank": 5,
+      "chunk_id": "sec_4a5aa813",
+      "heading": "12.7 COUNTERPARTS",
+      "page_num": 13,
+      "dense_score": 0.5495
+    },
+    {
+      "rank": 6,
+      "chunk_id": "sec_7a179bd6",
+      "heading": "6.4 CONFIDENTIALITY AND NON-DISCLOSURE",
+      "page_num": 7,
+      "dense_score": 0.5479
+    },
+    {
+      "rank": 7,
+      "chunk_id": "sec_da7c2b8d",
+      "heading": "3.8 CLIENT ASSISTANCE",
+      "page_num": 3,
+      "dense_score": 0.5477
+    },
+    {
+      "rank": 8,
+      "chunk_id": "sec_5492f581",
+      "heading": "3.4 ACCEPTANCE OF MILESTONE DELIVERABLE\u037e CHANGE REQUESTS",
+      "page_num": 2,
+      "dense_score": 0.5438
+    },
+    {
+      "rank": 9,
+      "chunk_id": "sec_0cb6bccc",
+      "heading": "12.2 NOTICE",
+      "page_num": 12,
+      "dense_score": 0.5337
+    },
+    {
+      "rank": 10,
+      "chunk_id": "sec_b2418557",
+      "heading": "3.7 FINAL DELIVERABLE AND SUBJECT PROGRAM TESTING",
+      "page_num": 3,
+      "dense_score": 0.5334
+    },
+    {
+      "rank": 11,
+      "chunk_id": "sec_93c9b2e7",
+      "heading": "12.6 OTHER DEFINITIONAL TERMS, TERMS OF CONSTRUCTION",
+      "page_num": 13,
+      "dense_score": 0.5328
+    },
+    {
+      "rank": 12,
+      "chunk_id": "sec_4c265e34",
+      "heading": "3.1 DELIVERY SCHEDULE\u037e MILESTONES",
+      "page_num": 1,
+      "dense_score": 0.5208
+    },
+    {
+      "rank": 13,
+      "chunk_id": "sec_d41949f9",
+      "heading": "3.5 REJECTION OF MILESTONE DELIVERABLE",
+      "page_num": 2,
+      "dense_score": 0.5182
+    },
+    {
+      "rank": 14,
+      "chunk_id": "sec_a1341b18",
+      "heading": "6.3 LICENSE TO CLIENT'S INTELLECTUAL PROPERTY",
+      "page_num": 6,
+      "dense_score": 0.5167
+    },
+    {
+      "rank": 15,
+      "chunk_id": "sec_e71bf9b5",
+      "heading": "13. Acknowledgement by Client",
+      "page_num": 14,
+      "dense_score": 0.5147
+    },
+    {
+      "rank": 16,
+      "chunk_id": "sec_33cc2629",
+      "heading": "2. Statement of Work",
+      "page_num": 1,
+      "dense_score": 0.5117
+    },
+    {
+      "rank": 17,
+      "chunk_id": "sec_48eb1b83",
+      "heading": "9.1 CLIENT",
+      "page_num": 9,
+      "dense_score": 0.5105
+    },
+    {
+      "rank": 18,
+      "chunk_id": "sec_782de4ac",
+      "heading": "SOFTWARE DEVELOPMENT AGREEMENT",
+      "page_num": 1,
+      "dense_score": 0.508
+    },
+    {
+      "rank": 19,
+      "chunk_id": "sec_51419571",
+      "heading": "10.3 NON DISPARAGEMENT CLAUSE",
+      "page_num": 10,
+      "dense_score": 0.5075
+    },
+    {
+      "rank": 20,
+      "chunk_id": "sec_2620266c",
+      "heading": "11.2 TERMINATION FOR CAUSE",
+      "page_num": 10,
+      "dense_score": 0.5065
+    }
+  ],
+  "bm25_scores": [],
+  "rrf_fusion": [],
+  "top_sections_selected": [
+    {
+      "chunk_id": "sec_24ed8675",
+      "heading": "3.2 PROJECT DELIVERY AND INSTALLATION",
+      "page_num": 2,
+      "dense_score": 0.5849
+    },
+    {
+      "chunk_id": "sec_a1341b18",
+      "heading": "6.3 LICENSE TO CLIENT'S INTELLECTUAL PROPERTY",
+      "page_num": 6,
+      "dense_score": 0.5167
+    },
+    {
+      "chunk_id": "sec_7a179bd6",
+      "heading": "6.4 CONFIDENTIALITY AND NON-DISCLOSURE",
+      "page_num": 7,
+      "dense_score": 0.5479
+    },
+    {
+      "chunk_id": "sec_0cb6bccc",
+      "heading": "12.2 NOTICE",
+      "page_num": 12,
+      "dense_score": 0.5337
+    },
+    {
+      "chunk_id": "sec_ced396b7",
+      "heading": "12.8 ENTIRE AGREEMENT AND UNDERSTANDING",
+      "page_num": 13,
+      "dense_score": 0.5526
+    }
+  ],
+  "retrieved_sentences_count": 11,
+  "retrieved_sentences": [
+    {
+      "rank": 1,
+      "chunk_id": "sen_6b6df71d",
+      "section_id": "sec_24ed8675",
+      "heading": "3.2 PROJECT DELIVERY AND INSTALLATION",
+      "page_num": 2,
+      "dense_score": 0.5849,
+      "text": "As detailed in a SOW hereto, Developer will provide certain Services, Deliverables and Documentation to Client upon a de..."
+    },
+    {
+      "rank": 2,
+      "chunk_id": "sen_5c826bed",
+      "section_id": "sec_ced396b7",
+      "heading": "12.8 ENTIRE AGREEMENT AND UNDERSTANDING",
+      "page_num": 13,
+      "dense_score": 0.5526,
+      "text": "This Agreement and Appendices hereto are the complete and exclusive statement of agreement of the Parties as to matters ..."
+    },
+    {
+      "rank": 3,
+      "chunk_id": "sen_14b37aca",
+      "section_id": "sec_7a179bd6",
+      "heading": "6.4 CONFIDENTIALITY AND NON-DISCLOSURE",
+      "page_num": 7,
+      "dense_score": 0.5385,
+      "text": "Upon expiration or termination of this Agreement, Receiving Party will immediately destroy or erase all copies of docume..."
+    },
+    {
+      "rank": 4,
+      "chunk_id": "sen_27b4a865",
+      "section_id": "sec_0cb6bccc",
+      "heading": "12.2 NOTICE",
+      "page_num": 12,
+      "dense_score": 0.5337,
+      "text": "A notice required or permitted under this Agreement will be deemed given if in writing, and delivered by a Party in pers..."
+    },
+    {
+      "rank": 5,
+      "chunk_id": "sen_18850215",
+      "section_id": "sec_a1341b18",
+      "heading": "6.3 LICENSE TO CLIENT'S INTELLECTUAL PROPERTY",
+      "page_num": 6,
+      "dense_score": 0.5332,
+      "text": "To assist Developer to complete all Project-related Services and deliverable Deliverables to Client in a complete and ti..."
+    },
+    {
+      "rank": 6,
+      "chunk_id": "sen_39005110",
+      "section_id": "sec_7a179bd6",
+      "heading": "6.4 CONFIDENTIALITY AND NON-DISCLOSURE",
+      "page_num": 7,
+      "dense_score": 0.5221,
+      "text": "For purposes of this Agreement, Derivatives shall mean: (a) for copyrightable or copyrighted material, any translation, ..."
+    },
+    {
+      "rank": 7,
+      "chunk_id": "sen_063c97e6",
+      "section_id": "sec_7a179bd6",
+      "heading": "6.4 CONFIDENTIALITY AND NON-DISCLOSURE",
+      "page_num": 7,
+      "dense_score": 0.5194,
+      "text": "6.4.2 Non-Disclosure. Neither Party shall use or disclose Confidential Information of the other Party to any third party..."
+    },
+    {
+      "rank": 8,
+      "chunk_id": "sen_36e93a41",
+      "section_id": "sec_7a179bd6",
+      "heading": "6.4 CONFIDENTIALITY AND NON-DISCLOSURE",
+      "page_num": 7,
+      "dense_score": 0.514,
+      "text": "The Receiving Party further agrees to immediately notify Disclosing Party of any actual or suspected misuse misappropria..."
+    },
+    {
+      "rank": 9,
+      "chunk_id": "sen_7c8b43c3",
+      "section_id": "sec_7a179bd6",
+      "heading": "6.4 CONFIDENTIALITY AND NON-DISCLOSURE",
+      "page_num": 7,
+      "dense_score": 0.5085,
+      "text": "Confidential Information does not include information at: (a) is available to the public or that becomes available to th..."
+    },
+    {
+      "rank": 10,
+      "chunk_id": "sen_0605cd06",
+      "section_id": "sec_7a179bd6",
+      "heading": "6.4 CONFIDENTIALITY AND NON-DISCLOSURE",
+      "page_num": 7,
+      "dense_score": 0.4954,
+      "text": "Accordingly, in the event of a breach or threatened breach of Section 6 of this Agreement, Disclosing Party will be enti..."
+    },
+    {
+      "rank": 11,
+      "chunk_id": "sen_4853252a",
+      "section_id": "sec_a1341b18",
+      "heading": "6.3 LICENSE TO CLIENT'S INTELLECTUAL PROPERTY",
+      "page_num": 6,
+      "dense_score": 0.4752,
+      "text": "As such, Client hereby grants Developer a royalty-free, worldwide, license to use its Content, Marks, Procedures and Con..."
+    }
+  ],
+  "context_sent_to_llm": "Source [1]\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf\nSection: 3.2 PROJECT DELIVERY AND INSTALLATION\nPage: 2\n\nAs detailed in a SOW hereto, Developer will provide certain Services, Deliverables and Documentation to Client upon a designated Milestone in accordance with such Milestone's specific Specifications (collectively, Specific Specifications). Prior to completing a Milestone, Developer will: (a) inform Client of the availability of each portion of a Deliverable otherwise required be delivered by such Milestone date for testing by Client (he Acceptance Test Date)\u037e and (b) deliver to Client sue Deliverable (each a Milestone Deliverable) including the source code and object code form compatible with the platform(s) described in the SOW for such Milestone Deliverable.\n\nSource [2]\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf\nSection: 12.8 ENTIRE AGREEMENT AND UNDERSTANDING\nPage: 13\n\nThis Agreement and Appendices hereto are the complete and exclusive statement of agreement of the Parties as to matters covered by it. This Agreement and its Appendices replaces and supersedes all prior written or oral agreement or statements by and among the Parties with respect to the matters covered by it. This Agreement may not be modified or amended except in writing signed by a duly authorized representative of each Party.\n\nSource [3]\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf\nSection: 6.4 CONFIDENTIALITY AND NON-DISCLOSURE\nPage: 7\n\nUpon expiration or termination of this Agreement, Receiving Party will immediately destroy or erase all copies of documents or materials containing any Confidential Information provided by Disclosing Party and, upon the Disclosing Party's request, promptly confirm destruction of same by signing and returning to the Disclosing Party a certificate of destruction reasonably satisfactory to the Disclosing Party. 6.4.3 Derivatives. All Confidential Information, and any Derivatives thereof whether created by Client or Developer, remain the property of the Disclosing Party and no license or other rights to any Confidential Information or Derivatives is granted or implied hereby.\n\nSource [4]\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf\nSection: 12.2 NOTICE\nPage: 12\n\nA notice required or permitted under this Agreement will be deemed given if in writing, and delivered by a Party in person, one (1) business day after being sent via overnight carrier, or three (3) business days after being sent by certified mail return receipt requested to the address set forth below, or such other address as may be supplied by either Party subsequently:\n\nSource [5]\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf\nSection: 6.3 LICENSE TO CLIENT'S INTELLECTUAL PROPERTY\nPage: 6\n\nTo assist Developer to complete all Project-related Services and deliverable Deliverables to Client in a complete and timely manner, Client shall provide Developer access and licensed rights to the following as necessary to complete the Project: (a) text, software, graphics, photos, sounds, music, videos, designs, compilations, magnetic translations, digital conversion interactive features and the like (collectively, the Content)\u037e (b) any trademarks, service marks, trade dress and logos, whether owned or licensed by Client (collectively, the Marks)\u037e and (c) any know-how, methodologies, equipment, or processes used by Client in its operations {collectively, the Procedures)\u037e and (d) Client's Confidential Information (as defined below).\n\nSource [6]\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf\nSection: 6.4 CONFIDENTIALITY AND NON-DISCLOSURE\nPage: 7\n\nFor purposes of this Agreement, Derivatives shall mean: (a) for copyrightable or copyrighted material, any translation, abridgment, revision or other form in which an existing work may be recast, transformed or adapted \u037e(b) for patentable or patented material, any improvement thereon\u037e and (c) for material which is protected by trade secret, any new material derived from such existing trade secret material, including new material which may be protected under applicable copyright, patent, or trade secret law. 6.4.4 Notification of Suspected Disclosure.\n\nSource [7]\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf\nSection: 6.4 CONFIDENTIALITY AND NON-DISCLOSURE\nPage: 7\n\n6.4.2 Non-Disclosure. Neither Party shall use or disclose Confidential Information of the other Party to any third party, without the written consent of the Disclosing Party of such Confidential Information. Receiving Party agrees to undertake reasonable measures to maintain and preserve the Confidential Information of the Disclosing Party in confidence, which measures shall be no less than the measures taken by the\n\nReceiving Party to protect its own confidential information and in no vent shall be less than reasonable care.\n\nSource [8]\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf\nSection: 6.4 CONFIDENTIALITY AND NON-DISCLOSURE\nPage: 7\n\nThe Receiving Party further agrees to immediately notify Disclosing Party of any actual or suspected misuse misappropriation, or unauthorized disclosure of Confidential Information, which may come to Receiving Party's attention. 6.4.5  Injunctive Relief for Breach. Because of the unique nature of the Confidential Information and other elements of the Parties business relationship, the Parties acknowledge and agree that a breach of any of the provisions of Section 6 of this Agreement by Receiving Party will irreparably harm the Disclosing Party.\n\nSource [9]\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf\nSection: 6.4 CONFIDENTIALITY AND NON-DISCLOSURE\nPage: 7\n\nConfidential Information does not include information at: (a) is available to the public or that becomes available to the public through no act or failure to act by the receiving Party (Receiving Party)\u037e (b) is known to the Receiving Party prior to the date of disclosure by the disclosing Party (Disclosing Party), unless the Receiving Party agreed to keep such information in confidence at the time of receipt of the information\u037e (c) is properly obtained hereafter from a source that is not under an obligation of confidentiality with respect to such information\u037e or (d) is developed independently by the Receiving Party without reference to or use of the Disclosing Party's Confidential Information.\n\nSource [10]\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf\nSection: 6.4 CONFIDENTIALITY AND NON-DISCLOSURE\nPage: 7\n\nAccordingly, in the event of a breach or threatened breach of Section 6 of this Agreement, Disclosing Party will be entitled to seek injunctive relief to enforce the terms of Section 6 of this Agreement without the necessity of posting a bond or if a bond is required, at the minimum amount legally required.\n\nSource [11]\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf\nSection: 6.3 LICENSE TO CLIENT'S INTELLECTUAL PROPERTY\nPage: 6\n\nAs such, Client hereby grants Developer a royalty-free, worldwide, license to use its Content, Marks, Procedures and Confidential Information in order to complete the Project. Client hereby acknowledge and agrees that Client waives all moral rights to be identified as the author on any and all material or content identified under this subsection of this Agreement.",
+  "generated_answer": "* **Project Type**\n    * The agreement is a development agreement between PelicanDeliversInc and another party.\n* **Project Scope**\n    * The agreement covers the provision of certain services, deliverables, and documentation by the developer to the client.\n* **Confidentiality**\n    * The agreement includes provisions for confidentiality and non-disclosure, including the destruction of confidential information upon expiration or termination of the agreement.\n* **Intellectual Property**\n    * The client grants the developer a royalty-free, worldwide license to use its intellectual property, including content, marks, procedures, and confidential information.\n* **Notice**\n    * A notice required or permitted under the agreement will be deemed given if in writing, and delivered by a party in person, one business day after being sent via overnight carrier, or three business days after being sent by certified mail return receipt requested.\n* **Entire Agreement**\n    * The agreement and its appendices are the complete and exclusive statement of agreement between the parties, and may not be modified or amended except in writing signed by a duly authorized representative of each party.\n* **Governing Law**\n    * The agreement does not specify the governing law, but it is implied that the laws of the jurisdiction where the agreement was executed will apply.\n* **Dispute Resolution**\n    * In the event of a breach or threatened breach of the agreement, the disclosing party will be entitled to seek injunctive relief to enforce the terms of the agreement without the necessity of posting a bond.",
+  "citations": [
+    {
+      "document": "PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf",
+      "page": 2,
+      "section": "3.2 PROJECT DELIVERY AND INSTALLATION",
+      "chunk_id": "sen_6b6df71d",
+      "score": 0.5849,
+      "preview": "As detailed in a SOW hereto, Developer will provide certain Services, Deliverables and Documentation to Client upon a designated Milestone in accordance with such Milestone's specific Specifications (..."
+    },
+    {
+      "document": "PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf",
+      "page": 13,
+      "section": "12.8 ENTIRE AGREEMENT AND UNDERSTANDING",
+      "chunk_id": "sen_5c826bed",
+      "score": 0.5526,
+      "preview": "This Agreement and Appendices hereto are the complete and exclusive statement of agreement of the Parties as to matters covered by it. This Agreement and its Appendices replaces and supersedes all pri..."
+    },
+    {
+      "document": "PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf",
+      "page": 7,
+      "section": "6.4 CONFIDENTIALITY AND NON-DISCLOSURE",
+      "chunk_id": "sen_14b37aca",
+      "score": 0.5385,
+      "preview": "Upon expiration or termination of this Agreement, Receiving Party will immediately destroy or erase all copies of documents or materials containing any Confidential Information provided by Disclosing ..."
+    },
+    {
+      "document": "PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf",
+      "page": 12,
+      "section": "12.2 NOTICE",
+      "chunk_id": "sen_27b4a865",
+      "score": 0.5337,
+      "preview": "A notice required or permitted under this Agreement will be deemed given if in writing, and delivered by a Party in person, one (1) business day after being sent via overnight carrier, or three (3) bu..."
+    },
+    {
+      "document": "PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf",
+      "page": 6,
+      "section": "6.3 LICENSE TO CLIENT'S INTELLECTUAL PROPERTY",
+      "chunk_id": "sen_18850215",
+      "score": 0.5332,
+      "preview": "To assist Developer to complete all Project-related Services and deliverable Deliverables to Client in a complete and timely manner, Client shall provide Developer access and licensed rights to the fo..."
+    },
+    {
+      "document": "PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf",
+      "page": 7,
+      "section": "6.4 CONFIDENTIALITY AND NON-DISCLOSURE",
+      "chunk_id": "sen_39005110",
+      "score": 0.5221,
+      "preview": "For purposes of this Agreement, Derivatives shall mean: (a) for copyrightable or copyrighted material, any translation, abridgment, revision or other form in which an existing work may be recast, tran..."
+    },
+    {
+      "document": "PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf",
+      "page": 7,
+      "section": "6.4 CONFIDENTIALITY AND NON-DISCLOSURE",
+      "chunk_id": "sen_063c97e6",
+      "score": 0.5194,
+      "preview": "6.4.2 Non-Disclosure. Neither Party shall use or disclose Confidential Information of the other Party to any third party, without the written consent of the Disclosing Party of such Confidential Infor..."
+    },
+    {
+      "document": "PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf",
+      "page": 7,
+      "section": "6.4 CONFIDENTIALITY AND NON-DISCLOSURE",
+      "chunk_id": "sen_36e93a41",
+      "score": 0.514,
+      "preview": "The Receiving Party further agrees to immediately notify Disclosing Party of any actual or suspected misuse misappropriation, or unauthorized disclosure of Confidential Information, which may come to ..."
+    },
+    {
+      "document": "PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf",
+      "page": 7,
+      "section": "6.4 CONFIDENTIALITY AND NON-DISCLOSURE",
+      "chunk_id": "sen_7c8b43c3",
+      "score": 0.5085,
+      "preview": "Confidential Information does not include information at: (a) is available to the public or that becomes available to the public through no act or failure to act by the receiving Party (Receiving Part..."
+    },
+    {
+      "document": "PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf",
+      "page": 7,
+      "section": "6.4 CONFIDENTIALITY AND NON-DISCLOSURE",
+      "chunk_id": "sen_0605cd06",
+      "score": 0.4954,
+      "preview": "Accordingly, in the event of a breach or threatened breach of Section 6 of this Agreement, Disclosing Party will be entitled to seek injunctive relief to enforce the terms of Section 6 of this Agreeme..."
+    },
+    {
+      "document": "PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf",
+      "page": 6,
+      "section": "6.3 LICENSE TO CLIENT'S INTELLECTUAL PROPERTY",
+      "chunk_id": "sen_4853252a",
+      "score": 0.4752,
+      "preview": "As such, Client hereby grants Developer a royalty-free, worldwide, license to use its Content, Marks, Procedures and Confidential Information in order to complete the Project. Client hereby acknowledg..."
+    }
+  ]
+}
+================================================================================
+{
+  "timestamp": "2026-06-08T14:34:11.168638",
+  "query": "[Format Instruction: Provide a bullet list of critical points and key highlights.]\n\nwhat are the certain servies and deliverables by the developer",
+  "doc_id": [
+    "2f789cea-ddba-4807-aa5a-49f344c74ca1"
+  ],
+  "retrieved_sections_count": 1,
+  "retrieved_sections": [
+    {
+      "rank": 1,
+      "chunk_id": "summary_2f789cea-ddba-4807-aa5a-49f344c74ca1",
+      "heading": "Document Summary",
+      "page_num": 1,
+      "dense_score": 1.0
+    }
+  ],
+  "bm25_scores": [],
+  "rrf_fusion": [],
+  "top_sections_selected": [
+    {
+      "chunk_id": "summary_2f789cea-ddba-4807-aa5a-49f344c74ca1",
+      "heading": "Document Summary",
+      "page_num": 1,
+      "dense_score": 1.0
+    }
+  ],
+  "retrieved_sentences_count": 1,
+  "retrieved_sentences": [
+    {
+      "rank": 1,
+      "chunk_id": "summary_2f789cea-ddba-4807-aa5a-49f344c74ca1",
+      "section_id": null,
+      "heading": "Document Summary",
+      "page_num": 1,
+      "dense_score": 1.0,
+      "text": "Comprehensive summary could not be fully compiled due to LLM error. Section outline:\n\nSection SOFTWARE DEVELOPMENT AGREE..."
+    }
+  ],
+  "context_sent_to_llm": "Source [1]\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf\nSection: Document Summary\nPage: 1\n\nComprehensive summary could not be fully compiled due to LLM error. Section outline:\n\nSection SOFTWARE DEVELOPMENT AGREEMENT: THIS SOFTWARE DEVELOPMENT AGREEMENT (Agreement ) is made December 3rd, 2018 (the Effective Date) by and between DOT COM LLC, OBA Seattle Software Developers, a Delaware limited liability company (Deve...\nSection 2. Statement of Work: Developer will design, develop, and deliver, satisfactory to Client, the \"Pelican Delivers Application Phase 1\" (collectively, the Subject Program), and all elated Project services (collectively, the ...\nSection 3.1 DELIVERY SCHEDULE\u037e MILESTONES: Each SOW will include a delivery schedule for Services and Deliverables (the Delivery Schedule) that will identify mutual agreed upon Project time deadlines concerning the performance of Services, del...\nSection 3.2 PROJECT DELIVERY AND INSTALLATION: As detailed in a SOW hereto, Developer will provide certain Services, Deliverables and Documentation to Client upon a designated Milestone in accordance with such Milestone's specific Specifications (...\nSection 3.3 ACCEPTANCE A",
+  "generated_answer": "Based on the provided context, here are the critical points and key highlights:\n\n* **Services and Deliverables**\n    * The developer will provide certain services and deliverables to the client, as detailed in a Statement of Work (SOW).\n    * The services and deliverables will be provided upon a designated milestone in accordance with the milestone's specific specifications.\n    * The developer will design, develop, and deliver the \"Pelican Delivers Application Phase 1\" (collectively, the Subject Program), and all related Project services (collectively, the Deliverables).\n    * The Deliverables will include, but are not limited to:\n        + The Subject Program\n        + All related Project services\n        + Documentation\n    * The developer will provide the Deliverables in accordance with the Delivery Schedule, which will identify mutual agreed-upon Project time deadlines concerning the performance of services.",
+  "citations": [
+    {
+      "document": "PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf",
+      "page": 1,
+      "section": "Document Summary",
+      "chunk_id": "summary_2f789cea-ddba-4807-aa5a-49f344c74ca1",
+      "score": 1.0,
+      "preview": "Comprehensive summary could not be fully compiled due to LLM error. Section outline:\n\nSection SOFTWARE DEVELOPMENT AGREEMENT: THIS SOFTWARE DEVELOPMENT AGREEMENT (Agreement ) is made December 3rd, 201..."
+    }
+  ]
+}
+================================================================================
+{
+  "timestamp": "2026-06-08T14:36:23.030609",
+  "query": "[Format Instruction: Provide a bullet list of critical points and key highlights.]\n\nwhat is the project actual scope",
+  "doc_id": [
+    "2f789cea-ddba-4807-aa5a-49f344c74ca1"
+  ],
+  "retrieved_sections_count": 1,
+  "retrieved_sections": [
+    {
+      "rank": 1,
+      "chunk_id": "summary_2f789cea-ddba-4807-aa5a-49f344c74ca1",
+      "heading": "Document Summary",
+      "page_num": 1,
+      "dense_score": 1.0
+    }
+  ],
+  "bm25_scores": [],
+  "rrf_fusion": [],
+  "top_sections_selected": [
+    {
+      "chunk_id": "summary_2f789cea-ddba-4807-aa5a-49f344c74ca1",
+      "heading": "Document Summary",
+      "page_num": 1,
+      "dense_score": 1.0
+    }
+  ],
+  "retrieved_sentences_count": 1,
+  "retrieved_sentences": [
+    {
+      "rank": 1,
+      "chunk_id": "summary_2f789cea-ddba-4807-aa5a-49f344c74ca1",
+      "section_id": null,
+      "heading": "Document Summary",
+      "page_num": 1,
+      "dense_score": 1.0,
+      "text": "Comprehensive summary could not be fully compiled due to LLM error. Section outline:\n\nSection SOFTWARE DEVELOPMENT AGREE..."
+    }
+  ],
+  "context_sent_to_llm": "Source [1]\nDocument: PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf\nSection: Document Summary\nPage: 1\n\nComprehensive summary could not be fully compiled due to LLM error. Section outline:\n\nSection SOFTWARE DEVELOPMENT AGREEMENT: THIS SOFTWARE DEVELOPMENT AGREEMENT (Agreement ) is made December 3rd, 2018 (the Effective Date) by and between DOT COM LLC, OBA Seattle Software Developers, a Delaware limited liability company (Deve...\nSection 2. Statement of Work: Developer will design, develop, and deliver, satisfactory to Client, the \"Pelican Delivers Application Phase 1\" (collectively, the Subject Program), and all elated Project services (collectively, the ...\nSection 3.1 DELIVERY SCHEDULE\u037e MILESTONES: Each SOW will include a delivery schedule for Services and Deliverables (the Delivery Schedule) that will identify mutual agreed upon Project time deadlines concerning the performance of Services, del...\nSection 3.2 PROJECT DELIVERY AND INSTALLATION: As detailed in a SOW hereto, Developer will provide certain Services, Deliverables and Documentation to Client upon a designated Milestone in accordance with such Milestone's specific Specifications (...\nSection 3.3 ACCEPTANCE A",
+  "generated_answer": "Based on the provided context, here are the critical points and key highlights:\n\n* **Project Scope**\n    * The project scope includes the provision of certain services, deliverables, and documentation by the developer to the client.\n    * The developer will design, develop, and deliver the \"Pelican Delivers Application Phase 1\" (collectively, the Subject Program), and all related Project services (collectively, the Deliverables).\n    * The Deliverables will include, but are not limited to:\n        + The Subject Program\n        + All related Project services\n        + Documentation\n    * The project scope will be detailed in a Statement of Work (SOW), which will include a delivery schedule for Services and Deliverables (the Delivery Schedule) that will identify mutual agreed-upon Project time deadlines concerning the performance of Services.\n    * The developer will provide the Deliverables upon a designated milestone in accordance with the milestone's specific specifications.\n\nNote: The project scope is not fully detailed in the provided context, and some information is missing due to LLM error.",
+  "citations": [
+    {
+      "document": "PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2 (1).pdf",
+      "page": 1,
+      "section": "Document Summary",
+      "chunk_id": "summary_2f789cea-ddba-4807-aa5a-49f344c74ca1",
+      "score": 1.0,
+      "preview": "Comprehensive summary could not be fully compiled due to LLM error. Section outline:\n\nSection SOFTWARE DEVELOPMENT AGREEMENT: THIS SOFTWARE DEVELOPMENT AGREEMENT (Agreement ) is made December 3rd, 201..."
+    }
+  ]
+}
+================================================================================

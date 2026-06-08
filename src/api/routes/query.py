@@ -112,6 +112,7 @@ def query_rag(
         return QueryResponse(
             answer=result["answer"],
             citations=result["citations"],
+            model=result.get("model_used"),
         )
     except HTTPException:
         raise

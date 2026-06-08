@@ -6,6 +6,8 @@ class Citation(BaseModel):
     document: str = Field(..., description="The filename of the source document.")
     page: int = Field(..., description="The page number of the source document.")
     section: str = Field(..., description="The section heading of the citation.")
+    score: Optional[float] = Field(default=None, description="Retrieval relevance score for this citation.")
+    preview: Optional[str] = Field(default=None, description="Evidence text snippet from the cited source.")
 
 
 class QueryResponse(BaseModel):
@@ -16,6 +18,10 @@ class QueryResponse(BaseModel):
     citations: List[Citation] = Field(
         default_factory=list,
         description="The source citations used to answer the question.",
+    )
+    model: Optional[str] = Field(
+        default=None,
+        description="The model used to generate the answer.",
     )
 
 
@@ -44,6 +50,7 @@ class MessageResponse(BaseModel):
     citations: Optional[List[Citation]] = None
     latency_ms: Optional[int] = None
     timestamp: str
+    model: Optional[str] = None
 
 
 class ChatResponse(BaseModel):
@@ -66,4 +73,3 @@ class ChatDetailResponse(BaseModel):
 class StatusResponse(BaseModel):
     status: str
     message: Optional[str] = None
-

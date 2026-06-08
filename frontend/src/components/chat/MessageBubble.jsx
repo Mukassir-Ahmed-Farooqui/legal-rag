@@ -8,6 +8,7 @@ import toast from 'react-hot-toast';
 export const MessageBubble = ({ message }) => {
   const [copied, setCopied] = useState(false);
   const [highlightedIndex, setHighlightedIndex] = useState(null);
+  const [showAllCitations, setShowAllCitations] = useState(false);
   const isUser = message.role === 'user';
 
   const handleCopy = () => {
@@ -29,8 +30,22 @@ export const MessageBubble = ({ message }) => {
     }
   };
 
-  // Click handler for citation chips to highlight target source card
   const handleCitationClick = (citationIndex) => {
+    if (citationIndex >= 3 && !showAllCitations) {
+      setShowAllCitations(true);
+      setTimeout(() => {
+        setHighlightedIndex(citationIndex);
+        const cardEl = document.getElementById(`cit-${message.id}-${citationIndex}`);
+        if (cardEl) {
+          cardEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+        setTimeout(() => {
+          setHighlightedIndex((current) => current === citationIndex ? null : current);
+        }, 3000);
+      }, 100);
+      return;
+    }
+
     setHighlightedIndex(citationIndex);
     // Auto clear highlight after 3 seconds
     setTimeout(() => {
@@ -117,15 +132,17 @@ export const MessageBubble = ({ message }) => {
   const citations = message.citations || [];
   const citationCount = citations.length;
   const isError = message.isError === true;
+  const displayedCitations = showAllCitations ? citations : citations.slice(0, 3);
 
   // Build metadata string: latency + sources count
   const latencyPart = message.latencyMs !== undefined 
     ? `${(message.latencyMs / 1000).toFixed(1)}s` 
     : '';
   const sourcesPart = citationCount > 0 
-    ? `${citationCount} Source${citationCount !== 1 ? 's' : ''}` 
+    ? `${citationCount} Evidence Chunk${citationCount !== 1 ? 's' : ''}` 
     : '';
-  const metadataString = [latencyPart, sourcesPart].filter(Boolean).join(' • ');
+  const modelPart = message.model ? message.model : '';
+  const metadataString = [modelPart, latencyPart, sourcesPart].filter(Boolean).join(' • ');
 
   return (
     <div className="flex justify-start w-full gap-3 select-text">
@@ -134,7 +151,7 @@ export const MessageBubble = ({ message }) => {
         <Shield className="h-4.5 w-4.5" />
       </div>
 
-      <div className="max-w-[80%] space-y-2.5 flex-1">
+      <div className="max-w-[80%] space-y-2.5 flex-1 min-w-0">
         {/* Header row */}
         <div className="flex items-center gap-2 text-xs font-semibold text-slate-500 select-none">
           <span className="text-slate-800 font-bold">OpenDoc</span>
@@ -158,7 +175,7 @@ export const MessageBubble = ({ message }) => {
           </div>
         ) : (
           /* Successful Answer Card */
-          <div className="bg-white border border-slate-200 rounded-2xl shadow-sm overflow-hidden w-full transition-all hover:border-slate-300">
+          <div className="bg-white border border-slate-200 rounded-2xl shadow-sm overflow-hidden w-full transition-all hover:border-slate-300 min-w-0">
             <div className="bg-slate-50/80 px-4 py-2.5 border-b border-slate-150 flex items-center justify-between select-none">
               <div className="flex items-center gap-2">
                 <Sparkles className="h-4 w-4 text-blue-650" />
@@ -191,7 +208,7 @@ export const MessageBubble = ({ message }) => {
               </div>
             </div>
 
-            <div className="p-4 text-xs md:text-sm leading-relaxed text-slate-800 bg-white select-text">
+            <div className="p-4 text-xs md:text-sm leading-relaxed text-slate-800 bg-white select-text overflow-hidden break-words">
               <ReactMarkdown components={markdownComponents}>
                 {message.content}
               </ReactMarkdown>
@@ -201,10 +218,10 @@ export const MessageBubble = ({ message }) => {
             {citationCount > 0 && (
               <div className="bg-slate-50/40 p-4 border-t border-slate-150 space-y-3">
                 <span className="text-[10px] font-bold text-slate-450 uppercase tracking-wider block select-none">
-                  Sources ({citationCount})
+                  Evidence ({citationCount})
                 </span>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  {citations.map((cit, idx) => {
+                  {displayedCitations.map((cit, idx) => {
                     const isHighlighted = highlightedIndex === idx;
                     const truncatedName = truncateFilename(cit.document, 28);
                     
@@ -241,23 +258,40 @@ export const MessageBubble = ({ message }) => {
                               <span className="truncate">{truncatedName}</span>
                             </div>
                             
-                            {/* Page Number (Tertiary) */}
-                            <span className="text-[9px] text-slate-400 font-bold font-mono block">
-                              Page {cit.page !== undefined ? cit.page : 'N/A'}
-                            </span>
+                            <div className="flex items-center gap-2">
+                              {/* Page Number (Tertiary) */}
+                              <span className="text-[9px] text-slate-400 font-bold font-mono block">
+                                Page {cit.page !== undefined ? cit.page : 'N/A'}
+                              </span>
+                              
+                              {/* Score */}
+                              {cit.score !== undefined && (
+                                <span className="text-[9px] text-slate-400 font-bold font-mono block">
+                                  • Score: {cit.score.toFixed(4)}
+                                </span>
+                              )}
+                            </div>
                           </div>
                         </div>
 
                         {/* Evidence snippet if available */}
-                        {(cit.snippet || cit.text) && (
-                          <blockquote className="mt-2.5 text-[10px] leading-relaxed text-slate-500 font-medium border-l-2 border-slate-300 pl-2.5 italic line-clamp-3 select-text bg-slate-50/80 p-1.5 rounded">
-                            "{cit.snippet || cit.text}"
+                        {(cit.preview || cit.snippet || cit.text) && (
+                          <blockquote className="mt-2.5 text-[10px] leading-relaxed text-slate-500 font-medium border-l-2 border-slate-300 pl-2.5 italic line-clamp-3 select-text bg-slate-50/80 p-1.5 rounded" title={cit.chunk_id}>
+                            "{cit.preview || cit.snippet || cit.text}"
                           </blockquote>
                         )}
                       </div>
                     );
                   })}
                 </div>
+                {citationCount > 3 && (
+                  <button
+                    onClick={() => setShowAllCitations(!showAllCitations)}
+                    className="mt-3 text-[10px] font-bold text-blue-600 hover:text-blue-700 w-full text-center py-1.5 bg-blue-50/50 hover:bg-blue-50 rounded-lg transition-colors cursor-pointer"
+                  >
+                    {showAllCitations ? 'Show Less Evidence' : `Show ${citationCount - 3} More Evidence Chunks`}
+                  </button>
+                )}
               </div>
             )}
           </div>

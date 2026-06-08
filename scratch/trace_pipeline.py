@@ -1,93 +1,58 @@
-"""
-Full pipeline trace: PDF → parsed elements → section chunks → stored headings.
-Writes results to scratch/trace_output.txt (UTF-8).
-"""
-import os, sys
+import asyncio
+import json
+from src.retrieval.retriever import HierarchicalRetriever
+from src.storage.qdrant_store import get_client, get_embedder
+from src.workflows.legal_graph import legal_graph, get_retriever
 
-# Ensure project root is on path
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
-
-from pathlib import Path
-from src.ingestion.parser import parse_pdf
-from src.ingestion.chunker import chunk_document
-
-PDF_PATH = Path("data/uploads/ArcaUsTreasuryFund_20200207_N-2_EX-99.K5_11971930_EX-99.K5_Development Agreement.pdf")
-OUT_PATH = Path(os.path.dirname(__file__)) / "trace_output.txt"
-
-
-def main():
-    if not PDF_PATH.exists():
-        print(f"PDF not found: {PDF_PATH}")
-        sys.exit(1)
-
-    parsed = parse_pdf(PDF_PATH)
-
-    with open(OUT_PATH, "w", encoding="utf-8") as f:
-
-        # ── STAGE 1: Raw parsed elements ──────────────────────────────
-        f.write("=" * 80 + "\n")
-        f.write("STAGE 1: RAW PARSED ELEMENTS (from Docling via parser.py)\n")
-        f.write(f"Total elements: {len(parsed.elements)}\n")
-        f.write("=" * 80 + "\n\n")
-
-        heading_count = 0
-        for i, el in enumerate(parsed.elements):
-            is_heading = "heading" in el.element_type.lower() or "section_header" in el.element_type.lower()
-            if is_heading:
-                heading_count += 1
-            marker = ">>> HEADING <<<" if is_heading else ""
-            f.write(f"[{i:03d}] type={el.element_type:15s} page={el.page_num:2d} {marker}\n")
-            f.write(f"      text: {el.text[:200]}\n")
-            if el.parent_heading:
-                f.write(f"      parent_heading: {el.parent_heading}\n")
-            f.write("\n")
-
-        f.write(f"\nTotal headings detected by parser: {heading_count}\n\n")
-
-        # ── STAGE 2: Section chunks from chunker ──────────────────────
-        section_chunks, sentence_chunks = chunk_document(
-            parsed.elements,
-            doc_id=parsed.doc_id,
-            filename=parsed.filename,
-        )
-
-        f.write("=" * 80 + "\n")
-        f.write("STAGE 2: SECTION CHUNKS (from chunker.py)\n")
-        f.write(f"Total section chunks: {len(section_chunks)}\n")
-        f.write(f"Total sentence chunks: {len(sentence_chunks)}\n")
-        f.write("=" * 80 + "\n\n")
-
-        for i, sc in enumerate(section_chunks):
-            f.write(f"--- Section Chunk {i} ---\n")
-            f.write(f"  heading   : {sc.heading}\n")
-            f.write(f"  chunk_id  : {sc.chunk_id}\n")
-            f.write(f"  page      : {sc.page_num}-{sc.end_page_num}\n")
-            f.write(f"  tokens    : {sc.token_count}\n")
-            f.write(f"  text[0:300]: {sc.text[:300]}\n")
-            f.write("\n")
-
-        # ── STAGE 3: Heading distribution summary ─────────────────────
-        f.write("=" * 80 + "\n")
-        f.write("STAGE 3: HEADING DISTRIBUTION SUMMARY\n")
-        f.write("=" * 80 + "\n\n")
-
-        from collections import Counter
-        heading_dist = Counter(sc.heading for sc in section_chunks)
-        for h, count in heading_dist.most_common():
-            f.write(f"  {count:3d}x  \"{h}\"\n")
-
-        f.write("\n\n")
-
-        # same for sentence chunks
-        sent_heading_dist = Counter(sc.heading for sc in sentence_chunks)
-        f.write("Sentence chunk heading distribution:\n")
-        for h, count in sent_heading_dist.most_common():
-            f.write(f"  {count:3d}x  \"{h}\"\n")
-
-    print(f"Trace written to: {OUT_PATH}")
-    print(f"Elements: {len(parsed.elements)}, Headings: {heading_count}")
-    print(f"Section chunks: {len(section_chunks)}, Sentence chunks: {len(sentence_chunks)}")
-
+async def trace_query():
+    # Let's trace it without doc_id first to see what the global response is, 
+    # but also with PelicanDelivers doc_id to match the user's screenshot.
+    doc_id = "d1f9c3db-6c0d-4bc4-879d-a93c9e01c323"
+    question = "What is the termination date?"
+    
+    # We will simulate the `rag.ask` call manually to capture step by step.
+    state = {"question": question, "selected_doc_ids": [doc_id], "chat_history": None}
+    
+    # Step 1: retrieve_node
+    from src.workflows.legal_graph import retrieve_node, generate_node, citation_node
+    state1 = retrieve_node(state)
+    state.update(state1)
+    
+    with open("pipeline_trace.txt", "w") as f:
+        f.write("=== STEP 1: Final sentence chunks returned by retriever ===\n")
+        for chunk in state.get("retrieved_chunks", []):
+            f.write(f"ChunkID: {chunk.chunk_id}\nPage: {chunk.page_num}\nHeading: {chunk.heading}\nScore: {chunk.score}\nPreview: {chunk.text[:150]}\n\n")
+            
+        f.write("\n=== STEP 2: Exact input entering citation_node ===\n")
+        # generate_node runs first
+        state2 = generate_node(state)
+        state.update(state2)
+        
+        f.write("Answer generated:\n")
+        f.write(state.get("answer", "") + "\n\n")
+        f.write("retrieved_chunks passed to citation_node:\n")
+        for chunk in state.get("retrieved_chunks", []):
+            f.write(f"  - Chunk: {chunk.chunk_id}, Page: {chunk.page_num}, Heading: {chunk.heading}\n")
+            
+        f.write("\n=== STEP 3: Exact citations generated by citation_node ===\n")
+        state3 = citation_node(state)
+        state.update(state3)
+        citations = state.get("citations", [])
+        for c in citations:
+            f.write(f"Page: {c.get('page')}, Heading: {c.get('section')}, Document: {c.get('document')}\n")
+            
+        f.write("\n=== STEP 4: Exact JSON returned to frontend ===\n")
+        from src.models.responses import QueryResponse
+        response = {
+            "answer": state.get("answer", ""),
+            "citations": state.get("citations", []),
+            "model_used": state.get("model_used")
+        }
+        f.write(json.dumps(response, indent=2))
+        
+        f.write("\n=== SUMMARY AND DEDUPLICATION ANALYSIS ===\n")
+        f.write(f"Number of retrieved chunks: {len(state.get('retrieved_chunks', []))}\n")
+        f.write(f"Number of generated citations: {len(citations)}\n")
 
 if __name__ == "__main__":
-    main()
+    asyncio.run(trace_query())

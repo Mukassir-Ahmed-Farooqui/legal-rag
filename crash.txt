@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "C:\Users\Mukashifa Fatima\OneDrive\Desktop\legal-rag\scratch\test_import.py", line 5, in <module>
+    import src.api.main
+ModuleNotFoundError: No module named 'src'

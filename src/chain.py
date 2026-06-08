@@ -1,13 +1,13 @@
 
 # src/chain.py
 from typing import Optional
-from src.workflows.legal_graph import legal_graph, retriever
+from src.workflows.legal_graph import legal_graph, get_retriever
 
 
 class LegalRAG:
 
     def __init__(self):
-        self.retriever = retriever
+        self.retriever = get_retriever()
 
     def ask(self, question: str, selected_doc_ids: Optional[list[str]] = None, chat_history: Optional[str] = None):
         state = legal_graph.invoke({"question": question, "selected_doc_ids": selected_doc_ids, "chat_history": chat_history})
@@ -33,5 +33,6 @@ class LegalRAG:
             "citations": state.get("citations", []),
             "chunks_retrieved_count": len(state.get("retrieved_chunks", [])),
             "contexts": [c.text for c in state.get("retrieved_chunks", [])],
+            "model_used": state.get("model_used"),
         }
 

@@ -190,6 +190,8 @@ def get_chat_detail(
                     document=c.get("document", ""),
                     page=c.get("page", 1),
                     section=c.get("section", ""),
+                    score=c.get("score"),
+                    preview=c.get("preview"),
                 )
                 for c in msg.citations
             ]
@@ -635,6 +637,8 @@ def create_message(
                 document=c.get("document", ""),
                 page=c.get("page", 1),
                 section=c.get("section", ""),
+                score=c.get("score"),
+                preview=c.get("preview"),
             )
             for c in result.get("citations", [])
         ]
@@ -646,6 +650,7 @@ def create_message(
             citations=citations_resp,
             latency_ms=assistant_msg.latency_ms,
             timestamp=assistant_msg.timestamp.isoformat(),
+            model=result.get("model_used"),
         )
 
     except Exception as e:

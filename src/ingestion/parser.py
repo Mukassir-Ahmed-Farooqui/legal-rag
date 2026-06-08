@@ -8,6 +8,8 @@ from typing import Optional
 
 from docling.document_converter import DocumentConverter
 from docling.datamodel.pipeline_options import PdfPipelineOptions
+from docling.datamodel.base_models import InputFormat
+from docling.document_converter import PdfFormatOption
 
 
 def clean_heading(text: str) -> str:
