@@ -67,34 +67,34 @@ graph TD
 
     subgraph FastAPI Ingestion Pipeline
         B -->|JWT Verification| C[Authentication Filter]
-        C -->|Extract Text & Parse| D[Docling PDF Parser]
-        D -->|Smart Chunk Sections + Sentences| E[Hierarchical Chunking Engine]
-        E -->|BAAI/bge-small-en-v1.5 Embed| F[Embedding Service]
+        C -->|Extract Text and Parse| D[Docling PDF Parser]
+        D -->|Smart Chunk Sections and Sentences| E[Hierarchical Chunking Engine]
+        E -->|BAAI bge-small-en-v1.5 Embed| F[Embedding Service]
         F -->|Store Section Vectors| G[(Qdrant Vector DB: legal_sections)]
         F -->|Store Sentence Vectors| H[(Qdrant Vector DB: legal_sentences)]
-        E -->|Record Metadata + Ownership| I[(Neon PostgreSQL DB)]
+        E -->|Record Metadata and Ownership| I[(Neon PostgreSQL DB)]
     end
 
-    subgraph Hybrid Retrieval & Generation
+    subgraph Hybrid Retrieval and Generation
         B -->|Orchestrate Workflow| J[LangGraph Coordinator]
         J -->|BM25 Keyword Search| G
         J -->|Dense Vector Search| G
-        J -->|Query Classification| K[SUMMARY | FACT | COMPARE]
-        J -->|Merge Rank Scores| L[Reciprocal Rank Fusion - RRF]
-        L -->|Inject Context + Citations| M[LLM Synthesis Engine]
-        M -->|Primary: Llama 3.1 via Groq| N[Groq API]
-        M -->|Fallback: Gemini 2.5 Flash| O[Google Gemini]
-        M -->|Return Citation-Grounded Answer| B
+        J -->|Query Classification| K["FACT, SUMMARY, COMPARE"]
+        J -->|Merge Rank Scores| L["Reciprocal Rank Fusion (RRF)"]
+        L -->|Inject Context and Citations| M[LLM Synthesis Engine]
+        M -->|"Primary: Llama 3.1 via Groq"| N[Groq API]
+        M -->|"Fallback: Gemini 2.5 Flash"| O[Google Gemini]
+        M -->|Return Citation Grounded Answer| B
     end
 
-    classDef database fill:#f9f,stroke:#333,stroke-width:2px;
-    classDef engine fill:#bbf,stroke:#333,stroke-width:2px;
-    classDef llm fill:#bfb,stroke:#333,stroke-width:2px;
-    class G,H,I database;
-    class D,E,J,L engine;
-    class M,N,O llm;
-```
+    classDef database fill:#f9f,stroke:#333,stroke-width:2px
+    classDef engine fill:#bbf,stroke:#333,stroke-width:2px
+    classDef llm fill:#bfb,stroke:#333,stroke-width:2px
 
+    class G,H,I database
+    class D,E,J,L engine
+    class M,N,O llm
+```
 ---
 
 ## ✨ Key Features
