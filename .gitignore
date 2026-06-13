@@ -1,8 +1,31 @@
+# Environments
 .env
+.env.*
 venv/
+.venv/
+
+# Python Cache
 __pycache__/
 *.pyc
+*.pyo
+.pytest_cache/
+
+# Agent/IDE
+.agent/
+.commandcode/
+.vscode/
+.idea/
 .DS_Store
+
+# Data & Scratch
 data/
+scratch/
+*.log
+
+# Frontend
+frontend/dist/
+frontend/node_modules/
+
+# Tasks & Old Artifacts
 task.md
 status.md
